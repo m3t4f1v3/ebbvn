@@ -1,0 +1,4 @@
+[gd_resource type="SystemFont" format=3 uid="uid://cj2op10schxbx"]
+
+[resource]
+font_names = PackedStringArray("FiraCode Nerd Font")

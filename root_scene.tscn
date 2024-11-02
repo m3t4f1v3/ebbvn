@@ -1,0 +1,116 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2ochjb7dgouq"]
+
+[ext_resource type="Texture2D" uid="uid://dqx74tc2xfop7" path="res://images/backgrounds/Rose.png" id="1_iqet6"]
+[ext_resource type="Script" path="res://vn.gd" id="1_t2jh2"]
+[ext_resource type="Theme" uid="uid://bwr5kvws544hh" path="res://themes/text.tres" id="2_iqet6"]
+[ext_resource type="Theme" uid="uid://bmwbqpe3y4sck" path="res://themes/buttons.tres" id="6_4ty2a"]
+
+[node name="RootScene" type="Node2D"]
+script = ExtResource("1_t2jh2")
+button_theme = ExtResource("6_4ty2a")
+
+[node name="BackgroundImage" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1_iqet6")
+expand_mode = 1
+
+[node name="Sprites" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 60.0
+offset_top = 70.0
+offset_right = 1860.0
+offset_bottom = 1050.0
+
+[node name="Left" type="Sprite2D" parent="Sprites"]
+position = Vector2(0, 1)
+scale = Vector2(2.22778, 2.22778)
+centered = false
+
+[node name="Right" type="Sprite2D" parent="Sprites"]
+position = Vector2(1319, 0)
+centered = false
+
+[node name="TextBox" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 60.0
+offset_top = 560.0
+offset_right = 60.0
+offset_bottom = 560.0
+
+[node name="NameControl" type="Control" parent="TextBox"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 400.0
+offset_bottom = 60.0
+
+[node name="NameBackground" type="ColorRect" parent="TextBox/NameControl"]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 60.0
+color = Color(0.196078, 0.0941176, 0.0941176, 0.901961)
+
+[node name="Name" type="RichTextLabel" parent="TextBox/NameControl"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 10.0
+offset_right = 350.0
+offset_bottom = 50.0
+theme = ExtResource("2_iqet6")
+bbcode_enabled = true
+scroll_active = false
+
+[node name="TextControl" type="Control" parent="TextBox"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 60.0
+offset_right = 1800.0
+offset_bottom = 490.0
+
+[node name="TextBackground" type="ColorRect" parent="TextBox/TextControl"]
+layout_mode = 0
+offset_right = 1800.0
+offset_bottom = 430.0
+color = Color(0.196078, 0.0941176, 0.0941176, 0.901961)
+
+[node name="Text" type="RichTextLabel" parent="TextBox/TextControl"]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 10.0
+offset_right = 1750.0
+offset_bottom = 420.0
+theme = ExtResource("2_iqet6")
+bbcode_enabled = true
+text = "Hiiii [font_size=24]Big text[/font_size] [font=res://fonts/CyberpunkWaifus.ttf]skibidi[/font]"
+scroll_active = false
+
+[node name="ProgressButton" type="Button" parent="TextBox/TextControl"]
+layout_mode = 0
+offset_right = 1800.0
+offset_bottom = 430.0
+flat = true
+
+[node name="Buttons" type="Control" parent="TextBox"]
+anchors_preset = 0
+offset_left = 500.0
+offset_right = 1800.0
+offset_bottom = 60.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextBox/Buttons"]
+layout_mode = 0
+offset_right = 1300.0
+offset_bottom = 60.0
+
+[node name="FullScreenEffects" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -12.0
+autoplay = true
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="."]

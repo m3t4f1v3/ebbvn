@@ -67,15 +67,18 @@ func update_scene_ui(scene_lines: Array):
 				await get_tree().create_timer(0.1).timeout  # A slight delay to allow UI to update
 				var in_bbcode = false
 				for character in dialogue_text:
-					#text_label.append_text(character)
+					
 					text_label.text += character
 					if character == "[":
 						in_bbcode = true
 					if character == "]":
 						in_bbcode = false
-					#print($TextBox/TextControl/ProgressButton.button_pressed)
-					if not $TextBox/TextControl/ProgressButton.button_pressed and not in_bbcode:
-						await get_tree().create_timer(0.05).timeout  # Adjust speed by changing the timer duration
+					
+					if not $TextBox/TextControl/ProgressButton.button_pressed and not in_bbcode and not Input.is_action_pressed("HURRRYYY"):
+						if Input.is_action_pressed("speed up text scroll"):
+							await get_tree().create_timer(0.01).timeout
+						else:
+							await get_tree().create_timer(0.05).timeout # Adjust speed by changing the timer duration
 				
 				await $TextBox/TextControl/ProgressButton.pressed  # Wait for a click on TextControl node
 				waiting_for_click = false
@@ -96,6 +99,7 @@ func update_scene_ui(scene_lines: Array):
 						if left_char == character:
 							left_char = ""
 					_:
+						print(line)
 						printerr("Invalid position specified for character.")
 			elif line.begins_with("clear"):
 				$TextBox/TextControl/Text.text = ""
@@ -118,6 +122,7 @@ func update_scene_ui(scene_lines: Array):
 						if left_char == character:
 							left_char = ""
 					_:
+						print(line)
 						printerr("Invalid position specified for character.")
 			elif " changes into " in line: # sprite change
 				var data = line.split(" changes into ")
@@ -129,6 +134,7 @@ func update_scene_ui(scene_lines: Array):
 					right_char:
 						$Sprites/Right.texture = load("res://images/sprites/%s" % char_sprite)
 					_:
+						print(line)
 						assert(false, "ERROR: Character position not set before changing sprite.")
 			elif line.begins_with("bgi"): # background image change
 				$BackgroundImage.texture = load("res://images/backgrounds/%s" % line.trim_prefix("bgi "))
@@ -141,10 +147,13 @@ func update_scene_ui(scene_lines: Array):
 					$BackgroundMusicPlayer.stream = load("res://audio/bgm/%s" % file)
 					$BackgroundMusicPlayer.volume_db = volume
 					$BackgroundMusicPlayer.play()
-				else:
+				elif type == "sfx":
 					$SFXPlayer.stream = load("res://audio/sfx/%s" % file)
 					$SFXPlayer.volume_db = volume
 					$SFXPlayer.play()
+				else:
+					print(line)
+					printerr("Invalid sound type")
 			elif line.begins_with("goto"):
 				load_scene(line.trim_prefix("goto "))
 			else:
@@ -162,6 +171,12 @@ func update_scene_ui(scene_lines: Array):
 
 func _on_choice_selected(next_scene: String):
 	load_scene(next_scene)
+
+func _process(_delta):
+	if Input.is_action_pressed("hide textbox"):
+		$TextBox.hide()
+	else:
+		$TextBox.show()
 
 func _ready():
 	var file = FileAccess.open(script_file_path, FileAccess.ModeFlags.READ)

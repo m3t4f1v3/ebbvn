@@ -10,6 +10,8 @@ var left_char = ""
 var right_char = ""
 var waiting_for_click = false
 
+var credits_rolling
+
 func load_scene(scene_name):
 	$Sprites/Left.texture = null
 	$Sprites/Right.texture = null
@@ -156,6 +158,50 @@ func update_scene_ui(scene_lines: Array):
 					printerr("Invalid sound type")
 			elif line.begins_with("goto"):
 				load_scene(line.trim_prefix("goto "))
+			elif line.begins_with("credits roll"):
+				$TextBox/Buttons.hide()
+				$TextBox/NameControl.hide()
+				$TextBox.position = Vector2(0,0)
+				$TextBox/TextControl.position = Vector2(0,0)
+				$TextBox/TextControl.size = Vector2(1920, 1080)
+				$TextBox/TextControl/Text.size = Vector2(1920, 1080)
+				$TextBox/TextControl/Text.scroll_following = true
+				#$TextBox/TextControl/Text.theme.default_font_size = 96
+				#$TextBox/TextControl/Text.material.shader = load("res://shaders/tilt.gdshader")
+				$TextBox/TextControl/TextBackground.size = Vector2(1920, 1080)
+				$TextBox/TextControl/TextBackground.material.shader = null
+				$ScreenFx.show()
+				
+				var steps = 100
+				
+				for step in range(steps): #really stupid way of doing this ngl
+					$ScreenFx.material.set_shader_parameter("up_left", lerp(Vector2(0,0), Vector2(0.2, 0.5), float(step+1)/steps))
+					$ScreenFx.material.set_shader_parameter("up_right", lerp(Vector2(1,0), Vector2(0.8, 0.5), float(step+1)/steps))
+					$ScreenFx.material.set_shader_parameter("down_right", lerp(Vector2(1,1), Vector2(1, 0.8), float(step+1)/steps))
+					$ScreenFx.material.set_shader_parameter("down_left", lerp(Vector2(0,1), Vector2(0, 0.8), float(step+1)/steps))
+					await get_tree().create_timer(1/steps).timeout
+					#print($ScreenFx.material.get_shader_parameter("up_left"))
+				
+				#$TextBox/TextControl/Text.material.set_shader_parameter("up_left", Vector2(0.4, 0))
+				#$TextBox/TextControl/Text.material.set_shader_parameter("up_right", Vector2(1-0.4, 0))
+				
+				#$TextBox/TextControl/TextBackground.material.set_shader_parameter("up_left", Vector2(0.4, 0))
+				#$TextBox/TextControl/TextBackground.material.set_shader_parameter("up_right", Vector2(1-0.4, 0))
+				
+				credits_rolling = true
+				
+			elif credits_rolling:
+				var in_bbcode = false
+				for character in line:
+					text_label.text += character
+					if character == "[":
+						in_bbcode = true
+					if character == "]":
+						in_bbcode = false
+					if not in_bbcode:
+						await get_tree().create_timer(0.03).timeout
+				text_label.text += "\n"
+				#await get_tree().create_timer(0.01).timeout
 			else:
 				print(line)
 				assert(false, "ERROR: Unrecognized line format.")

@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://b2ochjb7dgouq"]
+[gd_scene load_steps=13 format=3 uid="uid://b2ochjb7dgouq"]
 
 [ext_resource type="Script" path="res://vn.gd" id="1_t2jh2"]
 [ext_resource type="Theme" uid="uid://bwr5kvws544hh" path="res://themes/text.tres" id="2_iqet6"]
-[ext_resource type="Shader" uid="uid://bedjk52ll85d4" path="res://rounded_corners.tres" id="4_xhx10"]
+[ext_resource type="Shader" path="res://shaders/tilt.gdshader" id="3_wlcmu"]
+[ext_resource type="Shader" uid="uid://bedjk52ll85d4" path="res://shaders/rounded_corners.tres" id="4_xhx10"]
 [ext_resource type="Theme" uid="uid://bmwbqpe3y4sck" path="res://themes/buttons.tres" id="6_4ty2a"]
 [ext_resource type="Theme" uid="uid://dgebevrr68c5p" path="res://themes/textboxbutton.tres" id="6_ds41b"]
 [ext_resource type="Texture2D" uid="uid://bjv2nug3nwcxr" path="res://images/textboxdecal.png" id="7_uhalk"]
+[ext_resource type="Texture2D" uid="uid://bpw4jhwnrcmwj" path="res://images/sprites/Ed.png" id="8_883wi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cqdj0"]
 shader = ExtResource("4_xhx10")
@@ -22,6 +24,20 @@ shader_parameter/CustomColor = Color(0.196078, 0.0941176, 0.0941176, 0.901961)
 shader_parameter/CornerMasks = Vector4(0, 1, 0, 0)
 shader_parameter/SmoothFalloff = 1.0
 shader_parameter/Smoothing = 0.0
+
+[sub_resource type="Gradient" id="Gradient_8umpi"]
+colors = PackedColorArray(0.196078, 0.0941176, 0.0941176, 0.901961, 0.196078, 0.0941176, 0.0941176, 0.901961)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_agad3"]
+gradient = SubResource("Gradient_8umpi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_shekm"]
+shader = ExtResource("3_wlcmu")
+shader_parameter/up_left = Vector2(0, 0)
+shader_parameter/up_right = Vector2(1, 0)
+shader_parameter/down_right = Vector2(1, 1)
+shader_parameter/down_left = Vector2(0, 1)
+shader_parameter/plane_size = Vector2(0, 0)
 
 [node name="RootScene" type="Node2D"]
 script = ExtResource("1_t2jh2")
@@ -86,12 +102,12 @@ offset_top = 60.0
 offset_right = 1800.0
 offset_bottom = 490.0
 
-[node name="TextBackground" type="ColorRect" parent="TextBox/TextControl"]
+[node name="TextBackground" type="TextureRect" parent="TextBox/TextControl"]
 material = SubResource("ShaderMaterial_cqdj0")
 layout_mode = 0
 offset_right = 1800.0
 offset_bottom = 430.0
-color = Color(0.196078, 0.0941176, 0.0941176, 0.901961)
+texture = SubResource("GradientTexture1D_agad3")
 
 [node name="Text" type="RichTextLabel" parent="TextBox/TextControl"]
 layout_mode = 0
@@ -101,7 +117,14 @@ offset_right = 1750.0
 offset_bottom = 420.0
 theme = ExtResource("2_iqet6")
 bbcode_enabled = true
+text = "yap yap yap"
 scroll_active = false
+
+[node name="Decal" type="Sprite2D" parent="TextBox/TextControl"]
+modulate = Color(1, 1, 1, 0.113725)
+position = Vector2(1227, 25)
+texture = ExtResource("7_uhalk")
+centered = false
 
 [node name="ProgressButton" type="Button" parent="TextBox/TextControl"]
 layout_mode = 0
@@ -109,12 +132,6 @@ offset_right = 1800.0
 offset_bottom = 430.0
 theme = ExtResource("6_ds41b")
 flat = true
-
-[node name="Decal" type="Sprite2D" parent="TextBox/TextControl"]
-modulate = Color(1, 1, 1, 0.113725)
-position = Vector2(1227, 25)
-texture = ExtResource("7_uhalk")
-centered = false
 
 [node name="Buttons" type="Control" parent="TextBox"]
 anchors_preset = 0
@@ -127,11 +144,13 @@ layout_mode = 0
 offset_right = 1300.0
 offset_bottom = 60.0
 
-[node name="FullScreenEffects" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="ScreenFx" type="TextureRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_shekm")
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("8_883wi")
 
 [node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -12.0

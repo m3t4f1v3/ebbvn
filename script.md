@@ -41,4 +41,39 @@ Character 1: You decided to go to the forest.
 bgi Rose.png
 clear
 Character 1: You decided to stay in town.
-goto scene-1
+clear
+credits roll
+[font_size=96]
+skibidi
+awesome
+great
+gort
+pink
+edward
+goof
+mepea
+meeee
+godot engine
+raul
+awesome people
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+[/font_size]

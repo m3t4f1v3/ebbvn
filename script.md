@@ -78,11 +78,11 @@ bgi NeonStore.png
 
 clear
 
-fullscreen effect show MetaWorld
+fullscreen effect show Image backgrounds/Metaworld.png
 
 fullscreen effect show YakuzaRadial
 pause for 1 sec
-fullscreen effect hide MetaWorld
+fullscreen effect hide Image backgrounds/Metaworld.png
 pause for 1 sec
 fullscreen effect hide YakuzaRadial
 pause for 1 sec
@@ -106,10 +106,22 @@ Finger: Ok I can't see anything back here
 Esli: Put your damn glasses on
 Finger: Still can't
 Ed: No worries, I'll go to a shop that actually has stuff in stock
-Esli: FRET not, [b]I[/b] SHALL source ONE satoru Gojo keychain within a reasonable timeframe
+Finger: FRET not, [b]I[/b] SHALL source ONE satoru Gojo keychain within a reasonable timeframe
 Ed: 1-2 business days?
 Esli: Or its 35% off
 Ed: Deal
+Finger: Ok so the plan is we hit Ed on the head really really hard and Ed forgets everything
+Esli: Nooo that means that we would have to dispose of the body
+Ed: Dispose of WHOSE body??
+Esli: Not yours
+Ed: okk
+Finger: Well in that case
+fullscreen effect show Image FX/WellInThatCase.jpg at 810 390 sized 300 300
+<!-- 810 = 1920/2 - 300/2, we are positioning from top left corner -->
+<!-- 390 = 1080/2 - 300/2 -->
+sfx DoorsOpening.mp3 plays at -20 db
+wait for click
+fullscreen effect hide Image FX/WellInThatCase.jpg
 
 <!-- https://youtu.be/ik_A7Mqepe0 -->
 bgm nothingisbutwhatisnot.mp3 plays from 11 sec

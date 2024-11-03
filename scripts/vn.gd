@@ -299,14 +299,13 @@ func update_scene_ui(scene_lines: Array):
 			elif line.begins_with("fullscreen effect "):
 				var parts = line.split(" ")
 				
-				# Ensure the correct format
-				if parts.size() < 4:
-					printerr("Invalid fullscreen effect command format.")
-					return
+				
 				
 				var action = parts[2]  # Expected to be "show" or "hide"
 				var effect_name = parts[3]  # Expected effect name
 				var effect_path = "FullscreenFx/%s" % effect_name
+				
+				var argument = line.substr(len("fullscreen effect xxxx ") + len(effect_name) + 1)
 				
 				# Check if the node exists
 				if not has_node(effect_path):
@@ -319,12 +318,12 @@ func update_scene_ui(scene_lines: Array):
 				match action:
 					"show":
 						if effect_node.has_method("init"):
-							effect_node.init()
+							effect_node.init(argument)
 						else:
 							effect_node.show()
 					"hide":
 						if effect_node.has_method("deinit"):
-							effect_node.deinit()
+							effect_node.deinit(argument)
 						else:
 							effect_node.hide()
 					_:

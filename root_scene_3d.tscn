@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c0syide7diq0h"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="."]
+sides = 32
+ring_sides = 16
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.881081, 0.472966, 0, -0.472966, 0.881081, 0, 1.49438, 2.69122)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.791149, 0.611624, 0, -0.611624, 0.791149, 0, 1.58801, 6.05555)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]

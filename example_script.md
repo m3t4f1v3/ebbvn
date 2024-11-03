@@ -52,16 +52,16 @@ wait for click
 clear sprites
 
 hide textbox
-fullscreen effect show Edward
-show textbox
-fullscreen effect hide Edward
-
+fullscreen effect show Image sprites/Ed.png
 pause for 1 sec
 <!-- no support for 1 min 1 hour etc, this just tells you what the units are -->
-fullscreen effect show MetaWorld
+show textbox
+fullscreen effect hide Image sprites/Ed.png
+fullscreen effect show Image backgrounds/Metaworld.png at 100 100 sized 500 500
 fullscreen effect show YakuzaRadial
 pause for 1 sec
-fullscreen effect hide MetaWorld
+fullscreen effect hide Image backgrounds/Metaworld.png
+<!-- must always be lesser than or equal to the specificity of the corresponding show -->
 fullscreen effect hide YakuzaRadial
 
 Character 1: not a whole lot here now is there

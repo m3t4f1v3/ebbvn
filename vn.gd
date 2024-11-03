@@ -57,11 +57,11 @@ func update_scene_ui(scene_lines: Array):
 							$Sprites/Right.texture = load("res://images/sprites/%s.png" % char_sprite)
 						_:
 							assert(false, "ERROR: You must introduce a characters position before setting the sprite.")
+				dialogue_text = ""
 				if char_label.text != char_name[0]:
 					# we are changing characters
 					if char_name[0].to_lower() != "narrator":
 						char_label.text = char_name[0]
-					dialogue_text = ""
 				dialogue_text += split_line[1] + "\n"
 				# Wait for click here by setting waiting_for_click to true
 				waiting_for_click = true
@@ -158,6 +158,13 @@ func update_scene_ui(scene_lines: Array):
 					printerr("Invalid sound type")
 			elif line.begins_with("goto"):
 				load_scene(line.trim_prefix("goto "))
+			elif line.begins_with("fullscreen effect"):
+				var parts = line.split(" ")
+				var action = parts[2]  # This should be "show" or "hide"
+				var effect_name = parts[3]  # This is the name of the effect
+				var effect_node = get_node("FullscreenFx/%s" % effect_name)
+				effect_node.visible = (action == "show")
+
 			elif line.begins_with("credits roll"):
 				$TextBox/Buttons.hide()
 				$TextBox/NameControl.hide()
@@ -165,7 +172,7 @@ func update_scene_ui(scene_lines: Array):
 				$TextBox/TextControl.position = Vector2(0,0)
 				$TextBox/TextControl.size = Vector2(1920, 1080)
 				$TextBox/TextControl/Text.size = Vector2(1920, 1080)
-				$TextBox/TextControl/Text.scroll_following = true
+				#$TextBox/TextControl/Text.scroll_following = true
 				#$TextBox/TextControl/Text.theme.default_font_size = 96
 				#$TextBox/TextControl/Text.material.shader = load("res://shaders/tilt.gdshader")
 				$TextBox/TextControl/TextBackground.size = Vector2(1920, 1080)
@@ -179,7 +186,7 @@ func update_scene_ui(scene_lines: Array):
 					$ScreenFx.material.set_shader_parameter("up_right", lerp(Vector2(1,0), Vector2(0.8, 0.5), float(step+1)/steps))
 					$ScreenFx.material.set_shader_parameter("down_right", lerp(Vector2(1,1), Vector2(1, 0.8), float(step+1)/steps))
 					$ScreenFx.material.set_shader_parameter("down_left", lerp(Vector2(0,1), Vector2(0, 0.8), float(step+1)/steps))
-					await get_tree().create_timer(1/steps).timeout
+					await get_tree().create_timer(float(1)/steps).timeout
 					#print($ScreenFx.material.get_shader_parameter("up_left"))
 				
 				#$TextBox/TextControl/Text.material.set_shader_parameter("up_left", Vector2(0.4, 0))

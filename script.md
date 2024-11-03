@@ -1,79 +1,34 @@
-# Esli's bday vn
+# Esli's Big Birthday
 
 ## Scene 1
+clear
+* Option 1: [Rewind your pc clock](#chronos-the-wise)
 
-bgi Rose.png
+## Chronos the Wise
+
 clear
 
-bgm skibidi.mp3 plays at -10
-sfx vineboom.mp3 plays at -10
+narrator: Rewind to 8/12/22
+Chronos the Wise: WHAt ! your not supposed to be here
 
-Character 1 enters from the left
-Character 1 changes into Nanjo.png
+Antag enters from the left
+Antag changes into Korth.webp
 
-Character 2 enters from the right
-Character 2 changes into Ed.png
-
-Character 1: Hello, [i]italic[/i] [b]bold[/b] the story.
-Character 2: Hiiii [font_size=24]Big text[/font_size] [font=res://fonts/CyberpunkWaifus.ttf]skibidi[/font]
-
-<!-- Narrator: This is a comment. -->
-Narrator: really spooky
-
-* Option 1: [Go to the forest](#scene-2)
-* Option 2: [Stay in town](#scene-3)
-
-## Scene 2
-
-bgi Forest.jpg
-clear
-
-Character 1 enters from the right
-Character 1 changes into Nanjo.png
-
-Character 1: You decided to go to the forest.
-
-* Option 1: [Go deeper into the forest](#scene-4)
-* Option 2: [Go back to the crossroads](#scene-1)
-
-## Scene 3
-
-bgi Rose.png
-clear
-Character 1: You decided to stay in town.
-clear
-credits roll
-[font_size=96]
-skibidi
-awesome
-great
-gort
-pink
-edward
-goof
-mepea
-meeee
-godot engine
-raul
-awesome people
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-[/font_size]
+Antag: I have an idea
+Antag: Hear me out
+Zecheru enters from the right
+Zecheru changes into Zecheru.webp
+Zecheru: FINISHED THIS BLOODY THING
+Zecheru: (stupid ass image of some stupid ass pipes)
+Zecheru: NOW I HAVE TO WAIT FOR CONFIRMATION IF ITS GOOD
+Zecheru: if its not im screwed
+Zecheru: :JessicaWah:
+Antag: One time I obtained a copy of Persona 3 through interesting means. 2 months later, Persona 3 gets a remake. If I do the same thing with RGD, maybe it will come out on steam 🤔
+Esli enters from the left
+Esli changes into Esli.webp
+Esli: do it!
+Esli: (in reply to zecherus stupid ass pipes) I have no idea what that is but it looks neat
+Zecheru: floor heating
+Antag: It reminds me of the map of Yume Nikki
+Tamurahime Chad: P3 should have gotten a remake in the P3D style
+Chronos the Wise: THis ! is an example ! of Irony ! THis is because ! it did !

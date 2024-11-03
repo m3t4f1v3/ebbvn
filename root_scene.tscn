@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b2ochjb7dgouq"]
+[gd_scene load_steps=14 format=3 uid="uid://b2ochjb7dgouq"]
 
 [ext_resource type="Script" path="res://vn.gd" id="1_t2jh2"]
 [ext_resource type="Theme" uid="uid://bwr5kvws544hh" path="res://themes/text.tres" id="2_iqet6"]
@@ -7,6 +7,7 @@
 [ext_resource type="Theme" uid="uid://bmwbqpe3y4sck" path="res://themes/buttons.tres" id="6_4ty2a"]
 [ext_resource type="Theme" uid="uid://dgebevrr68c5p" path="res://themes/textboxbutton.tres" id="6_ds41b"]
 [ext_resource type="Texture2D" uid="uid://bjv2nug3nwcxr" path="res://images/textboxdecal.png" id="7_uhalk"]
+[ext_resource type="Script" path="res://danmu.gd" id="8_8tqi2"]
 [ext_resource type="Texture2D" uid="uid://bpw4jhwnrcmwj" path="res://images/sprites/Ed.png" id="8_883wi"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cqdj0"]
@@ -162,7 +163,12 @@ offset_bottom = 1080.0
 mouse_filter = 2
 texture = ExtResource("8_883wi")
 
-[node name="ScreenFx" type="TextureRect" parent="."]
+[node name="Danmu" type="Control" parent="FullscreenFx"]
+visible = false
+anchors_preset = 0
+script = ExtResource("8_8tqi2")
+
+[node name="Credits" type="TextureRect" parent="."]
 visible = false
 material = SubResource("ShaderMaterial_shekm")
 offset_right = 1920.0

@@ -58,8 +58,8 @@ func update_scene_ui(scene_lines: Array):
 						_:
 							assert(false, "ERROR: You must introduce a characters position before setting the sprite.")
 				dialogue_text = ""
-				if char_label.text != char_name[0]:
-					# we are changing characters
+				if char_label.text != char_name[0]: # we are changing characters
+					dialogue_text += "\n"
 					if char_name[0].to_lower() != "narrator":
 						char_label.text = char_name[0]
 				dialogue_text += split_line[1] + "\n"
@@ -140,6 +140,8 @@ func update_scene_ui(scene_lines: Array):
 						assert(false, "ERROR: Character position not set before changing sprite.")
 			elif line.begins_with("bgi"): # background image change
 				$BackgroundImage.texture = load("res://images/backgrounds/%s" % line.trim_prefix("bgi "))
+			elif line.begins_with("credits bgi"): # credits background change
+				$Credits.texture = load("res://images/backgrounds/%s" % line.trim_prefix("credits bgi "))
 			elif " plays at " in line: # music
 				var type_and_file = line.split(" plays at ")[0].split(" ")
 				var type = type_and_file[0]
@@ -156,15 +158,40 @@ func update_scene_ui(scene_lines: Array):
 				else:
 					print(line)
 					printerr("Invalid sound type")
-			elif line.begins_with("goto"):
+			elif line.begins_with("goto "):
 				load_scene(line.trim_prefix("goto "))
-			elif line.begins_with("fullscreen effect"):
+			elif line.begins_with("pause for "):
+				await get_tree().create_timer(float(line.trim_prefix("pause for "))).timeout
+			elif line.begins_with("fullscreen effect "):
 				var parts = line.split(" ")
 				var action = parts[2]  # This should be "show" or "hide"
 				var effect_name = parts[3]  # This is the name of the effect
 				var effect_node = get_node("FullscreenFx/%s" % effect_name)
 				effect_node.visible = (action == "show")
-
+			elif " sprite translates to " in line:
+				var data = line.split(" sprite translates to ")
+				var sprite_to_change = data[0]
+				var sprite_position = data[1].split(",")
+				match sprite_to_change.to_lower():
+					"left":
+						$Sprites/Left.set_position(Vector2(float(sprite_position[0]), float(sprite_position[1])))
+					"right":
+						$Sprites/Right.set_position(Vector2(float(sprite_position[0]), float(sprite_position[1])))
+					_:
+						print(line)
+						assert(false, "ERROR: Invalid sprite position")
+			elif " sprite scales to " in line:
+				var data = line.split(" sprite scales to ")
+				var sprite_to_change = data[0]
+				var sprite_scales = data[1].split(",")
+				match sprite_to_change.to_lower():
+					"left":
+						$Sprites/Left.set_size(Vector2(float(sprite_scales[0]), float(sprite_scales[1])))
+					"right":
+						$Sprites/Right.set_size(Vector2(float(sprite_scales[0]), float(sprite_scales[1])))
+					_:
+						print(line)
+						assert(false, "ERROR: Invalid sprite position")
 			elif line.begins_with("credits roll"):
 				$TextBox/Buttons.hide()
 				$TextBox/NameControl.hide()
@@ -177,17 +204,20 @@ func update_scene_ui(scene_lines: Array):
 				#$TextBox/TextControl/Text.material.shader = load("res://shaders/tilt.gdshader")
 				$TextBox/TextControl/TextBackground.size = Vector2(1920, 1080)
 				$TextBox/TextControl/TextBackground.material.shader = null
-				$ScreenFx.show()
+				$Credits.show()
+				
+				if $BackgroundImage.texture:
+					$Credits.texture = $BackgroundImage.texture
 				
 				var steps = 100
 				
 				for step in range(steps): #really stupid way of doing this ngl
-					$ScreenFx.material.set_shader_parameter("up_left", lerp(Vector2(0,0), Vector2(0.2, 0.5), float(step+1)/steps))
-					$ScreenFx.material.set_shader_parameter("up_right", lerp(Vector2(1,0), Vector2(0.8, 0.5), float(step+1)/steps))
-					$ScreenFx.material.set_shader_parameter("down_right", lerp(Vector2(1,1), Vector2(1, 0.8), float(step+1)/steps))
-					$ScreenFx.material.set_shader_parameter("down_left", lerp(Vector2(0,1), Vector2(0, 0.8), float(step+1)/steps))
+					$Credits.material.set_shader_parameter("up_left", lerp(Vector2(0,0), Vector2(0.2, 0.5), float(step+1)/steps))
+					$Credits.material.set_shader_parameter("up_right", lerp(Vector2(1,0), Vector2(0.8, 0.5), float(step+1)/steps))
+					$Credits.material.set_shader_parameter("down_right", lerp(Vector2(1,1), Vector2(1, 0.8), float(step+1)/steps))
+					$Credits.material.set_shader_parameter("down_left", lerp(Vector2(0,1), Vector2(0, 0.8), float(step+1)/steps))
 					await get_tree().create_timer(float(1)/steps).timeout
-					#print($ScreenFx.material.get_shader_parameter("up_left"))
+					#print($Credits.material.get_shader_parameter("up_left"))
 				
 				#$TextBox/TextControl/Text.material.set_shader_parameter("up_left", Vector2(0.4, 0))
 				#$TextBox/TextControl/Text.material.set_shader_parameter("up_right", Vector2(1-0.4, 0))
@@ -212,15 +242,17 @@ func update_scene_ui(scene_lines: Array):
 			else:
 				print(line)
 				assert(false, "ERROR: Unrecognized line format.")
-	
-	# Populate choice buttons
-	for choice in choices:
-		var button = Button.new()
-		button.text = choice[0].strip_edges()  # The choice text
-		button.theme = button_theme  # Apply the custom theme
-		button.size_flags_horizontal = Control.SIZE_EXPAND | Control.SIZE_FILL
-		button.connect("pressed", Callable(self, "_on_choice_selected").bind(choice[1].strip_edges()))  # Connect to scene loading
-		button_container.add_child(button)
+	if choices:
+		# Populate choice buttons
+		for choice in choices:
+			var button = Button.new()
+			button.text = choice[0].strip_edges()  # The choice text
+			button.theme = button_theme  # Apply the custom theme
+			button.size_flags_horizontal = Control.SIZE_EXPAND | Control.SIZE_FILL
+			button.connect("pressed", Callable(self, "_on_choice_selected").bind(choice[1].strip_edges()))  # Connect to scene loading
+			button_container.add_child(button)
+	else:
+		print("we're done")
 
 func _on_choice_selected(next_scene: String):
 	load_scene(next_scene)

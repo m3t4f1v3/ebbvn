@@ -1,4 +1,6 @@
-[gd_resource type="Theme" format=3 uid="uid://bwr5kvws544hh"]
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bwr5kvws544hh"]
+
+[ext_resource type="SystemFont" uid="uid://cj2op10schxbx" path="res://fonts/firacodenerdfontmono.tres" id="1_txj63"]
 
 [resource]
 RichTextLabel/font_sizes/bold_font_size = 32
@@ -6,3 +8,4 @@ RichTextLabel/font_sizes/bold_italics_font_size = 32
 RichTextLabel/font_sizes/italics_font_size = 32
 RichTextLabel/font_sizes/mono_font_size = 32
 RichTextLabel/font_sizes/normal_font_size = 32
+RichTextLabel/fonts/normal_font = ExtResource("1_txj63")

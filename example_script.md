@@ -32,6 +32,9 @@ bgi Forest.jpg
 clear
 
 Character 1 enters from the right
+<!-- By default, left sprite is at 0,0, right sprite is at 1024, 0, both have a scale of 700, 1000 -->
+right sprite translates to 100, 0
+right sprite scales to 100, 100
 Character 1 changes into Nanjo.png
 
 Character 1: You decided to go to the forest.
@@ -42,9 +45,11 @@ Character 1: You decided to go to the forest.
 ## Scene 3
 
 bgi Rose.png
+bgm tsurupettan.mp3 plays at 0
 clear
 Character 1: You decided to stay in town.
 clear
+fullscreen effect show Danmu
 credits roll
 [font_size=96]
 skibidi

@@ -213,6 +213,7 @@ texture = SubResource("PlaceholderTexture2D_12gv8")
 script = ExtResource("9_pi2rv")
 
 [node name="3D" type="TextureRect" parent="FullscreenFx"]
+visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0

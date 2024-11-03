@@ -1,0 +1,2 @@
+Heeler = nerd font mono, lowercase delta, brick from https://www.blenderkit.com/asset-gallery-detail/e99298d8-8922-469b-b66d-d446dd656d85/, hdri from https://www.blenderkit.com/asset-gallery-detail/154f0d2e-7ca8-450f-85d2-7882fc1869a8/
+Rauf = https://commons.wikimedia.org/wiki/File:Interview_with_Timoth%C3%A9e_Chalamet,_2019.png by https://www.youtube.com/@HollywoodFilmAcademy license is CC BY 3.0

@@ -4,10 +4,11 @@
 
 bgi Rose.png
 clear
+clear chars
 
-
-bgm skibidi.mp3 plays at -10
-sfx vineboom.mp3 plays at -10
+bgm KouyaoArukePiano.mp3 plays at -10db
+bgm goes to 20 db
+sfx vineboom.mp3 plays at -10db
 
 Character 1 enters from the left
 Character 1 changes into Nanjo.png
@@ -16,12 +17,17 @@ Character 2 enters from the right
 Character 2 changes into Ed.png
 
 Character 1: Hello, [i]italic[/i] [b]bold[/b] the story.
-fullscreen effect show Edward
 Character 2: Hiiii [font_size=24]Big text[/font_size] [font=res://fonts/CyberpunkWaifus.ttf]skibidi[/font]
 
 <!-- Narrator: This is a comment. -->
 Narrator: really spooky
-fullscreen effect hide Edward
+clear chars
+<!-- you MUST introduce the characters again if you clear chars -->
+bgm KouyaoArukePiano.mp3 pauses
+bgm nothingisbutwhatisnot.mp3 plays from 10 sec
+pause for 2 sec
+<!-- wont save the position of nothingisbutwhatisnot, also will override the audio volume with new volume-->
+bgm KouyaoArukePiano.mp3 resumes
 
 * Option 1: [Go to the forest](#scene-2)
 * Option 2: [Stay in town](#scene-3)
@@ -30,14 +36,35 @@ fullscreen effect hide Edward
 
 bgi Forest.jpg
 clear
+clear chars
 
 Character 1 enters from the right
 <!-- By default, left sprite is at 0,0, right sprite is at 1024, 0, both have a scale of 700, 1000 -->
-right sprite translates to 100, 0
+right sprite translates to 700, 0
 right sprite scales to 100, 100
 Character 1 changes into Nanjo.png
 
 Character 1: You decided to go to the forest.
+Character 1 moves to the left
+<!-- this will NOT carry over the transforms -->
+bgm nothingisbutwhatisnot.mp3 plays from 10 sec
+wait for click
+clear sprites
+
+hide textbox
+fullscreen effect show Edward
+show textbox
+fullscreen effect hide Edward
+
+pause for 1 sec
+<!-- no support for 1 min 1 hour etc, this just tells you what the units are -->
+fullscreen effect show MetaWorld
+fullscreen effect show YakuzaRadial
+pause for 1 sec
+fullscreen effect hide MetaWorld
+fullscreen effect hide YakuzaRadial
+
+Character 1: not a whole lot here now is there
 
 * Option 1: [Go deeper into the forest](#scene-4)
 * Option 2: [Go back to the crossroads](#scene-1)
@@ -45,8 +72,9 @@ Character 1: You decided to go to the forest.
 ## Scene 3
 
 bgi Rose.png
-bgm tsurupettan.mp3 plays at 0
+bgm tsurupettan.mp3 plays at -20db
 clear
+clear chars
 Character 1: You decided to stay in town.
 clear
 fullscreen effect show Danmu

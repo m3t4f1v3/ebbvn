@@ -1,14 +1,17 @@
-[gd_scene load_steps=14 format=3 uid="uid://b2ochjb7dgouq"]
+[gd_scene load_steps=20 format=3 uid="uid://b2ochjb7dgouq"]
 
-[ext_resource type="Script" path="res://vn.gd" id="1_t2jh2"]
+[ext_resource type="Script" path="res://scripts/vn.gd" id="1_t2jh2"]
 [ext_resource type="Theme" uid="uid://bwr5kvws544hh" path="res://themes/text.tres" id="2_iqet6"]
 [ext_resource type="Shader" path="res://shaders/tilt.gdshader" id="3_wlcmu"]
 [ext_resource type="Shader" uid="uid://bedjk52ll85d4" path="res://shaders/rounded_corners.tres" id="4_xhx10"]
 [ext_resource type="Theme" uid="uid://bmwbqpe3y4sck" path="res://themes/buttons.tres" id="6_4ty2a"]
 [ext_resource type="Theme" uid="uid://dgebevrr68c5p" path="res://themes/textboxbutton.tres" id="6_ds41b"]
 [ext_resource type="Texture2D" uid="uid://bjv2nug3nwcxr" path="res://images/textboxdecal.png" id="7_uhalk"]
-[ext_resource type="Script" path="res://danmu.gd" id="8_8tqi2"]
+[ext_resource type="Script" path="res://scripts/danmu.gd" id="8_8tqi2"]
 [ext_resource type="Texture2D" uid="uid://bpw4jhwnrcmwj" path="res://images/sprites/Ed.png" id="8_883wi"]
+[ext_resource type="Texture2D" uid="uid://bcoobvh1hwouf" path="res://images/backgrounds/Metaworld.png" id="9_pealo"]
+[ext_resource type="Script" path="res://scripts/twirl.gd" id="9_pi2rv"]
+[ext_resource type="Shader" path="res://shaders/twirl.gdshader" id="10_7mcp0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cqdj0"]
 shader = ExtResource("4_xhx10")
@@ -31,6 +34,16 @@ colors = PackedColorArray(0.196078, 0.0941176, 0.0941176, 0.901961, 0.196078, 0.
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_agad3"]
 gradient = SubResource("Gradient_8umpi")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fsrer"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5wqph"]
+shader = ExtResource("10_7mcp0")
+shader_parameter/max_drag_distance = 0.0
+shader_parameter/samples = 20
+shader_parameter/contrast = 1.0
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_12gv8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_shekm"]
 shader = ExtResource("3_wlcmu")
@@ -60,6 +73,14 @@ offset_bottom = 1050.0
 [node name="Left" type="TextureRect" parent="Sprites"]
 layout_mode = 0
 offset_right = 700.0
+offset_bottom = 1000.0
+expand_mode = 4
+stretch_mode = 5
+
+[node name="Middle" type="TextureRect" parent="Sprites"]
+layout_mode = 0
+offset_left = 600.0
+offset_right = 1300.0
 offset_bottom = 1000.0
 expand_mode = 4
 stretch_mode = 5
@@ -100,7 +121,9 @@ offset_right = 350.0
 offset_bottom = 50.0
 theme = ExtResource("2_iqet6")
 bbcode_enabled = true
+fit_content = true
 scroll_active = false
+autowrap_mode = 0
 
 [node name="TextControl" type="Control" parent="TextBox"]
 layout_mode = 3
@@ -167,6 +190,25 @@ texture = ExtResource("8_883wi")
 visible = false
 anchors_preset = 0
 script = ExtResource("8_8tqi2")
+
+[node name="MetaWorld" type="TextureRect" parent="FullscreenFx"]
+visible = false
+material = SubResource("ShaderMaterial_fsrer")
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = ExtResource("9_pealo")
+
+[node name="YakuzaRadial" type="TextureRect" parent="FullscreenFx"]
+visible = false
+material = SubResource("ShaderMaterial_5wqph")
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+texture = SubResource("PlaceholderTexture2D_12gv8")
+script = ExtResource("9_pi2rv")
 
 [node name="Credits" type="TextureRect" parent="."]
 visible = false

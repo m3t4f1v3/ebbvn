@@ -1,11 +1,14 @@
 # Esli's Big Birthday
 
 ## Scene 1
-clear
-* Option 1: [Rewind your pc clock](#chronos-the-wise)
-* Option 2: [Skip straight to the credits](#the-end)
 
-## Chronos the Wise
+clear
+
+* Option 1: [Where it all started](#where-it-all-started)
+* Option 2: [The winter arc](#company-life)
+* Option 3: [Credits](#the-end)
+
+## Where it all started
 
 clear
 
@@ -40,11 +43,13 @@ Chronos the Wise: THis ! is an example ! of Irony ! THis is because ! it did !
 
 ## The End
 
-bgm tsurupettan.mp3 plays at 0
+bgm tsurupettan.mp3 plays at -20db
 credits bgi cake.webp
 clear
-Character 1: You decided to stay in town.
-clear
+clear chars
+
+Narrator: hold on let me adjust that for you
+
 fullscreen effect show Danmu
 credits roll
 [font_size=96]
@@ -57,3 +62,55 @@ godot engine - engine
 raul - writing
 Reg Moss, aka Alexander Dimitriou, resident of 39.70810705498792, 19.702100145879694
 [/font_size]
+
+## Company Life
+
+bgm KouyaoArukePiano.mp3 plays
+
+Esli: Ok so after getting my Bachelor’s degree I get recruited to work for a tech company where I get to apply my skills for the first time but get in trouble with my boss who is actually the owner's wife, and the owner is actually my uncle so my bitch boss is my aunt in law
+Chronos the Wise: WHat ! if instead of working at some ! tech company you worked as a purveyor of trinkets and you had a time machine to STEAL ! trinkets
+Esli: Can I choose something else?
+Chronos the Wise: no
+
+bgi NeonStore.png
+
+<!-- https://youtu.be/4Kbf8McDFKU -->
+
+clear
+
+fullscreen effect show MetaWorld
+
+fullscreen effect show YakuzaRadial
+pause for 1 sec
+fullscreen effect hide MetaWorld
+pause for 1 sec
+fullscreen effect hide YakuzaRadial
+pause for 1 sec
+
+Esli enters from the left
+Ed enters from the right
+
+Esli (Esli.webp): This is so awesome
+Ed (Ed.png): I'd like one Satoru Gojo keychain
+Esli: Satoru Gojo,,, in this time of year...
+Ed: whats wrong
+Esli: Nothing, FINGER !!! can you pretty please check if we have a Satoru Gojo keychain in the back?
+Finger enters from the right
+<!-- https://www.deviantart.com/haxxthefox/art/Mike-Ehrmantraut-in-Umineko-Ryukishi07-s-style-931197799 -->
+Finger changes into Finger.png
+Finger: I'm not a kid (named finger)..
+<!-- slightly unintuitive but we forgot all about this char when we overwrote them -->
+Ed enters from the right
+Ed (Ed.png): well you would hope not
+Finger: Ok I can't see anything back here
+Esli: Put your damn glasses on
+Finger: Still can't
+Ed: No worries, I'll go to a shop that actually has stuff in stock
+Esli: FRET not, [b]I[/b] SHALL source ONE satoru Gojo keychain within a reasonable timeframe
+Ed: 1-2 business days?
+Esli: Or its 35% off
+Ed: Deal
+
+<!-- https://youtu.be/ik_A7Mqepe0 -->
+bgm nothingisbutwhatisnot.mp3 plays from 11 sec
+Esli: nothing,, is but what is not

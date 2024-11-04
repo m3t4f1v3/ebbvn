@@ -68,6 +68,7 @@ fullscreen effect show Titlecard [font_size=100]skibidi[/font_size]
 fullscreen effect hide YakuzaRadial
 
 Character 1: not a whole lot here now is there
+fullscreen effect hide Titlecard [font_size=100]skibidi[/font_size]
 
 * Option 1: [Go deeper into the forest](#scene-4)
 * Option 2: [Go back to the crossroads](#scene-1)

@@ -50,7 +50,7 @@ func init(arguments: String) -> void:
 		comment.fit_content = true
 		danmu.append(comment)
 		# design choice?
-		comment.position = Vector2(0, y)
+		comment.position = Vector2(-1000, y)
 		add_child(comment)
 	self.show()
 

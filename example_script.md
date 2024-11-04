@@ -79,7 +79,7 @@ clear
 clear chars
 Character 1: You decided to stay in town.
 clear
-fullscreen effect show Danmu
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!!  Love, Gil
 credits roll
 [font_size=96]
 skibidi

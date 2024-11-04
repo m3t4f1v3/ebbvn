@@ -1,7 +1,7 @@
 extends Node
 
 @export var read_from_current_dir = false
-
+@export var script_file = "script.md"
 @export var button_theme: Theme  # Drag your custom theme resource here in the Inspector
 @export var validate_script = false
 
@@ -75,7 +75,7 @@ func update_scene_ui(scene_lines: Array):
 	
 	# Separate dialogue lines from choices
 	for line in scene_lines:
-		var split_line = line.split(": ")
+		var split_line = line.split(": ", true, 1)
 		if line.begins_with("<!--"): continue # these are in-script comments
 		if len(split_line) == 2:
 			if line.begins_with("* "):  # Choice line
@@ -477,7 +477,7 @@ func _ready():
 		base_dir = "res://"
 
 	print("we are working from ", base_dir)
-	var file = FileAccess.open(base_dir + "script.md", FileAccess.ModeFlags.READ)
+	var file = FileAccess.open(base_dir + script_file, FileAccess.ModeFlags.READ)
 	if file:
 		var script_text = file.get_as_text()
 		scenes = parse_markdown(script_text)

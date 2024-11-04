@@ -7,23 +7,32 @@ func _ready() -> void:
 	pass # Start hidden by default
 
 # Initialize and display the titlecard with optional arguments for text, position, and size
+# Initialize and display the titlecard with optional arguments for text, position, and size
 func init(arguments: String) -> void:
 	var titlecard = RichTextLabel.new()
 	titlecard.bbcode_enabled = true
 	titlecard.hide()
 	titlecard.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	titlecards[arguments] = titlecard
+
 	var text = ""
 	var pos = Vector2.ZERO
 	var card_size = Vector2(1920, 1080)
 	
-	# Split the arguments by spaces
+	# Split the arguments by spaces but keep text with multiple spaces
 	var tokens = arguments.split(" ")
-	if tokens.size() > 0:
-		# The first token is always the text
-		text = tokens[0]
+	var i = 0
 	
-	var i = 1
+	# Accumulate text until we hit "at" or "sized"
+	while i < tokens.size():
+		if tokens[i] == "at" or tokens[i] == "sized":
+			break
+		text += tokens[i] + " "
+		i += 1
+	
+	text = text.strip_edges()  # Remove any leading or trailing whitespace
+
+	# Process position and size
 	while i < tokens.size():
 		match tokens[i]:
 			"at":
@@ -45,6 +54,7 @@ func init(arguments: String) -> void:
 	
 	add_child(titlecard)
 	titlecard.show()
+
 
 # Hide the titlecard
 func deinit(arguments: String) -> void:

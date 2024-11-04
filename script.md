@@ -7,6 +7,8 @@ clear
 * Option 1: [Where it all started](#where-it-all-started)
 * Option 2: [The winter arc](#company-life)
 * Option 3: [Credits](#the-end)
+* Option 4: [Peak](#hvid)
+
 
 ## Where it all started
 
@@ -50,7 +52,7 @@ clear chars
 
 Narrator: hold on let me adjust that for you
 
-fullscreen effect show Danmu
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!!  Love, Gil
 credits roll
 [font_size=96]
 pink - writing
@@ -60,6 +62,8 @@ meep - writing
 jth - art
 godot engine - engine
 raul - writing
+gil - writing
+zecheru - writing
 Reg Moss, aka Alexander Dimitriou, resident of 39.70810705498792, 19.702100145879694
 [/font_size]
 
@@ -126,3 +130,724 @@ fullscreen effect hide Image FX/WellInThatCase.jpg
 <!-- https://youtu.be/ik_A7Mqepe0 -->
 bgm nothingisbutwhatisnot.mp3 plays from 11 sec
 Esli: nothing,, is but what is not
+
+## Hvid
+
+bgi hvid/VowPlace.png
+bgm hvid/high_minded_castle.wav plays
+clear
+Rauf enters from the left
+Heeler enters from the right
+Rauf (hvid/Rauf.png): I, Rauf, take you, Heeler, to be my mostly lawfully wedded they/them, to have and to hold, from this day forward, for better, for worse, for richer, for poorer, in sickness and in health, until death do us part.
+
+pastor bastor: I now pronounce you they/thems.
+
+Heeler (hvid/Heeler.png): Today is probably the happiest day of my life.
+
+Rauf: That's true. If I got married to myself I'd be pretty happy myself.
+
+Heeler: That's true.
+
+Rauf: You know what this entails, right?
+
+Heeler: Yes.
+
+Rauf: Ok.
+
+Heeler: I love you too Rauf.
+
+Rauf: What if I don't Heeler?
+Rauf: You'd have made a massive mistake marrying someone who doesn't love you.
+
+Heeler: That's true
+
+bgi hvid/Restaurant.png
+bgm hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
+clear
+Rauf: They should've used the catacombs as a reference for the architecture.
+
+Heeler: This is an Italian restaurant, the catacombs are 🤮 French.
+
+Rauf: ☝️🤓 erm actually there were catacombs in Rome, the word actually comes from the Latin root word catumbas.
+
+Heeler: I think. It's over for you.
+
+Rauf: That's true.
+
+Heeler: That's true.
+
+Rauf: I will be ordering a spaghetti bolognese.
+
+waiter: I'm sorry, we don't have that, we have Spaghettis Boloǧnese à la Française.
+
+Rauf: Isn't that just spaghetti bolognese?
+
+waiter: Yeah, but it's French.
+
+Rauf: Alright, I'll have that.
+
+Heeler: Gimme a pizza.
+
+waiter: We don't have that, we have a Pizza à la Française.
+
+Heeler: Isn't that just a pizza?
+
+waiter: No, it's a blend of French and Caribbean cuisine.
+
+Heeler: Do you have any French fries?
+
+waiter: We have French fries à la Française.
+
+Heeler: 💀 ok, I'll have that.
+
+Rauf: Sorry, I've gotta take this call.
+
+person on the phone: Your shipment of pantothenic acid has arrived.
+
+Rauf: Oh goodie, I'll be right there.
+
+person on the phone: The shipment has been delivered and signed by Heeler.
+
+Rauf: That's true.
+
+person on the phone: That's true.
+
+Heeler: Well while you were gone I ordered a bottle of pills.
+
+Rauf: How much did it cost?
+
+Heeler: 3 sauces.
+
+Rauf: Hmm, it better be worth it.
+
+Heeler: [i]takes a pill and eats it[/i]
+
+Rauf: How is it?
+
+Heeler: Idfk it hasn't been absorbed into my bloodstream yet.
+
+Rauf: Well you should've crushed it up and then put it in your water and then drank it and then you should've crushed up another one and then you should've waited for our food to come and then you should've sprinkled the crushed up pill on your food and then you should've eaten it.
+
+Heeler: Well if I did that then it would've cost 1/3 of a sauce per pop.
+
+Rauf: That's true.
+
+Heeler: I know it's true.
+
+bgi hvid/car.png
+bgm hvid/平沢進_24ONSEKI.wav plays
+clear
+Rauf: I need to buy something from the store.
+
+Heeler: What are you gonna buy?
+
+Rauf: I'm gonna buy phosphorus.
+
+Heeler: Okkkkkk, so happy for you.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+waiter: Here's your phosphorus and hypoderms.
+
+Rauf: Thank you.
+
+bgi hvid/car.png
+bgm hvid/平沢進_24ONSEKI.wav plays
+clear
+Rauf: This won't hurt a bit.
+
+Heeler: What was in that?
+
+Rauf: Metaphosphoric acid that I will be using to synthesize CoA.
+
+Heeler: Ok.
+
+Rauf: Ok.
+
+bgi hvid/living_room_1835923_1920.png
+bgm hvid/Cartoon_On_and_On.wav plays
+clear
+Heeler: I'm gonna go to sleep.
+
+Rauf: I know.
+
+Heeler: Are you sure the pantothenic acid is working?
+
+Rauf: I don't know, I'm not a doctor.
+
+Heeler: What if I die?
+
+Rauf: Then I'll be sad and I'll use your life insurance payout on cheering myself up with a new car.
+
+Heeler: I'll be there for you.
+
+Rauf: That's true.
+
+Heeler: I know it's true.
+
+Rauf: Tell me when the abdominal cramps kick in.
+
+Heeler: What if you're asleep?
+
+Rauf: Then let me eep.
+
+Heeler: Ok, noted.
+
+Rauf: Have you ever wondered why they don't just synthesize sugar.
+
+Heeler: I don't know, I'm not a chemist.
+
+Rauf: That's true.
+
+Heeler: Even if they did, only 50% would be passed out of the body.
+
+Rauf: It'd taste like sugar though instead of that weird artificial sweetener taste.
+
+Heeler: What if they used normal sugar and then added a bunch of artificial sweeteners to it?
+
+Rauf: That would work too. They should hire you as a food designer.
+
+Heeler: It would be a waste of my talents.
+
+Rauf: That's true.
+
+Heeler: Even if it wasn't a waste of my talents, I wouldn't do it.
+Heeler: What if my creative vision was compromised?
+Heeler: I'd have to make compromises to my identity.
+
+Rauf: We don't ever make compromises.
+
+Heeler: It defines who we are.
+
+bgi hvid/living_room_1835923_1920.png
+bgm hvid/I_have_always_loved_you.wav plays
+clear
+Heeler: I think it worked.
+
+Rauf: Maybe, let me check your skin.
+Rauf: Alright, it worked.
+
+Heeler: Now what?
+
+Rauf: I don't know, I'm not a doctor.
+
+Heeler: Well I'm gonna go to sleep.
+Heeler: If it worked then I'll be dead when I wake up and I'd ultradie if I went out into the sun and I don't wanna ultradie.
+
+Rauf: That's great to hear.
+
+Heeler: If I was a zombie, would you still love me?
+
+Rauf: Legally, I'm obligated to.
+
+Heeler: That's so sweet.
+
+bgi hvid/ApartmentExteriorNight.png
+bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+clear
+Rauf: Well now with your newfound hunger for brains, you can probably become a politician, and after you're elected, you can fit right in with the rest of them.
+
+Heeler: That's a great idea, plus I'd get plenty of brains.
+
+Rauf: That's true.
+
+Heeler: That's true.
+
+Rauf: I'm gonna go to the store, do you want anything?
+
+Heeler: A corpse would be good.
+
+Rauf: Ok, I'll be right back.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+
+Rauf: I'd like to buy a corpse.
+
+waiter: We don't have that, we have a corpse à la Française.
+
+Rauf: Isn't that just a corpse?
+
+waiter: No, it's a blend of French and Caribbean cuisine.
+
+Rauf: Ok, I'll have that.
+
+waiter: That'll be 3 sauces for the corpse and 1 sauce for the sauce.
+
+Rauf: Ok, here you go.
+
+waiter: Why is there a fishing line attached?
+
+Rauf: To reel it in.
+
+waiter: Okkkkkk, so happy for you and thank you.
+
+bgi hvid/living_room_1835923_1920.png
+bgm hvid/Cartoon_On_and_On.wav plays
+clear
+
+
+
+
+Heeler: This is delicious, where did you get it?
+
+Rauf: No thank you? No gratitude? I went all the way to the store to get this for you.
+
+Heeler: Yes.
+
+Rauf: Well I'm glad you like it.
+
+Heeler: How much did it cost?
+
+Rauf: 3 sauces.
+
+Heeler: Hmm, it better be worth it.
+Heeler: [i]Takes a sneaky bite of the corpse[/i]
+
+Rauf: How is it?
+
+Heeler: It's good.
+
+Rauf: That's good.
+
+Heeler: I know it's good.
+
+Rauf: I'm gonna go to sleep.
+
+Heeler: Ok, I'll be here.
+
+bgi hvid/ApartmentExteriorNight.png
+bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+clear
+
+Heeler: I'm gonna go to the store.
+
+Rauf: Ok, I'll be here.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+
+Heeler: It appears that the store is closed.
+Heeler changes into hvid/knife.png
+Heeler: I'm gonna go to the other store with my 5 sauce long knife.
+
+Rauf: I can't hear you, I'm asleep and about 3 kilometers away.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+
+Heeler: It appears that the store is closed.
+Heeler changes into hvid/green.png
+Heeler: I'm gonna go back.
+
+Rauf: That's great, I can't wait to see you.
+
+bgi hvid/ApartmentExteriorNight.png
+bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+clear
+
+Heeler: I'm back.
+
+Pedestrian: Hey, are you feeling alright, you look a little ill.
+
+Heeler: I'm fine, I'm just a little hungry, do you have anything to eat?
+
+Pedestrian: I have a doctorate in sociology, I don't have any food.
+
+Heeler: Ok, I'll be on my way, you need all the food you can get.
+
+Pedestrian: That's true.
+
+Heeler: That's true.
+
+bgi hvid/living_room_1835923_1920_Night.png
+bgm hvid/Cartoon_On_and_On.wav plays
+clear
+
+Rauf: If you're hungry, I can make you some food.
+
+Heeler: I'm not hungry, I'm just a little hungry.
+
+Rauf: Do you know how denatured the proteins have to be for them to be absorbed into your bloodstream?
+
+Heeler: Yes, about 1/3 of the way to total disintegration.
+
+Rauf: Ok that should only take about 3 hours in the tank.
+
+Heeler: Wouldn't that taint the lemonade though?
+
+Rauf: No, it would just make it richer in flavor, the customers would be happy.
+
+Heeler: That's true.
+
+Rauf: I'm happy that you're happy.
+
+Heeler: I know.
+
+Rauf: I'm gonna harvest some more people, do you want them fresh or reconstituted?
+
+Heeler: Reconstituted, it's cheaper and easier for you.
+
+Rauf: Thanks for the consideration.
+
+Heeler: You're welcome.
+
+Rauf: I'll be back in a few hours.
+
+Heeler: Ok, I'll be here.
+
+bgi hvid/ApartmentExteriorNight.png
+bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+clear
+
+Rauf: I'm gonna go to the store.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+
+Heeler: It appears that the store is full of people.
+
+waiter: Well it's a store, what did you expect?
+
+Heeler: I expected it to be empty.
+
+waiter: Well if it were empty it would be closed.
+
+Heeler: That's true.
+
+waiter: Would you like to buy anything?
+
+Heeler: Yes, I'd like to buy some other customers.
+
+waiter: We don't have that, we have other customers à la Française.
+
+Heeler: Well I hope they're discounted.
+
+waiter: They are, they're 1/3 of a sauce each.
+
+Heeler: Ok, I'll have 6 of them.
+
+waiter: That'll be 2 sauces.
+
+Heeler: I know, I can do basic arithmetic in my head.
+
+waiter: Well making assumptions on arithmetic ability would be rude.
+waiter: Anyways, would you like a bag?
+
+Heeler: Yes, thank you.
+
+waiter: That'll be 1 sauce.
+
+Heeler: Can't I have it for free?
+
+waiter: No, it's a bag à la Française.
+
+Heeler: I thought they were free.
+
+waiter: No, they're 1 sauce each, the government taxes them.
+
+Heeler: Why would the government tax bags?
+
+waiter: Because they're à la Française.
+
+Heeler: Ok, I'll have one.
+
+waiter: That'll be 1 sauce.
+
+Heeler: Ok, here you go.
+
+waiter: Why is there a fishing line attached?
+
+Heeler: To reel it in.
+
+waiter: Okkkkkk, so happy for you and thank you.
+
+bgi hvid/ApartmentExteriorNight.png
+bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+clear
+
+Heeler: How was your trip to the store?
+
+Rauf: I didn't go to the store, you went to the store.
+
+Heeler: That's true.
+
+Rauf: That's true.
+
+Heeler: I'm gonna go to sleep.
+
+Rauf: Ok, I'll be here preparing your food.
+
+bgi hvid/living_room_1835923_1920_Night.png
+bgm hvid/Cartoon_On_and_On.wav plays
+clear
+
+Rauf: I am NOT solving a differential equation for you.
+
+Heeler: Why not?
+
+Rauf: Because I don't want to and numerical approximation is good enough.
+
+Heeler: What if the error compounds over your potential errors?
+
+Rauf: Then I'll be dead and it won't matter.
+
+Heeler: That's true.
+
+Rauf: That's true.
+
+bgi hvid/Laboratory.png
+bgm hvid/lovesong_2003.wav plays
+clear
+
+Rauf: Ok, the computer says that the rate should be 1.58740105197 cubic centimeters per second.
+Rauf: The computer is always right.
+Rauf: The people are about 1.5 cubic meters each.
+Rauf: That means that it should take about 11 days to reconstitute them.
+
+Rauf: I don't have 11 days, I have 3 hours.
+Rauf: I'll just have to increase the rate to about 1800 cubic centimeters per second.
+Rauf: That should work.
+Rauf: I'll have to buy more sulfuric acid though.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+
+Rauf: I'd like to buy some sulfuric acid.
+
+waiter: We don't have that, we have sulfuric acid à la Française.
+
+Rauf: Well I'll take sulfurous acid then.
+
+waiter: How many liters?
+
+Rauf: 1.5 cubic meters.
+
+waiter: Awfully rude of you to assume that I can do basic arithmetic in my head.
+
+Rauf: I'm sorry, I didn't mean to offend you.
+
+waiter: It's ok, I'll let it slide this time.
+
+Rauf: Thank you.
+
+waiter: You're welcome.
+
+bgi hvid/Laboratory.png
+bgm hvid/lovesong_2003.wav plays
+clear
+
+Tank: [i]bubbles[/i]
+
+Rauf: Ok, that should be enough.
+
+bgi hvid/living_room_1835923_1920_Night.png
+bgm hvid/Cartoon_On_and_On.wav plays
+clear
+
+Rauf: I'm back.
+
+Heeler: That's great, I can't wait to see you.
+
+Rauf: I'm glad you're happy.
+
+Heeler: I know.
+
+Rauf: I'm gonna go to sleep.
+
+Heeler: Ok, I'll be here.
+
+bgi hvid/ApartmentExterior.png
+bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+clear
+
+Rauf: You're gonna have to eat a lot of people to get enough energy to go to the store.
+Rauf: Luckily, I have a solution.
+Rauf: I call it gloopy goop.
+
+Heeler: What's in it?
+
+Rauf: It's a blend of French and Caribbean cuisine.
+
+Heeler: Ok, I'll have some.
+
+Rauf: Ok, here you go.
+
+Heeler: It's delicious.
+
+Rauf: I'm glad you like it.
+
+Heeler: I know.
+
+bgi hvid/living_room_1835923_1920.png
+bgm hvid/Cartoon_On_and_On.wav plays
+clear
+
+Rauf: Do you think you can go to the restaurant italien and get some food?
+
+Heeler: Yes.
+
+Rauf: That's great, I can't wait to see you.
+
+Heeler: I'm glad you're happy.
+
+Rauf: I know.
+
+bgi hvid/Restaurant.png
+bgm hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
+clear
+
+waiter: What would you like to order?
+
+Heeler: I'd like to order some food.
+
+waiter: What kind of food?
+
+Heeler: Well what kind of food do you have?
+
+waiter: We have food à la Française.
+
+Heeler: Ok, I'll have that.
+
+waiter: All of it?
+
+Heeler: Yes.
+
+waiter: Ok, that'll be 3 sauces.
+
+Heeler: Ok, here you go.
+
+Rauf: Do you also sell corpses?
+
+waiter: We have reconstituted corpses à la Française.
+
+Rauf: Ok, I'll have 3 and a half of them.
+
+waiter: That'll be 1 sauce.
+
+Rauf: Ok, here you go.
+
+waiter: If you don't mind me asking, why do you need corpses?
+
+Rauf: I'm a scientist.
+
+Heeler: He is not a scientist, he's a doctor.
+
+waiter: What kind of doctor?
+
+Heeler: A doctor of philosophy.
+
+waiter: That's not a real doctor.
+
+Heeler: That's true.
+
+Rauf: That's true.
+
+Heeler: They'll usually be called in to solve a problem that the scientists can't solve.
+
+waiter: What kind of problems?
+
+Heeler: Well, for example, if the scientists can't figure out how to not piss off the ethics committee, they'll call in a doctor of philosophy to solve the problem.
+
+waiter: Why wouldn't they just ignore the ethics committee?
+
+Heeler: Because they're a bunch of jackasses that want to self perpetuate their own existence.
+
+waiter: That's true.
+
+Heeler: That's true.
+
+Rauf: That's true.
+
+waiter: Here's your food.
+
+Heeler: Thank you.
+
+waiter: You're welcome.
+
+Rauf: If you don't mind me asking, why do you need sauce?
+
+waiter: I'm a waiter.
+waiter: You should ask the chef why he needs sauce.
+
+Rauf: Ok, I'll ask him.
+
+waiter: He's not here right now, he's at the store.
+
+Rauf: Ok, I'll ask him when he gets back.
+
+waiter: Ok, I'll let him know.
+
+Rauf: Thank you.
+
+waiter: You're welcome.
+
+bgi hvid/GroceryStore.png
+bgm hvid/Genshiryoku.wav plays
+clear
+
+chef: I'd like to buy some sauce.
+
+waiter: We don't have that, we have sauce à la Française.
+
+chef: Ok, I'll have that.
+
+waiter: That'll be 1/2 of a sauce.
+
+chef: Ok, here you go.
+
+bgi hvid/Restaurant.png
+bgm hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
+clear
+
+waiter: The chef is back in the kitchen.
+
+Rauf: Ok, I'll go ask him.
+
+waiter: Ok, I'll let him know.
+
+Rauf: Thank you.
+
+waiter: You're welcome.
+
+Rauf: Why do you need sauce?
+
+chef: I'm a chef.
+
+Rauf: That's true.
+
+chef: That's true.
+chef: You should ask the waiter why he needs sauce.
+
+Rauf: The waiter said that he's a waiter thus he has no need to know how condiments are used in cooking to enhance taste and add flavor, often complementing the dish.
+
+chef: That's true.
+chef: Well if you really want to know, you can probably ask a doctor of philosophy to ponder the question.
+
+Rauf: That's true.
+Rauf: I will ask someone who is a doctor of philosophy.
+
+chef: That's true.
+
+Rauf: Heeler, do you know any doctors of philosophy?
+
+Heeler: No, sorry.
+
+Rauf: Shame, thanks anyways.
+
+Heeler: You're welcome.
+
+bgi hvid/TheEnd.png
+bgm stops
+clear
+Rauf: It's over.
+
+random: It's over for you.
+
+Heeler: That's true.

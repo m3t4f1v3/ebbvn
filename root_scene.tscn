@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b2ochjb7dgouq"]
+[gd_scene load_steps=20 format=3 uid="uid://b2ochjb7dgouq"]
 
 [ext_resource type="Script" path="res://scripts/vn.gd" id="1_t2jh2"]
 [ext_resource type="Theme" uid="uid://bwr5kvws544hh" path="res://themes/text.tres" id="2_iqet6"]
@@ -8,9 +8,8 @@
 [ext_resource type="Theme" uid="uid://dgebevrr68c5p" path="res://themes/textboxbutton.tres" id="6_ds41b"]
 [ext_resource type="Texture2D" uid="uid://bjv2nug3nwcxr" path="res://images/textboxdecal.png" id="7_uhalk"]
 [ext_resource type="Script" path="res://scripts/danmu.gd" id="8_8tqi2"]
-[ext_resource type="Texture2D" uid="uid://bpw4jhwnrcmwj" path="res://images/sprites/Ed.png" id="8_883wi"]
-[ext_resource type="Script" path="res://image.gd" id="8_kc1l5"]
-[ext_resource type="Script" path="res://scripts/twirl.gd" id="9_pi2rv"]
+[ext_resource type="Script" path="res://scripts/image.gd" id="8_kc1l5"]
+[ext_resource type="Script" path="res://scripts/yakuzaradial.gd" id="9_pi2rv"]
 [ext_resource type="Shader" path="res://shaders/twirl.gdshader" id="10_7mcp0"]
 [ext_resource type="PackedScene" uid="uid://c0syide7diq0h" path="res://root_scene_3d.tscn" id="11_vym5d"]
 
@@ -57,6 +56,7 @@ shader_parameter/plane_size = Vector2(0, 0)
 
 [node name="RootScene" type="Node2D"]
 script = ExtResource("1_t2jh2")
+read_from_current_dir = true
 button_theme = ExtResource("6_4ty2a")
 
 [node name="SubViewport" type="SubViewport" parent="."]
@@ -227,7 +227,6 @@ material = SubResource("ShaderMaterial_shekm")
 offset_right = 1920.0
 offset_bottom = 1080.0
 mouse_filter = 2
-texture = ExtResource("8_883wi")
 
 [node name="BackgroundMusicPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -12.0

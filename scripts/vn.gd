@@ -1,10 +1,13 @@
 extends Node
 
-@export var script_file_path: String = "res://script.md"
+@export var read_from_current_dir = false
+
 @export var button_theme: Theme  # Drag your custom theme resource here in the Inspector
+@export var validate_script = false
 
 var scenes = {}
 var current_scene = "scene-1"
+var base_dir = ""
 
 var left_char = ""
 var middle_char = ""
@@ -30,6 +33,31 @@ func load_scene(scene_name):
 	right_char = ""
 	current_scene = scene_name
 	update_scene_ui(scenes[current_scene])
+
+func load_both(path: String, type = null):
+	if read_from_current_dir:
+		match type:
+			ImageTexture:
+				var image = Image.load_from_file(path)
+				var texture = ImageTexture.create_from_image(image)
+				return texture
+			AudioStream:
+				var audio
+				if "ogg" in path:
+					audio = AudioStreamOggVorbis.load_from_file(path)
+				else:
+					var file = FileAccess.open(path, FileAccess.READ)
+					if "wav" in path:
+						printerr("This will hurt your ears, thus I will NOT play it")
+						#audio = AudioStreamWAV.new()
+						return
+					elif "mp3" in path:
+						audio = AudioStreamMP3.new()
+					audio.data = file.get_buffer(file.get_length())
+				return audio
+	else:
+		return load(path)
+			
 
 func update_scene_ui(scene_lines: Array):
 	# Reference the text label and buttons container
@@ -63,11 +91,11 @@ func update_scene_ui(scene_lines: Array):
 					# change sprite to char_name
 					match char_name[0]:
 						left_char:
-							$Sprites/Left.texture = load("res://images/sprites/%s" % char_sprite)
+							$Sprites/Left.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 						middle_char:
-							$Sprites/Middle.texture = load("res://images/sprites/%s" % char_sprite)
+							$Sprites/Middle.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 						right_char:
-							$Sprites/Right.texture = load("res://images/sprites/%s" % char_sprite)
+							$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 						_:
 							assert(false, "ERROR: You must introduce a characters position before setting the sprite.")
 				dialogue_text = ""
@@ -79,8 +107,10 @@ func update_scene_ui(scene_lines: Array):
 				# Wait for click here by setting waiting_for_click to true
 				waiting_for_click = true
 				#text_label.text = dialogue_text.strip_edges()
-				await get_tree().create_timer(0.1).timeout  # A slight delay to allow UI to update
+				if not validate_script:
+					await get_tree().create_timer(0.1).timeout  # A slight delay to allow UI to update
 				var in_bbcode = false
+				line.replace("res://", base_dir)
 				for character in dialogue_text:
 					
 					text_label.text += character
@@ -89,13 +119,13 @@ func update_scene_ui(scene_lines: Array):
 					if character == "]":
 						in_bbcode = false
 					
-					if not $TextBox/TextControl/ProgressButton.button_pressed and not in_bbcode and not Input.is_action_pressed("HURRRYYY"):
+					if not $TextBox/TextControl/ProgressButton.button_pressed and not in_bbcode and not Input.is_action_pressed("HURRRYYY") and not validate_script:
 						if Input.is_action_pressed("speed up text scroll"):
 							await get_tree().create_timer(0.01).timeout
 						else:
 							await get_tree().create_timer(0.05).timeout # Adjust speed by changing the timer duration
-				
-				await $TextBox/TextControl/ProgressButton.pressed  # Wait for a click on TextControl node
+				if not validate_script:
+					await $TextBox/TextControl/ProgressButton.pressed  # Wait for a click on TextControl node
 				waiting_for_click = false
 		else:
 			# Handle other types of script actions
@@ -201,18 +231,18 @@ func update_scene_ui(scene_lines: Array):
 				var char_sprite = data[1]
 				match character:
 					left_char:
-						$Sprites/Left.texture = load("res://images/sprites/%s" % char_sprite)
+						$Sprites/Left.texture = load_both(base_dir + "images/sprites/%s" % char_sprite)
 					middle_char:
-						$Sprites/Middle.texture = load("res://images/sprites/%s" % char_sprite)
+						$Sprites/Middle.texture = load_both(base_dir + "images/sprites/%s" % char_sprite)
 					right_char:
-						$Sprites/Right.texture = load("res://images/sprites/%s" % char_sprite)
+						$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite)
 					_:
 						print(line)
 						assert(false, "ERROR: Character position not set before changing sprite.")
 			elif line.begins_with("bgi"): # background image change
-				$BackgroundImage.texture = load("res://images/backgrounds/%s" % line.trim_prefix("bgi "))
+				$BackgroundImage.texture = load_both(base_dir + "images/backgrounds/%s" % line.trim_prefix("bgi "), ImageTexture)
 			elif line.begins_with("credits bgi"): # credits background change
-				$Credits.texture = load("res://images/backgrounds/%s" % line.trim_prefix("credits bgi "))
+				$Credits.texture = load_both(base_dir + "images/backgrounds/%s" % line.trim_prefix("credits bgi "), ImageTexture)
 			elif " plays" in line:  # music playback command
 				var parts = line.split(" plays")
 				var type_and_file = parts[0].split(" ")
@@ -239,13 +269,21 @@ func update_scene_ui(scene_lines: Array):
 				
 				# Load and configure the audio stream based on type
 				if type == "bgm":
-					$BackgroundMusicPlayer.stream = load("res://audio/bgm/%s" % file)
+					$BackgroundMusicPlayer.stream = load_both(base_dir + "audio/bgm/%s" % file, AudioStream)
 					$BackgroundMusicPlayer.volume_db = volume
 					$BackgroundMusicPlayer.play(start_time)
 				elif type == "sfx":
-					$SFXPlayer.stream = load("res://audio/sfx/%s" % file)
+					$SFXPlayer.stream = load_both(base_dir + "audio/sfx/%s" % file, AudioStream)
 					$SFXPlayer.volume_db = volume
 					$SFXPlayer.play(start_time)
+				else:
+					print(line)
+					printerr("Invalid sound type")
+			elif " stops" in line:
+				if "bgm" in line:
+					$BackgroundMusicPlayer.stop()
+				elif "sfx" in line:
+					$SFXPlayer.stop()
 				else:
 					print(line)
 					printerr("Invalid sound type")
@@ -267,10 +305,10 @@ func update_scene_ui(scene_lines: Array):
 				var type = parts[0]
 				var audio = parts[1]
 				if type == "bgm":
-					$BackgroundMusicPlayer.stream = load("res://audio/bgm/%s" % audio)
+					$BackgroundMusicPlayer.stream = load_both(base_dir + "audio/bgm/%s" % audio, AudioStream)
 					$BackgroundMusicPlayer.play(audio_positions[audio])
 				elif type == "sfx":
-					$SFXPlayer.stream = load("res://audio/bgm/%s" % audio)
+					$SFXPlayer.stream = load_both(base_dir + "audio/bgm/%s" % audio, AudioStream)
 					$SFXPlayer.play(audio_positions[audio])
 				else:
 					print(line)
@@ -293,9 +331,11 @@ func update_scene_ui(scene_lines: Array):
 			elif line.begins_with("goto "):
 				load_scene(line.trim_prefix("goto "))
 			elif line.begins_with("wait for click"):
-				await $TextBox/TextControl/ProgressButton.pressed
+				if not validate_script:
+					await $TextBox/TextControl/ProgressButton.pressed
 			elif line.begins_with("pause for "): # pause for 1 sec
-				await get_tree().create_timer(float(line.trim_prefix("pause for "))).timeout
+				if not validate_script:
+					await get_tree().create_timer(float(line.trim_prefix("pause for "))).timeout
 			elif line.begins_with("fullscreen effect "):
 				var parts = line.split(" ")
 				
@@ -366,7 +406,7 @@ func update_scene_ui(scene_lines: Array):
 				$TextBox/TextControl/Text.size = Vector2(1920, 1080)
 				#$TextBox/TextControl/Text.scroll_following = true
 				#$TextBox/TextControl/Text.theme.default_font_size = 96
-				#$TextBox/TextControl/Text.material.shader = load("res://shaders/tilt.gdshader")
+				#$TextBox/TextControl/Text.material.shader = load_both(base_dir + "shaders/tilt.gdshader")
 				$TextBox/TextControl/TextBackground.size = Vector2(1920, 1080)
 				$TextBox/TextControl/TextBackground.material.shader = null
 				$Credits.show()
@@ -381,7 +421,8 @@ func update_scene_ui(scene_lines: Array):
 					$Credits.material.set_shader_parameter("up_right", lerp(Vector2(1,0), Vector2(0.8, 0.5), float(step+1)/steps))
 					$Credits.material.set_shader_parameter("down_right", lerp(Vector2(1,1), Vector2(1, 0.8), float(step+1)/steps))
 					$Credits.material.set_shader_parameter("down_left", lerp(Vector2(0,1), Vector2(0, 0.8), float(step+1)/steps))
-					await get_tree().create_timer(float(1)/steps).timeout
+					if not validate_script:
+						await get_tree().create_timer(float(1)/steps).timeout
 					#print($Credits.material.get_shader_parameter("up_left"))
 				
 				#$TextBox/TextControl/Text.material.set_shader_parameter("up_left", Vector2(0.4, 0))
@@ -394,13 +435,14 @@ func update_scene_ui(scene_lines: Array):
 				
 			elif credits_rolling:
 				var in_bbcode = false
+				line.replace("res://", base_dir)
 				for character in line:
 					text_label.text += character
 					if character == "[":
 						in_bbcode = true
 					if character == "]":
 						in_bbcode = false
-					if not in_bbcode:
+					if not in_bbcode and not validate_script:
 						await get_tree().create_timer(0.03).timeout
 				text_label.text += "\n"
 				#await get_tree().create_timer(0.01).timeout
@@ -429,7 +471,13 @@ func _process(_delta):
 		$TextBox.show()
 
 func _ready():
-	var file = FileAccess.open(script_file_path, FileAccess.ModeFlags.READ)
+	if read_from_current_dir:
+		base_dir = "./"
+	else:
+		base_dir = "res://"
+
+	print("we are working from ", base_dir)
+	var file = FileAccess.open(base_dir + "script.md", FileAccess.ModeFlags.READ)
 	if file:
 		var script_text = file.get_as_text()
 		scenes = parse_markdown(script_text)

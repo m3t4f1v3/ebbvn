@@ -26,6 +26,8 @@ clear chars
 bgm KouyaoArukePiano.mp3 pauses
 bgm nothingisbutwhatisnot.mp3 plays from 10 sec
 pause for 2 sec
+bgm stops
+bgm KouyaoArukePiano.mp3 resumes
 <!-- wont save the position of nothingisbutwhatisnot, also will override the audio volume with new volume-->
 bgm KouyaoArukePiano.mp3 resumes
 

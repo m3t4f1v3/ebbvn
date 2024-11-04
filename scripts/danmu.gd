@@ -26,7 +26,7 @@ func init(arguments: String) -> void:
 		if "[img]" in text:
 			var parts = text.split("]")
 			var data = parts[0].trim_prefix("[img")
-			var path = parts[1].trim_suffix("[/img").replace("res://", get_tree().get_current_scene().base_dir)
+			var path = parts[1].trim_suffix("[/img")#.replace("res://", get_tree().get_current_scene().base_dir)
 			#print(path)
 			if "=" in data:
 				# currently only supports width and height

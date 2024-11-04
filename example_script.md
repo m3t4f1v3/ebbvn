@@ -63,6 +63,7 @@ fullscreen effect show Image backgrounds/Metaworld.png at 100 100 sized 500 500
 fullscreen effect show YakuzaRadial
 pause for 1 sec
 fullscreen effect hide Image backgrounds/Metaworld.png
+fullscreen effect show Titlecard [font_size=100]skibidi[/font_size]
 <!-- hide specificity must always be lesser than or equal to the specificity of the corresponding show, i.e. im just checking if its a substring :skull:-->
 fullscreen effect hide YakuzaRadial
 

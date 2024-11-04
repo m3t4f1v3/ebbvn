@@ -56,6 +56,6 @@ func deinit(arguments: String) -> void:
 	for key in images:
 		#print(key, arguments)
 		if arguments in key:
-			images[key].hide()
+			images[key].queue_free()
 			break
 		

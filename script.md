@@ -23,6 +23,7 @@ Antag enters from the left
 Antag changes into Korth.webp
 
 Antag: I have an idea
+
 Antag: Hear me out
 Zecheru enters from the right
 Zecheru changes into Zecheru.webp

@@ -58,7 +58,6 @@ shader_parameter/plane_size = Vector2(0, 0)
 [node name="RootScene" type="Node2D"]
 script = ExtResource("1_t2jh2")
 read_from_current_dir = true
-script_file = "example_script.md"
 button_theme = ExtResource("6_4ty2a")
 
 [node name="SubViewport" type="SubViewport" parent="."]

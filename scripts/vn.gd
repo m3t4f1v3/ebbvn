@@ -55,9 +55,14 @@ func load_both(path: String, type = null):
 						audio = AudioStreamMP3.new()
 					audio.data = file.get_buffer(file.get_length())
 				return audio
+			_:
+				print(path)
+				printerr("Invalid type provided")
 	else:
 		return load(path)
 			
+func _input(event: InputEvent):
+	$SubViewport.push_input(event)
 
 func update_scene_ui(scene_lines: Array):
 	# Reference the text label and buttons container
@@ -231,11 +236,11 @@ func update_scene_ui(scene_lines: Array):
 				var char_sprite = data[1]
 				match character:
 					left_char:
-						$Sprites/Left.texture = load_both(base_dir + "images/sprites/%s" % char_sprite)
+						$Sprites/Left.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 					middle_char:
-						$Sprites/Middle.texture = load_both(base_dir + "images/sprites/%s" % char_sprite)
+						$Sprites/Middle.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 					right_char:
-						$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite)
+						$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 					_:
 						print(line)
 						assert(false, "ERROR: Character position not set before changing sprite.")
@@ -383,6 +388,20 @@ func update_scene_ui(scene_lines: Array):
 					_:
 						print(line)
 						assert(false, "ERROR: Invalid sprite position")
+			elif " sprite rotates by " in line:
+				var data = line.split(" sprite rotates by ")
+				var sprite_to_change = data[0]
+				var sprite_angle_in_deg = float(data[1])
+				match sprite_to_change.to_lower():
+					"left":
+						$Sprites/Left.rotation_degrees = sprite_angle_in_deg
+					"middle":
+						$Sprites/Middle.rotation_degrees = sprite_angle_in_deg
+					"right":
+						$Sprites/Right.rotation_degrees = sprite_angle_in_deg
+					_:
+						print(line)
+						assert(false, "ERROR: Invalid sprite position")
 			elif " sprite scales to " in line:
 				var data = line.split(" sprite scales to ")
 				var sprite_to_change = data[0]
@@ -481,16 +500,25 @@ func _ready():
 	if file:
 		var script_text = file.get_as_text()
 		scenes = parse_markdown(script_text)
+		#print(scenes)
 		file.close()
 		load_scene("scene-1")  # Start at Scene 1 or an initial scene of your choice
+
+func clean_string(input: String) -> String:
+	var regex = RegEx.new()
+	regex.compile("[^a-zA-Z0-9-]")  # Matches any character that is NOT alphanumeric or a hyphen
+	return regex.sub(input,"")  # Replace matches with an empty string
+
 
 func parse_markdown(text: String) -> Dictionary:
 	var parsed_scenes = {}
 	var local_scene = ""
 	for line in text.split("\n"):
 		if line.begins_with("## "):
-			local_scene = line.trim_prefix("## ").strip_edges().replace(" ", "-").to_lower()
+			#print("please")
+			local_scene = clean_string(line.trim_prefix("## ").strip_edges().replace(" ", "-")).to_lower()
 			parsed_scenes[local_scene] = []
+			#print(local_scene)
 		elif local_scene and line:
 			parsed_scenes[local_scene].append(line)
 	return parsed_scenes

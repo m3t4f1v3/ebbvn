@@ -47,8 +47,12 @@ right sprite scales to 100, 100
 Character 1 changes into Nanjo.png
 
 Character 1: You decided to go to the forest.
+
+<!-- this move will NOT carry over the transforms -->
+
 Character 1 moves to the left
-<!-- this will NOT carry over the transforms -->
+Left sprite rotates by -45 deg
+
 bgm nothingisbutwhatisnot.mp3 plays from 10 sec
 wait for click
 clear sprites

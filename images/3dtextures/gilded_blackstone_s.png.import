@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lm4apq6u2mtx"
-path.s3tc="res://.godot/imported/ApartmentExterior.png-9e2de59ae6ceb4e2bf8b2bdcedc0d030.s3tc.ctex"
+uid="uid://c5fcx05t5lu7g"
+path.s3tc="res://.godot/imported/gilded_blackstone_s.png-3b552a2aa15c707ca5b67b754b73c63b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://images/backgrounds/hvid/ApartmentExterior.png"
-dest_files=["res://.godot/imported/ApartmentExterior.png-9e2de59ae6ceb4e2bf8b2bdcedc0d030.s3tc.ctex"]
+source_file="res://images/3dtextures/gilded_blackstone_s.png"
+dest_files=["res://.godot/imported/gilded_blackstone_s.png-3b552a2aa15c707ca5b67b754b73c63b.s3tc.ctex"]
 
 [params]
 

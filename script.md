@@ -127,10 +127,89 @@ fullscreen effect show Image FX/WellInThatCase.jpg at 810 390 sized 300 300
 sfx DoorsOpening.mp3 plays at -20 db
 wait for click
 fullscreen effect hide Image FX/WellInThatCase.jpg
+Finger enters from the right
+Finger (Finger.png): Esli we NEED to cook
+Esli: Ok I’ll get the keychain, you sit there looking pretty or something
+Esli: I can never remember how to use this useless piece of junk, was it the three dials first or the buttons brah
+Ed: three dials first
+Esli: Ok well I’ve got a 50-50 chance of getting it right
+Esli: button first it is
+Machine: poof
+Esli: damn
+Chronos the Wise: WHat ! the Hell ! did you do to my time and relative dimension thingamajig
+Esli: Ed did it
+Chronos the Wise: WHat ! you SEEk ! (indeed.com) to Deceive [b]I[/b] the Wise !!?
+Esli: No
+Chronos the Wise: My WISdom transcends your petty untruths
+Chronos the Wise: I sentence you to being UNEMPLoyed
+Esli: That’s quite the punishment
 
+Esli: I lost my job at my store today
+Finger: Well if you think about it, every closed door is 2.71828182846 open doors
+Esli: That isn’t a bad philosophy
+
+<!-- once theyre back at the store -->
 <!-- https://youtu.be/ik_A7Mqepe0 -->
 bgm nothingisbutwhatisnot.mp3 plays from 11 sec
 Esli: nothing,, is but what is not
+Finger: out of EVERYTHING you could’ve gotten into why did it HAVE to be misquoting Elizabethan Era writers with rhythm game osts blasting
+Esli: what is man but a miserable pile of secrets
+Finger: dawg that ain’t even a book
+Esli: “The Almighty Judge of good deeds and bad, the Lord God, Head of the Heavens and High King of the World, was unknown to them. Oh, cursed is he who in time of trouble had to thrust his soul into the fire’s embrace, forfeiting help; he has nowhere to turn. But blessed is he who after death can approach the Lord and find friendship in the Father’s embrace.”
+
+goto gods-world
+
+## God’s World
+bgi godsworld/ryuk.png
+
+Narrator: What is man but his vices?
+Narrator: Chapter 1 - Coming to terms
+
+Narrator: Humanity has shed its criminal dregs---the thought of instant retribution rings within the criminally inclined. There is no escape from Kira.
+Narrator: After Mikami had expended his use, Kira struck a deal with the United Nations, to end crime in exchange for a board of 'Angels of Death', who would advise Kira on proceeding without influence or loyalty to anyone but Kira.
+
+Narrator: These Angels of Death comprised members whose identities were only known to each other and Kira himself, all 5 of whom were elected in a blind vote.
+
+Narrator: The recent debacle with Mello was at the forefront of Kira's psyche, although he had considered the possibility for criminals to bypass the restrictions of the Death Note, he hadn't paid much mind to it and accordingly lost 2 pieces, briefly placing Kira in a losing position.
+Narrator: Kira commissioned the group to counter this and prevent further lapses of consideration.
+
+Board: "The board has made considerable progress on the great problem, Mr. Kira. A consensus has been reached regarding the underlying traits that cause crime outside of justifiable necessity, megalomania. As always, the proof of this conclusion and the identity of your vessel are attached."
+
+Ryuk: "The numerous advances in deanonymizing have made your tenure difficult, so as to speak."
+Kira: "In no small part due to your efforts with that auctioneer. Was my plan really that boring?"
+Ryuk: "I just don't find the administrative path you took very entertaining, though I can't say that the public's response was expected."
+Kira: "Holding both the Death Note and this world in one hand isn't easy, though dealing with the renewed SPK was certainly the most fun I've had in some time."
+Ryuk: "Thought that you weren't in it for your own entertainment, maybe you could take my place."
+Kira: "I'm afraid that I couldn't live in the perfect society if I were a Shinigami, plus I don't like red apples that much."
+Ryuk: "Heheh that takes me back, really loved that guy, shame you got bored of him."
+Kira: "I certainly wasn't bored of him, L was probably the only guy that could understand how it feels to be me, though I'm afraid that his death was unavoidable."
+Ryuk: "Are you praying that another detective pops up?"
+Kira: "Maybe once I've finished with my world."
+
+Narrator: L's exposition of the rules governing the Death Note was his magnum opus, perhaps a greater feat than theoretically exposing Kira's identity. Through unmatched deduction and thought experiments, he had taken the throne of the Shinigami King and simulated the events that would inform said rules. This uncanny accuracy even drove Ryuk to privately express his unsettlement, much less freaked Kira out.
+
+Narrator: Chapter 2 - A misstep in the right direction
+Kira: "Ah, they're still using the natural right hypothesis. Say Ryuk, how's the state of logic in the Shinigami realm?"
+Ryuk: "Are you kidding me? Well, I might as well look over it, I can't say I've given your administrative approach much merit."
+Ryuk: "Ah, this reminds me of that fraudster Deridovely's secrets, always knew something was up with his games."
+Kira: "This is and, that's or, and that last thing there means that the entire symbol is inverted."
+Ryuk: "Good luck with solving that then, why'd you decide to limit yourself to 'bad' and 'good' like that?"
+Kira: "Well firstly, it's true and false but to answer your question succinctly, you need to try extending it with a third possibility, "neutral", which corresponds with your assumption."
+Ryuk: "Why not use 'indifferent' instead?"
+Kira: "Hm... You might be onto something Ryuk."
+Ryuk: "Apple?"
+Kira: "Here you go, don't eat the core this time."
+
+Kira: I'll have to start thinking about how to communicate as Kira without the Death Note, asking the board is a death sentence, I'm sure the US will take it as a sign that my job's almost finished and just eliminate me with the subtlety of a nuclear explosion once they think that they can do my work.
+Ryuk: “hedefinize hızla yaklaşan bir nükleer bomba var”
+Kira: “Cut it out.”
+Ryuk: “They aren’t usually that interesting, so no, I won’t.”
+Kira: Going back over my potential solutions may help solve it, axiomizing my logical process would solve both this and the issue of blind trust, but that will take some time to complete.
+Kira: “You hate apples don’t you?”
+Ryuk: “I can’t help it.”
+Kira: “Hm, I guess hinging designs on your abundance or the lack thereof seems illogical now that I go through it.”
+<!-- detective is aligned with kira idealistically, but has no loyalty -->
+
 
 ## Hvid
 

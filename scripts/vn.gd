@@ -12,9 +12,10 @@ var base_dir = ""
 var left_char = ""
 var middle_char = ""
 var right_char = ""
-var waiting_for_click = false
 
 var credits_rolling = false
+var shaking
+var shake_intensity = 10
 var audio_positions = {}
 
 @onready var default_left_position = Vector2($Sprites/Left.position)
@@ -88,7 +89,8 @@ func update_scene_ui(scene_lines: Array):
 				var choice = split_line[1].strip_edges().split("](")
 				var choice_text = choice[0].trim_prefix("[")
 				var scene_id = choice[1].trim_prefix("#").trim_suffix(")")
-				choices.append([choice_text, scene_id])
+				var option_label = split_line[0].trim_prefix("* ")
+				choices.append([choice_text, scene_id, option_label])
 			else:  # Dialogue line
 				var char_name = split_line[0].split(" (")
 				if len(char_name) == 2: # we are changing the sprite
@@ -109,8 +111,6 @@ func update_scene_ui(scene_lines: Array):
 					if char_name[0].to_lower() != "narrator":
 						char_label.text = char_name[0]
 				dialogue_text += split_line[1] + "\n"
-				# Wait for click here by setting waiting_for_click to true
-				waiting_for_click = true
 				#text_label.text = dialogue_text.strip_edges()
 				if not validate_script:
 					await get_tree().create_timer(0.1).timeout  # A slight delay to allow UI to update
@@ -131,7 +131,6 @@ func update_scene_ui(scene_lines: Array):
 							await get_tree().create_timer(0.05).timeout # Adjust speed by changing the timer duration
 				if not validate_script:
 					await $TextBox/TextControl/ProgressButton.pressed  # Wait for a click on TextControl node
-				waiting_for_click = false
 		else:
 			# Handle other types of script actions
 			if " enters from the " in line: # set initial positions
@@ -245,7 +244,32 @@ func update_scene_ui(scene_lines: Array):
 						print(line)
 						assert(false, "ERROR: Character position not set before changing sprite.")
 			elif line.begins_with("bgi"): # background image change
-				$BackgroundImage.texture = load_both(base_dir + "images/backgrounds/%s" % line.trim_prefix("bgi "), ImageTexture)
+				var arguments = line.trim_prefix("bgi ")
+				var tokens = arguments.split(" ")
+				var file_path
+				var pos = Vector2(0, 0)
+				var img_size = Vector2(1920, 1080)
+				if tokens.size() > 0:
+					# The first token is always the file path
+					file_path = tokens[0]
+				
+				var i = 1
+				while i < tokens.size():
+					match tokens[i]:
+						"at":
+							# Parse position if available
+							if i + 2 < tokens.size():
+								pos = Vector2(tokens[i + 1].to_int(), tokens[i + 2].to_int())
+								i += 2
+						"sized":
+							# Parse size if available
+							if i + 2 < tokens.size():
+								img_size = Vector2(tokens[i + 1].to_int(), tokens[i + 2].to_int())
+								i += 2
+					i += 1
+				$BackgroundImage.texture = load_both(base_dir + "images/backgrounds/%s" % file_path, ImageTexture)
+				$BackgroundImage.size = img_size
+				$BackgroundImage.position = pos
 			elif line.begins_with("credits bgi"): # credits background change
 				$Credits.texture = load_both(base_dir + "images/backgrounds/%s" % line.trim_prefix("credits bgi "), ImageTexture)
 			elif " plays" in line:  # music playback command
@@ -338,6 +362,27 @@ func update_scene_ui(scene_lines: Array):
 			elif line.begins_with("wait for click"):
 				if not validate_script:
 					await $TextBox/TextControl/ProgressButton.pressed
+			elif line.begins_with("3D"):
+				var command = line.trim_prefix("3D ")
+				if command.begins_with("wait for completion of parkour course "):
+					var course = command.trim_prefix("wait for completion of parkour course ")
+					$"SubViewport/Node3D/Parkour Civilization".call(course)
+					$SubViewport/Node3D/CharacterBody3D.position = Vector3(0,1,0)
+					#var deaths = 0
+					$"SubViewport/Node3D/Ground/Limitless".connect("body_entered", Callable(func(body):
+						#deaths += 1
+						if body == $SubViewport/Node3D/CharacterBody3D:
+							$TextBox/NameControl/Name.name = "Satoru Gojo keychain"
+							$TextBox/TextControl/Text.text += "Limitless\n"
+							#print(deaths)
+						)
+					)
+					if not validate_script:
+						var _body = await $"SubViewport/Node3D/Parkour Civilization".flag.body_entered
+					#print(body)
+				else:
+					print(line)
+					printerr("unknown 3d command")
 			elif line.begins_with("pause for "): # pause for 1 sec
 				if not validate_script:
 					await get_tree().create_timer(float(line.trim_prefix("pause for "))).timeout
@@ -351,7 +396,17 @@ func update_scene_ui(scene_lines: Array):
 				var effect_path = "FullscreenFx/%s" % effect_name
 				
 				var argument = line.substr(len("fullscreen effect xxxx ") + len(effect_name) + 1)
-				
+				if effect_name == "screenshake":
+					if action == "show":
+						shaking = true
+						shake_intensity = float(argument)
+					elif action == "hide":
+						shaking = false
+						$TextBox.position = Vector2(60, 560)
+						$Sprites.position = Vector2(60, 70)
+					else:
+						printerr("Invalid action '%s' for fullscreen effect '%s'." % [action, effect_name])
+						
 				# Check if the node exists
 				if not has_node(effect_path):
 					printerr("Effect node '%s' not found." % effect_name)
@@ -471,6 +526,16 @@ func update_scene_ui(scene_lines: Array):
 	if choices:
 		# Populate choice buttons
 		for choice in choices:
+			if choice[2].is_valid_int():
+				var current_time = Time.get_unix_time_from_system()
+				if abs(current_time - float(choice[2])) < 7*24*60*60:
+					print(current_time)
+					print(float(choice[2]))
+					pass # process it if we are within 1 week of the time
+				else:
+					print(current_time)
+					print(float(choice[2]))
+					continue
 			var button = Button.new()
 			button.text = choice[0].strip_edges()  # The choice text
 			button.theme = button_theme  # Apply the custom theme
@@ -484,6 +549,10 @@ func _on_choice_selected(next_scene: String):
 	load_scene(next_scene)
 
 func _process(_delta):
+	if shaking:
+		var random_offset = Vector2(randf_range(-shake_intensity, shake_intensity), randf_range(-shake_intensity, shake_intensity))
+		$TextBox.position = Vector2(60, 560) + random_offset
+		$Sprites.position = Vector2(60, 70) + random_offset
 	if Input.is_action_pressed("hide textbox"):
 		$TextBox.hide()
 	else:

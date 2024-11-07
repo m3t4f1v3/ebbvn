@@ -2,12 +2,20 @@
 
 ## Scene 1
 
+* Option 1: [Edward](#edward)
+* Option 3: [Credits](#the-end)
+
+
+## Edward
+
+bgi Metaworld.png
 clear
 
-* Option 1: [Where it all started](#where-it-all-started)
+<!---aug/12/22--->
+* 1660226400: [Where it all started](#where-it-all-started)
 * Option 2: [The winter arc](#company-life)
-* Option 3: [Credits](#the-end)
-* Option 4: [Peak](#hvid)
+* Option 3: [Peak](#hvid)
+* Option 4: [Back](#scene-1)
 
 
 ## Where it all started
@@ -16,7 +24,6 @@ clear
 
 bgi Metaworld.png
 
-narrator: Rewind to 8/12/22
 Chronos the Wise: WHAt ! your not supposed to be here
 
 Antag enters from the left
@@ -44,29 +51,7 @@ Antag: It reminds me of the map of Yume Nikki
 Tamurahime Chad: P3 should have gotten a remake in the P3D style
 Chronos the Wise: THis ! is an example ! of Irony ! THis is because ! it did !
 
-## The End
-
-bgm tsurupettan.mp3 plays at -20db
-credits bgi cake.webp
-clear
-clear chars
-
-Narrator: hold on let me adjust that for you
-
-fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!!  Love, Gil
-credits roll
-[font_size=96]
-pink - writing
-edward - coding
-goof - writing/art
-meep - writing
-jth - art
-godot engine - engine
-raul - writing
-gil - writing
-zecheru - writing
-Reg Moss, aka Alexander Dimitriou, resident of 39.70810705498792, 19.702100145879694
-[/font_size]
+goto edward
 
 ## Company Life
 
@@ -160,7 +145,9 @@ Esli: “The Almighty Judge of good deeds and bad, the Lord God, Head of the Hea
 goto gods-world
 
 ## God’s World
-bgi godsworld/ryuk.png
+bgm nothingisbutwhatisnot.mp3 pauses
+bgm lstheme.mp3 plays
+bgi godsworld/ryuk.png at 656.25 0 sized 607.5 1080
 
 Narrator: What is man but his vices?
 Narrator: Chapter 1 - Coming to terms
@@ -210,6 +197,27 @@ Ryuk: “I can’t help it.”
 Kira: “Hm, I guess hinging designs on your abundance or the lack thereof seems illogical now that I go through it.”
 <!-- detective is aligned with kira idealistically, but has no loyalty -->
 
+clear
+
+bgi edward/jjk.jpg at 0 0 sized 1920 1296
+bgm nothingisbutwhatisnot.mp3 resumes
+
+bitch boss: SNAP BACK TO REALITY
+Esli: I challenge you to a parkour battle
+bitch boss: but would you lose? (esc for mouse)
+
+fullscreen effect show 3D
+3D wait for completion of parkour course first
+
+Esli: nah. I'd win
+
+fullscreen effect hide 3D
+
+sfx mc_thunder.mp3 plays
+
+narrator: the end
+
+goto edward
 
 ## Hvid
 
@@ -931,3 +939,30 @@ Rauf: It's over.
 random: It's over for you.
 
 Heeler: That's true.
+
+goto edward
+
+## The End
+
+bgm tsurupettan.mp3 plays at -20db
+credits bgi cake.webp
+clear
+clear chars
+
+Narrator: hold on let me adjust that for you
+
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!!  Love, Gil
+credits roll
+[font_size=96]
+pink - writing
+edward - coding
+goof - writing/art
+meep - writing
+jth - art
+esli - i dont remember
+godot engine - engine
+raul - writing
+gil - writing
+zecheru - writing
+Reg Moss, aka Alexander Dimitriou, resident of 39.70810705498792, 19.702100145879694
+[/font_size]

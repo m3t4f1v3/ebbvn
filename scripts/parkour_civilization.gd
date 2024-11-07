@@ -1,8 +1,8 @@
 extends Node3D
 
+var flag
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+func first() -> void:
 	for x in range(10):
 		for y in range(10):
 			var block = StaticBody3D.new()
@@ -23,9 +23,23 @@ func _ready() -> void:
 			block_collision.shape = BoxShape3D.new()
 			block.add_child(block_mesh)
 			block.add_child(block_collision)
-			block.position = Vector3(-x * 2, x + y - 1, -y * 2)
+			block.position = Vector3(x * 2, x + y, y * 2)
 			self.add_child(block)
+	flag = Area3D.new()
+	#flag.monitoring = false
+	var flag_collision = CollisionShape3D.new()
+	var flag_collision_box = BoxShape3D.new()
+	flag_collision.position = Vector3(18, 20, 18)
+	flag_collision_box.size = Vector3(1, 1, 1)
+	flag_collision.shape = flag_collision_box
+	flag.add_child(flag_collision)
+	#flag.monitoring = true
+	self.add_child(flag)
+	
 
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

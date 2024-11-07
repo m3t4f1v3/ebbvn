@@ -1,20 +1,56 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0syide7diq0h"]
+[gd_scene load_steps=16 format=3 uid="uid://c0syide7diq0h"]
 
 [ext_resource type="Script" path="res://scripts/character_body_3d.gd" id="1_dm3hn"]
 [ext_resource type="Script" path="res://scripts/parkour_civilization.gd" id="2_6lssu"]
+[ext_resource type="Texture2D" uid="uid://cdrvhkkpcp5jx" path="res://images/3dtextures/stone.png" id="3_rkyrl"]
+[ext_resource type="Texture2D" uid="uid://hwlg71p1x5ti" path="res://images/3dtextures/stone_s.png" id="4_jnigt"]
+[ext_resource type="Texture2D" uid="uid://pxqga302pqm4" path="res://images/3dtextures/stone_n.png" id="5_pqsyx"]
+[ext_resource type="Texture2D" uid="uid://dhg08jv23jmsv" path="res://images/3dtextures/AllSkyFree_Sky_AnotherPlanet_Equirect.png" id="6_xw042"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_chlrx"]
 radius = 0.3
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_sf24d"]
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_uxqne"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ouo78"]
+albedo_texture = ExtResource("3_rkyrl")
+metallic = 1.0
+metallic_texture = ExtResource("4_jnigt")
+metallic_texture_channel = 1
+roughness_texture = ExtResource("4_jnigt")
+normal_enabled = true
+normal_texture = ExtResource("5_pqsyx")
+uv1_scale = Vector3(50, 50, 50)
+grow_amount = 1.821
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ioxrd"]
+material = SubResource("StandardMaterial3D_ouo78")
+size = Vector2(50, 50)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h0ahg"]
+size = Vector3(50, 0.5, 50)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_mfxpf"]
+panorama = ExtResource("6_xw042")
+
+[sub_resource type="Sky" id="Sky_o53ly"]
+sky_material = SubResource("PanoramaSkyMaterial_mfxpf")
+
+[sub_resource type="Environment" id="Environment_merun"]
+background_mode = 2
+sky = SubResource("Sky_o53ly")
+volumetric_fog_density = 0.1
+
 [node name="Node3D" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.791149, 0.611624, 0, -0.611624, 0.791149, 0, 1.58801, 6.05555)
+transform = Transform3D(0.56926, 0.682606, 0.45825, -0.293918, -0.351576, 0.888823, 0.767825, -0.640659, 0.000491964, 0, 1.58801, 6.05555)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 0)
+collision_layer = 3
 script = ExtResource("1_dm3hn")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
@@ -32,3 +68,26 @@ fov = 90.0
 
 [node name="Parkour Civilization" type="Node3D" parent="."]
 script = ExtResource("2_6lssu")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8, 0)
+shape = SubResource("WorldBoundaryShape3D_uxqne")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("PlaneMesh_ioxrd")
+
+[node name="Limitless" type="Area3D" parent="Ground"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground/Limitless"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+shape = SubResource("BoxShape3D_h0ahg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_merun")
+
+[connection signal="body_entered" from="Ground/Limitless" to="Ground/Limitless" method="_on_body_entered"]

@@ -13,8 +13,8 @@ func initialize_rect(arguments: String) -> void:
 	color_rect.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	rect_dict[arguments] = color_rect
 	var path = ""
-	var position = Vector2.ZERO
-	var size = Vector2(1920, 1080)
+	var rect_position = Vector2.ZERO
+	var rect_size = Vector2(1920, 1080)
 	
 	# Split the arguments by spaces
 	var tokens = arguments.split(" ")
@@ -28,18 +28,18 @@ func initialize_rect(arguments: String) -> void:
 			"at":
 				# Parse position if available
 				if token_index + 2 < tokens.size():
-					position = Vector2(tokens[token_index + 1].to_int(), tokens[token_index + 2].to_int())
+					rect_position = Vector2(tokens[token_index + 1].to_int(), tokens[token_index + 2].to_int())
 					token_index += 2
 			"sized":
 				# Parse size if available
 				if token_index + 2 < tokens.size():
-					size = Vector2(tokens[token_index + 1].to_int(), tokens[token_index + 2].to_int())
+					rect_size = Vector2(tokens[token_index + 1].to_int(), tokens[token_index + 2].to_int())
 					token_index += 2
 		token_index += 1
 	
 	# Apply position and size settings
-	color_rect.position = position
-	color_rect.set_size(size)
+	color_rect.position = rect_position
+	color_rect.set_size(rect_size)
 
 	# Load and apply the color if file path is provided
 	color_rect.color = Color(path)

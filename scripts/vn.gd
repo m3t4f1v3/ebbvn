@@ -17,6 +17,8 @@ var credits_rolling = false
 var shaking
 var shake_intensity = 10
 var audio_positions = {}
+var current_bgm = ""
+var current_sfx = ""
 
 @onready var default_left_position = Vector2($Sprites/Left.position)
 @onready var default_middle_position = Vector2($Sprites/Middle.position)
@@ -278,6 +280,7 @@ func update_scene_ui(scene_lines: Array):
 				var type = type_and_file[0]
 				var file = type_and_file[1]
 				
+				
 				# Default values for optional parameters
 				var volume: float = 0  # Default volume if "at" not specified
 				var start_time: float = 0  # Default start time if "from" not specified
@@ -298,10 +301,15 @@ func update_scene_ui(scene_lines: Array):
 				
 				# Load and configure the audio stream based on type
 				if type == "bgm":
+					if current_bgm:
+						audio_positions[current_bgm] = $BackgroundMusicPlayer.get_playback_position()
+					current_bgm = file
 					$BackgroundMusicPlayer.stream = load_both(base_dir + "audio/bgm/%s" % file, AudioStream)
 					$BackgroundMusicPlayer.volume_db = volume
 					$BackgroundMusicPlayer.play(start_time)
 				elif type == "sfx":
+					if current_sfx:
+						audio_positions[current_sfx] = $SFXPlayer.get_playback_position()
 					$SFXPlayer.stream = load_both(base_dir + "audio/sfx/%s" % file, AudioStream)
 					$SFXPlayer.volume_db = volume
 					$SFXPlayer.play(start_time)
@@ -335,10 +343,16 @@ func update_scene_ui(scene_lines: Array):
 				var audio = parts[1]
 				if type == "bgm":
 					$BackgroundMusicPlayer.stream = load_both(base_dir + "audio/bgm/%s" % audio, AudioStream)
-					$BackgroundMusicPlayer.play(audio_positions[audio])
+					if audio_positions.has(audio):
+						$BackgroundMusicPlayer.play(audio_positions[audio])
+					else:
+						$BackgroundMusicPlayer.play()
 				elif type == "sfx":
 					$SFXPlayer.stream = load_both(base_dir + "audio/bgm/%s" % audio, AudioStream)
-					$SFXPlayer.play(audio_positions[audio])
+					if audio_positions.has(audio):
+						$SFXPlayer.play(audio_positions[audio])
+					else:
+						$SFXPlayer.play()
 				else:
 					print(line)
 					printerr("Invalid sound type")
@@ -372,7 +386,7 @@ func update_scene_ui(scene_lines: Array):
 					$"SubViewport/Node3D/Ground/Limitless".connect("body_entered", Callable(func(body):
 						#deaths += 1
 						if body == $SubViewport/Node3D/CharacterBody3D:
-							$TextBox/NameControl/Name.name = "Satoru Gojo keychain"
+							$TextBox/NameControl/Name.text = "Satoru Gojo keychain"
 							$TextBox/TextControl/Text.text += "Limitless\n"
 							#print(deaths)
 						)
@@ -529,12 +543,12 @@ func update_scene_ui(scene_lines: Array):
 			if choice[2].is_valid_int():
 				var current_time = Time.get_unix_time_from_system()
 				if abs(current_time - float(choice[2])) < 7*24*60*60:
-					print(current_time)
-					print(float(choice[2]))
+					#print(current_time)
+					#print(float(choice[2]))
 					pass # process it if we are within 1 week of the time
 				else:
-					print(current_time)
-					print(float(choice[2]))
+					#print(current_time)
+					#print(float(choice[2]))
 					continue
 			var button = Button.new()
 			button.text = choice[0].strip_edges()  # The choice text

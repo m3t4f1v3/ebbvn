@@ -2,11 +2,18 @@
 
 ## Scene 1
 
-* Option 1: [Edward](#edward)
-* Option 3: [Credits](#the-end)
+bgi Metaworld.png
+bgm overthesky.mp3 resumes
 
+* Option 1: [Pink](#pink)
+* Option 2: [Meep](#meep)
+* Option 3: [Raul](#raul)
+* Option 4: [Goof](#goof)
+* Option 5: [Abyss](#ed)
+* Option 6: [Eyelets](#zecheru)
+* credits: [Glory](#the-end)
 
-## Edward
+## Ed
 
 bgi Metaworld.png
 clear
@@ -27,13 +34,13 @@ bgi Metaworld.png
 Chronos the Wise: WHAt ! your not supposed to be here
 
 Antag enters from the left
-Antag changes into Korth.webp
+Antag changes into ed/Korth.webp
 
 Antag: I have an idea
 
 Antag: Hear me out
 Zecheru enters from the right
-Zecheru changes into Zecheru.webp
+Zecheru changes into ed/Zecheru.webp
 Zecheru: FINISHED THIS BLOODY THING
 Zecheru: (stupid ass image of some stupid ass pipes)
 Zecheru: NOW I HAVE TO WAIT FOR CONFIRMATION IF ITS GOOD
@@ -41,7 +48,7 @@ Zecheru: if its not im screwed
 Zecheru: :JessicaWah:
 Antag: One time I obtained a copy of Persona 3 through interesting means. 2 months later, Persona 3 gets a remake. If I do the same thing with RGD, maybe it will come out on steam 🤔
 Esli enters from the left
-Esli changes into Esli.webp
+Esli changes into ed/Esli.webp
 Esli: do it!
 left sprite translates to 100, 0
 left sprite scales to 100, 100
@@ -51,11 +58,11 @@ Antag: It reminds me of the map of Yume Nikki
 Tamurahime Chad: P3 should have gotten a remake in the P3D style
 Chronos the Wise: THis ! is an example ! of Irony ! THis is because ! it did !
 
-goto edward
+goto ed
 
 ## Company Life
 
-bgm KouyaoArukePiano.mp3 plays
+bgm ed/KouyaoArukePiano.mp3 plays
 
 Esli: Ok so after getting my Bachelor’s degree I get recruited to work for a tech company where I get to apply my skills for the first time but get in trouble with my boss who is actually the owner's wife, and the owner is actually my uncle so my bitch boss is my aunt in law
 Chronos the Wise: WHat ! if instead of working at some ! tech company you worked as a purveyor of trinkets and you had a time machine to STEAL ! trinkets
@@ -80,18 +87,18 @@ pause for 1 sec
 Esli enters from the left
 Ed enters from the right
 
-Esli (Esli.webp): This is so awesome
-Ed (Ed.png): I'd like one Satoru Gojo keychain
+Esli (ed/Erika/Erika_mei_13.png): This is so awesome
+Ed (ed/Ed.png): I'd like one Satoru Gojo keychain
 Esli: Satoru Gojo,,, in this time of year...
 Ed: whats wrong
 Esli: Nothing, FINGER !!! can you pretty please check if we have a Satoru Gojo keychain in the back?
 Finger enters from the right
 <!-- https://www.deviantart.com/haxxthefox/art/Mike-Ehrmantraut-in-Umineko-Ryukishi07-s-style-931197799 -->
-Finger changes into Finger.png
+Finger changes into ed/Finger.png
 Finger: I'm not a kid (named finger)..
 <!-- slightly unintuitive but we forgot all about this char when we overwrote them -->
 Ed enters from the right
-Ed (Ed.png): well you would hope not
+Ed (ed/Ed.png): well you would hope not
 Finger: Ok I can't see anything back here
 Esli: Put your damn glasses on
 Finger: Still can't
@@ -106,14 +113,14 @@ Ed: Dispose of WHOSE body??
 Esli: Not yours
 Ed: okk
 Finger: Well in that case
-fullscreen effect show Image FX/WellInThatCase.jpg at 810 390 sized 300 300
+fullscreen effect show Image ed/FX/WellInThatCase.jpg at 810 390 sized 300 300
 <!-- 810 = 1920/2 - 300/2, we are positioning from top left corner -->
 <!-- 390 = 1080/2 - 300/2 -->
 sfx DoorsOpening.mp3 plays at -20 db
 wait for click
-fullscreen effect hide Image FX/WellInThatCase.jpg
+fullscreen effect hide Image FX/ed/WellInThatCase.jpg
 Finger enters from the right
-Finger (Finger.png): Esli we NEED to cook
+Finger (ed/Finger.png): Esli we NEED to cook
 Esli: Ok I’ll get the keychain, you sit there looking pretty or something
 Esli: I can never remember how to use this useless piece of junk, was it the three dials first or the buttons brah
 Ed: three dials first
@@ -123,7 +130,7 @@ Machine: poof
 Esli: damn
 Chronos the Wise: WHat ! the Hell ! did you do to my time and relative dimension thingamajig
 Esli: Ed did it
-Chronos the Wise: WHat ! you SEEk ! (indeed.com) to Deceive [b]I[/b] the Wise !!?
+Chronos the Wise: WHat ! you SEEk ! (indeed.com (linkedin)) to Deceive [b]I[/b] the Wise !!?
 Esli: No
 Chronos the Wise: My WISdom transcends your petty untruths
 Chronos the Wise: I sentence you to being UNEMPLoyed
@@ -135,7 +142,7 @@ Esli: That isn’t a bad philosophy
 
 <!-- once theyre back at the store -->
 <!-- https://youtu.be/ik_A7Mqepe0 -->
-bgm nothingisbutwhatisnot.mp3 plays from 11 sec
+bgm ed/nothingisbutwhatisnot.mp3 plays from 11 sec
 Esli: nothing,, is but what is not
 Finger: out of EVERYTHING you could’ve gotten into why did it HAVE to be misquoting Elizabethan Era writers with rhythm game osts blasting
 Esli: what is man but a miserable pile of secrets
@@ -145,9 +152,9 @@ Esli: “The Almighty Judge of good deeds and bad, the Lord God, Head of the Hea
 goto gods-world
 
 ## God’s World
-bgm nothingisbutwhatisnot.mp3 pauses
-bgm lstheme.mp3 plays
-bgi godsworld/ryuk.png at 656.25 0 sized 607.5 1080
+bgm ed/nothingisbutwhatisnot.mp3 pauses
+bgm ed/lstheme.mp3 plays
+bgi ed/godsworld/ryuk.png at 656.25 0 sized 607.5 1080
 
 Narrator: What is man but his vices?
 Narrator: Chapter 1 - Coming to terms
@@ -199,8 +206,8 @@ Kira: “Hm, I guess hinging designs on your abundance or the lack thereof seems
 
 clear
 
-bgi edward/jjk.jpg at 0 0 sized 1920 1296
-bgm nothingisbutwhatisnot.mp3 resumes
+bgi ed/jjk.jpg at 0 0 sized 1920 1296
+bgm ed/nothingisbutwhatisnot.mp3 resumes
 
 bitch boss: SNAP BACK TO REALITY
 Esli: I challenge you to a parkour battle
@@ -213,24 +220,24 @@ Esli: nah. I'd win
 
 fullscreen effect hide 3D
 
-sfx mc_thunder.mp3 plays
+sfx ed/mc_thunder.mp3 plays
 
 narrator: the end
 
-goto edward
+goto ed
 
 ## Hvid
 
-bgi hvid/VowPlace.png
-bgm hvid/high_minded_castle.wav plays
+bgi ed/hvid/VowPlace.png
+bgm ed/hvid/high_minded_castle.wav plays
 clear
 Rauf enters from the left
 Heeler enters from the right
-Rauf (hvid/Rauf.png): I, Rauf, take you, Heeler, to be my mostly lawfully wedded they/them, to have and to hold, from this day forward, for better, for worse, for richer, for poorer, in sickness and in health, until death do us part.
+Rauf (ed/hvid/Rauf.png): I, Rauf, take you, Heeler, to be my mostly lawfully wedded they/them, to have and to hold, from this day forward, for better, for worse, for richer, for poorer, in sickness and in health, until death do us part.
 
 pastor bastor: I now pronounce you they/thems.
 
-Heeler (hvid/Heeler.png): Today is probably the happiest day of my life.
+Heeler (ed/hvid/Heeler.png): Today is probably the happiest day of my life.
 
 Rauf: That's true. If I got married to myself I'd be pretty happy myself.
 
@@ -249,8 +256,8 @@ Rauf: You'd have made a massive mistake marrying someone who doesn't love you.
 
 Heeler: That's true
 
-bgi hvid/Restaurant.png
-bgm hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
+bgi ed/hvid/Restaurant.png
+bgm ed/hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
 clear
 Rauf: They should've used the catacombs as a reference for the architecture.
 
@@ -322,8 +329,8 @@ Rauf: That's true.
 
 Heeler: I know it's true.
 
-bgi hvid/car.png
-bgm hvid/平沢進_24ONSEKI.wav plays
+bgi ed/hvid/car.png
+bgm ed/hvid/平沢進_24ONSEKI.wav plays
 clear
 Rauf: I need to buy something from the store.
 
@@ -333,15 +340,15 @@ Rauf: I'm gonna buy phosphorus.
 
 Heeler: Okkkkkk, so happy for you.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 waiter: Here's your phosphorus and hypoderms.
 
 Rauf: Thank you.
 
-bgi hvid/car.png
-bgm hvid/平沢進_24ONSEKI.wav plays
+bgi ed/hvid/car.png
+bgm ed/hvid/平沢進_24ONSEKI.wav plays
 clear
 Rauf: This won't hurt a bit.
 
@@ -353,8 +360,8 @@ Heeler: Ok.
 
 Rauf: Ok.
 
-bgi hvid/living_room_1835923_1920.png
-bgm hvid/Cartoon_On_and_On.wav plays
+bgi ed/hvid/living_room_1835923_1920.png
+bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
 Heeler: I'm gonna go to sleep.
 
@@ -408,8 +415,8 @@ Rauf: We don't ever make compromises.
 
 Heeler: It defines who we are.
 
-bgi hvid/living_room_1835923_1920.png
-bgm hvid/I_have_always_loved_you.wav plays
+bgi ed/hvid/living_room_1835923_1920.png
+bgm ed/hvid/I_have_always_loved_you.wav plays
 clear
 Heeler: I think it worked.
 
@@ -431,8 +438,8 @@ Rauf: Legally, I'm obligated to.
 
 Heeler: That's so sweet.
 
-bgi hvid/ApartmentExteriorNight.png
-bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+bgi ed/hvid/ApartmentExteriorNight.png
+bgm ed/hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
 clear
 Rauf: Well now with your newfound hunger for brains, you can probably become a politician, and after you're elected, you can fit right in with the rest of them.
 
@@ -448,8 +455,8 @@ Heeler: A corpse would be good.
 
 Rauf: Ok, I'll be right back.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 
 Rauf: I'd like to buy a corpse.
@@ -472,8 +479,8 @@ Rauf: To reel it in.
 
 waiter: Okkkkkk, so happy for you and thank you.
 
-bgi hvid/living_room_1835923_1920.png
-bgm hvid/Cartoon_On_and_On.wav plays
+bgi ed/hvid/living_room_1835923_1920.png
+bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
 
 
@@ -506,36 +513,36 @@ Rauf: I'm gonna go to sleep.
 
 Heeler: Ok, I'll be here.
 
-bgi hvid/ApartmentExteriorNight.png
-bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+bgi ed/hvid/ApartmentExteriorNight.png
+bgm ed/hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
 clear
 
 Heeler: I'm gonna go to the store.
 
 Rauf: Ok, I'll be here.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 
 Heeler: It appears that the store is closed.
-Heeler changes into hvid/knife.png
+Heeler changes into ed/hvid/knife.png
 Heeler: I'm gonna go to the other store with my 5 sauce long knife.
 
 Rauf: I can't hear you, I'm asleep and about 3 kilometers away.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 
 Heeler: It appears that the store is closed.
-Heeler changes into hvid/green.png
+Heeler changes into ed/hvid/green.png
 Heeler: I'm gonna go back.
 
 Rauf: That's great, I can't wait to see you.
 
-bgi hvid/ApartmentExteriorNight.png
-bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+bgi ed/hvid/ApartmentExteriorNight.png
+bgm ed/hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
 clear
 
 Heeler: I'm back.
@@ -552,8 +559,8 @@ Pedestrian: That's true.
 
 Heeler: That's true.
 
-bgi hvid/living_room_1835923_1920_Night.png
-bgm hvid/Cartoon_On_and_On.wav plays
+bgi ed/hvid/living_room_1835923_1920_Night.png
+bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
 
 Rauf: If you're hungry, I can make you some food.
@@ -588,14 +595,14 @@ Rauf: I'll be back in a few hours.
 
 Heeler: Ok, I'll be here.
 
-bgi hvid/ApartmentExteriorNight.png
-bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+bgi ed/hvid/ApartmentExteriorNight.png
+bgm ed/hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
 clear
 
 Rauf: I'm gonna go to the store.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 
 Heeler: It appears that the store is full of people.
@@ -655,8 +662,8 @@ Heeler: To reel it in.
 
 waiter: Okkkkkk, so happy for you and thank you.
 
-bgi hvid/ApartmentExteriorNight.png
-bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+bgi ed/hvid/ApartmentExteriorNight.png
+bgm ed/hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
 clear
 
 Heeler: How was your trip to the store?
@@ -671,8 +678,8 @@ Heeler: I'm gonna go to sleep.
 
 Rauf: Ok, I'll be here preparing your food.
 
-bgi hvid/living_room_1835923_1920_Night.png
-bgm hvid/Cartoon_On_and_On.wav plays
+bgi ed/hvid/living_room_1835923_1920_Night.png
+bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
 
 Rauf: I am NOT solving a differential equation for you.
@@ -689,8 +696,8 @@ Heeler: That's true.
 
 Rauf: That's true.
 
-bgi hvid/Laboratory.png
-bgm hvid/lovesong_2003.wav plays
+bgi ed/hvid/Laboratory.png
+bgm ed/hvid/lovesong_2003.wav plays
 clear
 
 Rauf: Ok, the computer says that the rate should be 1.58740105197 cubic centimeters per second.
@@ -703,8 +710,8 @@ Rauf: I'll just have to increase the rate to about 1800 cubic centimeters per se
 Rauf: That should work.
 Rauf: I'll have to buy more sulfuric acid though.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 
 Rauf: I'd like to buy some sulfuric acid.
@@ -727,16 +734,16 @@ Rauf: Thank you.
 
 waiter: You're welcome.
 
-bgi hvid/Laboratory.png
-bgm hvid/lovesong_2003.wav plays
+bgi ed/hvid/Laboratory.png
+bgm ed/hvid/lovesong_2003.wav plays
 clear
 
 Tank: [i]bubbles[/i]
 
 Rauf: Ok, that should be enough.
 
-bgi hvid/living_room_1835923_1920_Night.png
-bgm hvid/Cartoon_On_and_On.wav plays
+bgi ed/hvid/living_room_1835923_1920_Night.png
+bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
 
 Rauf: I'm back.
@@ -751,8 +758,8 @@ Rauf: I'm gonna go to sleep.
 
 Heeler: Ok, I'll be here.
 
-bgi hvid/ApartmentExterior.png
-bgm hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
+bgi ed/hvid/ApartmentExterior.png
+bgm ed/hvid/mixkit_urban_city_ambience_at_night_2678.wav plays
 clear
 
 Rauf: You're gonna have to eat a lot of people to get enough energy to go to the store.
@@ -773,8 +780,8 @@ Rauf: I'm glad you like it.
 
 Heeler: I know.
 
-bgi hvid/living_room_1835923_1920.png
-bgm hvid/Cartoon_On_and_On.wav plays
+bgi ed/hvid/living_room_1835923_1920.png
+bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
 
 Rauf: Do you think you can go to the restaurant italien and get some food?
@@ -787,8 +794,8 @@ Heeler: I'm glad you're happy.
 
 Rauf: I know.
 
-bgi hvid/Restaurant.png
-bgm hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
+bgi ed/hvid/Restaurant.png
+bgm ed/hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
 clear
 
 waiter: What would you like to order?
@@ -876,8 +883,8 @@ Rauf: Thank you.
 
 waiter: You're welcome.
 
-bgi hvid/GroceryStore.png
-bgm hvid/Genshiryoku.wav plays
+bgi ed/hvid/GroceryStore.png
+bgm ed/hvid/Genshiryoku.wav plays
 clear
 
 chef: I'd like to buy some sauce.
@@ -890,8 +897,8 @@ waiter: That'll be 1/2 of a sauce.
 
 chef: Ok, here you go.
 
-bgi hvid/Restaurant.png
-bgm hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
+bgi ed/hvid/Restaurant.png
+bgm ed/hvid/2021_05_12_The_Little_Cafe_www.FesliyanStudios.com.wav plays
 clear
 
 waiter: The chef is back in the kitchen.
@@ -931,7 +938,7 @@ Rauf: Shame, thanks anyways.
 
 Heeler: You're welcome.
 
-bgi hvid/TheEnd.png
+bgi ed/hvid/TheEnd.png
 bgm stops
 clear
 Rauf: It's over.
@@ -940,7 +947,7 @@ random: It's over for you.
 
 Heeler: That's true.
 
-goto edward
+goto ed
 
 ## The End
 

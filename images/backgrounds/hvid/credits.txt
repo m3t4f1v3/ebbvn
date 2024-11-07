@@ -1,6 +1,0 @@
-Restaurant = https://www.blenderkit.com/asset-gallery-detail/f40d9334-688d-4dd6-84de-3061bad135d8/, https://www.blenderkit.com/asset-gallery-detail/d4f6dc0a-974d-434b-896f-dfd5a41ad6e9/, https://www.blenderkit.com/asset-gallery-detail/21504400-d9a7-43ea-b1c8-77035ce41f72/, https://www.blenderkit.com/asset-gallery-detail/2311fa8a-92ec-49f7-9876-f7b083b12d43/
-car = https://www.blenderkit.com/asset-gallery-detail/2dc512b1-e1f3-4e2c-8e94-bd90eecb35d9/, https://www.blenderkit.com/asset-gallery-detail/ce9a63c9-2dda-44fc-a0c9-7f285fd08787/
-GroceryStore = https://www.blenderkit.com/asset-gallery-detail/dc2777e6-92b6-47cd-b0c3-0303061d706d/
-living_room_1835923_1920 = https://pixabay.com/photos/living-room-interior-design-1835923/
-ApartmentExteriorNight = https://www.blenderkit.com/asset-gallery-detail/009ca5d3-ec55-40d6-9c89-f3504112fb80/, https://www.blenderkit.com/asset-gallery-detail/aaf0647e-c194-4041-b22c-11236239f152/
-Laboratory = https://www.blenderkit.com/asset-gallery-detail/6630e82d-14f0-4b27-bb54-2b4fed2fcf35/, https://www.blenderkit.com/asset-gallery-detail/545ff1b5-c382-450c-9f3a-c5363952c8b2/, https://www.blenderkit.com/asset-gallery-detail/96ed2a55-a3cb-4301-96d9-4d952189ff5a/, https://www.blenderkit.com/a8f56fe7-200f-4808-9765-0238992af2c7/

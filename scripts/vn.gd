@@ -299,6 +299,7 @@ func update_scene_ui(scene_lines: Array):
 						$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 					_:
 						print(line)
+						print(left_char, middle_char, right_char)
 						assert(false, "ERROR: Character position not set before changing sprite.")
 			elif line.begins_with("bgi"): # background image change
 				var arguments = line.trim_prefix("bgi ")
@@ -475,28 +476,28 @@ func update_scene_ui(scene_lines: Array):
 						$Sprites.position = Vector2(60, 70)
 					else:
 						printerr("Invalid action '%s' for fullscreen effect '%s'." % [action, effect_name])
-						
-				# Check if the node exists
-				if not has_node(effect_path):
-					printerr("Effect node '%s' not found." % effect_name)
-					return
-				
-				var effect_node = get_node(effect_path)
-				
-				# Handle show/hide actions
-				match action:
-					"show":
-						if effect_node.has_method("init"):
-							effect_node.init(argument)
-						else:
-							effect_node.show()
-					"hide":
-						if effect_node.has_method("deinit"):
-							effect_node.deinit(argument)
-						else:
-							effect_node.hide()
-					_:
-						printerr("Invalid action '%s' for fullscreen effect '%s'." % [action, effect_name])
+				else:
+					# Check if the node exists
+					if not has_node(effect_path):
+						printerr("Effect node '%s' not found." % effect_name)
+						return
+					
+					var effect_node = get_node(effect_path)
+					
+					# Handle show/hide actions
+					match action:
+						"show":
+							if effect_node.has_method("init"):
+								effect_node.init(argument)
+							else:
+								effect_node.show()
+						"hide":
+							if effect_node.has_method("deinit"):
+								effect_node.deinit(argument)
+							else:
+								effect_node.hide()
+						_:
+							printerr("Invalid action '%s' for fullscreen effect '%s'." % [action, effect_name])
 
 			elif " sprite translates to " in line:
 				var data = line.split(" sprite translates to ")

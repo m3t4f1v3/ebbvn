@@ -9,6 +9,7 @@ bgm overthesky.mp3 resumes
 * Option 2: [Meep](#meep)
 * Option 3: [Raul](#raul)
 * Option 4: [Goof](#goof)
+* Option 5: [Gil](#gil)
 * Option 5: [War](#ed)
 * Option 6: [Hole in shoe](#zecheru)
 * credits: [Credits](#the-end)
@@ -23,7 +24,6 @@ clear
 * Option 2: [The winter arc](#company-life)
 * Option 3: [Peak](#hvid)
 * Option 4: [Back](#scene-1)
-
 
 ## Where it all started
 
@@ -152,6 +152,7 @@ Esli: “The Almighty Judge of good deeds and bad, the Lord God, Head of the Hea
 goto gods-world
 
 ## God’s World
+
 bgm ed/nothingisbutwhatisnot.mp3 pauses
 bgm ed/lstheme.mp3 plays at -5 db
 bgi ed/godsworld/ryuk.png at 656.25 0 sized 607.5 1080
@@ -483,9 +484,6 @@ waiter: Okkkkkk, so happy for you and thank you.
 bgi ed/hvid/living_room_1835923_1920.png
 bgm ed/hvid/Cartoon_On_and_On.wav plays
 clear
-
-
-
 
 Heeler: This is delicious, where did you get it?
 
@@ -959,7 +957,7 @@ clear chars
 
 Narrator: hold on let me adjust that for you
 
-fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!!  Love, Gil
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil
 credits roll
 [font_size=96]
 pink - writing
@@ -974,3 +972,636 @@ gil - writing
 zecheru - writing
 Reg Moss, aka Alexander Dimitriou, resident of 39.70810705498792, 19.702100145879694
 [/font_size]
+
+## Gil
+
+bgi gil/Cell.png
+bgm gil/albatross prison.mp3 plays at -10
+Esli: Ughhhh, what the hell happened last night? I guess it's time to get home
+clear
+
+Esli: (Huh, why can't I…
+sfx gil/sfx-smack.wav plays at -10
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+
+Esli: Oh shit! i'm handcuffed to the bench!)
+clear
+
+Maya enters from the left
+Maya changes into gil/Maya_1.png
+
+Maya: Hiii!
+clear
+
+Esli: …
+clear
+
+Maya: what's the matter?
+Maya changes into gil/Maya_3.png
+Maya: First time? ( ͡° ͜ʖ ͡°)
+clear
+sfx gil/sfx-smack.wav plays at -10
+Maya changes into gil/Maya_1.png
+Esli: (what's up with this girl?!)
+clear
+Maya: So yeah…
+Maya changes into gil/Maya_2.png
+
+Maya: The name's Maya fey, Ace Medium!
+clear
+
+Esli: Ace crime magnet too…
+Maya changes into gil/Maya_7.png
+clear
+
+sfx gil/sfx-smack.wav plays at -10
+Maya changes into gil/Maya_9.png
+Maya: Hey! Just because I
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+Maya changes into gil/Maya_8.png
+sfx gil/sfx-smack.wav plays at -10
+Maya: [i]accidentaly[/i] accidentally nuked france twice it doesn't mean that I'm a bad person!
+clear
+
+Esli: yeah sure, sure. So anyway,
+sfx gil/sfx-realization.wav plays at -10
+Esli: how the hell did i get here?
+clear
+
+Maya changes into gil/Maya_10.png
+Maya: how am i supposed to know that?!
+clear
+
+Esli: trur…
+clear
+Maya changes into gil/Maya_5.png
+Maya: I [i]did[/i]
+sfx gil/sfx-realization.wav plays at -10
+Maya: overhear something from the guards though!
+clear
+
+sfx gil/sfx-Lightbulb plays at -10
+Esli: !
+clear
+
+Maya changes into gil/Maya_4.png
+Maya: you've been accused of murder…
+clear
+Maya changes into gil/Maya_3.png
+Maya: Just like me!
+
+sfx gil/sfx-smack.wav plays at -10
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+
+Esli: THE FUCK?!
+
+Esli: I went for a quick nap and this happens?!
+clear
+Maya changes into gil/Maya_5.png
+Maya: Yeah don't ask me…
+
+Maya: This has happened to me like 4 times
+clear
+Maya changes into gil/Maya_4.png
+Maya: …This week
+
+sfx gil/sfx-smack.wav plays at -10
+clear
+
+Esli: (what the fuck's wrong with this girl?!
+clear
+
+Maya changes into gil/Maya_6.png
+Maya: Hey!
+Maya changes into gil/Maya_11.png
+sfx gil/sfx-smack.wav plays at -10
+Maya: I heard that!
+sfx gil/sfx-smack.wav plays at -10
+Maya changes into gil/Maya_10.png
+Esli: (Oh… i thought that i was saying that in my head…)
+clear
+
+Esli: …Whoopsies!
+clear
+
+sfx gil/sfx-thud.wav plays at -10
+Maya changes into gil/Maya_7.png
+Door: Slam
+clear
+
+Guard: Eslington!
+clear sprites
+clear
+
+Esli: …
+clear
+
+Guard: Esli Eslington!
+clear
+
+sfx gil/sfx-lightbulb.wav plays at -10
+Esli: (Oh he means me)
+clear
+
+Esli: Yes?
+clear
+
+Guard: Your defense council has arrived. Follow me to the interview room
+clear
+bgm stops
+
+bgi gil/AA_Detention Centre.png
+Kirei enters from the middle
+bgm gil/Kirei Attorney.mp3 plays at -10
+Kirei changes into gil/Kirei_Jacked.png
+Kirei: Good morning, Esli.
+clear
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+
+Esli: NO FUCKING WAY
+clear
+
+Esli: KIREI FUCKING KOTOMINE
+clear
+
+Kirei changes into gil/Kirei_Griffin.png
+Kirei: In the flesh, blood, cock and balls
+clear
+
+Esli: Okay but don't do that ever again.
+clear
+Kirei changes into gil/Kirei_2Sad.png
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+sfx gil/sfx-smack.wav plays at -10
+Esli: NEVER AGAIN, THAT'S AN ORDER
+clear
+
+Kirei changes into gil/Kirei_2Concerned.png
+
+Kirei: Ok sorgy…
+clear
+
+Esli: also, why are [i]you[/i] the one sitting in the defendant's area?
+clear
+
+The Lord Of This Universe enters from the left
+The Lord Of This Universe changes into gil/Lord Of Universe.png
+The Lord Of This Universe: BECAUSE I COULDN'T BE ARSED TO FIND A BACKGROUND
+clear
+The Lord Of This Universe fades out
+
+Kirei changes into gil/Kirei_2Sad.png
+Kirei & Esli: Okay, fair I guess…
+clear
+Kirei changes into gil/Kirei_1Happy.png
+Kirei: anyway, i'll be representing you in court tomorrow.
+clear
+
+Esli: OMG TYSM
+clear
+
+sfx gil/sfx-realization.wav plays at -10
+Esli: but what have I been accused of?
+clear
+
+Kirei changes into gil/Kirei_2Concerned.png
+
+Kirei: you've been accused of murdering John G. Dough
+clear
+
+sfx gil/sfx-stab.wav plays at -10
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+
+Esli: The Pastry Chef?!?
+clear
+Kirei changes into gil/Kirei_1Stern.png
+
+Kirei: Precisely.
+clear
+
+Kirei: With a name like that, in a universe like this one, what job would he possibly have?
+clear
+
+Esli: True…
+clear
+Kirei changes into gil/Kirei_4Disappointed.png
+Kirei: He died in a terrible workplace accident: his oven exploded or some shit.
+clear
+Kirei changes into gil/Kirei_2Sad.png
+Kirei: The police think you're behind it because of the cake that was found on his counter.
+clear
+
+Kirei: They found a cake with
+sfx gil/sfx-stab.wav plays at -10
+Kirei: YOUR name on it!
+clear
+
+Esli: WHAT?!
+sfx gil/sfx-stab.wav plays at -10
+Esli: That makes no logical sense!
+clear
+Kirei changes into gil/Kirei_3Confident.png
+Kirei: it absolutely doesn't, but this is the Ace Attorney world, what were you expecting?
+clear
+
+Esli: True…
+clear
+Kirei changes into gil/Kirei_2Concerned.png
+Kirei: they found you as you were running away from the scene, how do you not remember that?
+clear
+Kirei changes into gil/Kirei_1Stern.png
+Esli: I have no idea! I went for a quick nap in the park and woke up in jail…
+clear
+Kirei changes into gil/Kirei_2Smug.png
+Kirei: anyway, it's time for me to go investigate. After all, It's my god-given duty as a Priest-Lawyer-P.I.
+
+Esli: P.I.?
+clear
+Kirei changes into gil/Kirei_1Happy.png
+Kirei: yes
+clear
+Kirei changes into gil/Kirei_Jacked.png
+Kirei: Penis Investigator.
+clear
+
+Esli: Cool! So… can i come with?
+clear
+Kirei changes into gil/Kirei_1Stern.png
+Kirei: No.
+clear
+sfx gil/sfx-whoops.wav plays at -10
+
+Esli: And why's THAT?! So unfair!
+clear
+Kirei changes into gil/Kirei_4Smug.png
+Kirei: hmmm, maybe because…
+clear
+
+sfx gil/sfx-smack.wav plays at -10
+Kirei changes into gil/KiRin.png
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+
+Kirei: YOU'RE IN FUCKING PRISON
+clear
+Kirei changes into gil/Kirei_1Stern.png
+Esli: Good point
+clear
+
+goto prison-exterior
+
+## Prison Exterior
+
+bgi gil/prison exterior 1.png
+
+Kirei: (Time to get to the bottom of this situation)
+clear
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+
+sfx gil/sfx-whack.wav plays at -10
+Kirei: This is curious, what's this tremor?
+clear
+
+sfx gil/sfx-explosion.wav plays at -10
+bgi gil/prison exterior 2
+sfx gil/sfx-screenchange.wav plays at -5
+Esli enters from the middle
+
+Esli changes into gil/Esli_7.png
+Esli: So… where are we gonna be investigating?
+clear
+
+sfx gil/yell2 plays at -10
+Kirei: Esli, [b]what in the world[/i] did you do?
+clear
+Esli changes into gil/Esli_10.png
+Esli: I just smashed through the wall,
+Esli changes into gil/Esli_9.png
+Esli: is there a problem with that?
+clear
+
+Kirei: Just one…
+clear
+
+Kirei: How the
+sfx gil/whip plays at -10
+Esli changes into gil/Esli_6.png
+Kirei: [b]FUCK[/b] did you manage to smash through cinder blocks?!
+clear
+
+sfx gil/lightbulb plays at -10
+Esli changes into gil/Esli_4.png
+Esli: With my head!
+clear
+Esli changes into gil/Esli_1.png
+sfx gil/… plays at -10
+Kirei: so if you're able to [b]headbutt[/b] your way out of prison, why can't you just evade the judicial system?
+clear
+
+Esli changes into gil/Esli_3.png
+Esli: that's simple!
+clear
+Esli changes into gil/Esli_1.png
+Esli: I
+sfx gil/lightbulb plays at -10
+Esli changes into gil/Esli_3.png
+Esli: [i]let[/i] the judicial system affect me
+clear
+
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+sfx gil/sfx-whack.wav plays at -10
+Kirei: (I'm not gonna press this any further)
+clear
+
+Kirei: Alright, let's go investigate then
+clear
+clear chars
+
+sfx gil/sfx-scenechange.wav plays at -10
+bgi gil/clear
+bgi gil/Bakery Road
+
+Kirei: Come on Esli, it's time to get to work.
+clear
+Kirei: this is where you were apprehended last night. I’d say this is a perfect place to look for clues.
+Kirei: the Bakery is still crawling with police, I doubt that they’d let us investigate.
+clear
+Kirei: Where should we search first?
+
+* Option 1: [Check the Alley](#alley)
+* Option 2: [Check the Pharmacy](#pharmacy)
+
+## Alley
+
+bgi gil/Alley.png
+bgm gil/Investigation 2004.mp3 plays at -10
+Gumshoe enters from the left
+Gumshoe changes into gil/Gumshoe_
+
+Gumshoe: Hey Pal, how's it been?
+clear
+Kirei: Everything's well, how about you,
+sfx gil/lightbulb plays at -10
+Kirei: Richard?
+clear
+
+Gumshoe: Pal!
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+Gumshoe: Don't call me that, Pal!
+Gumshoe: As ya know, the name's Dick
+Gumshoe: Cock, Willy or Peins for my Friends.
+clear
+Gumshoe: Like you, Pal!
+clear
+
+Kirei: I see…
+Kirei: Anyway, would you mind shedding some light on what happened last night?
+Gumshoe changes into gil/Gumshoe_
+Gumshoe: Sure Pal! Here’s the deal
+clear chars
+bgm stops
+bgi gil/clear
+bgm gil/Core.mp3 plays at -10
+bgi gil/John Dough_1.png
+Gumshoe: John G. Dough was quite famous, Buddy,
+
+Gumshoe: as you already know, he was Japanifornia’s best Pastry chef
+
+Gumshoe: Anyway, this is how it went down.
+clear
+
+Gumshoe: Last night, around 2:00 AM, Mr. Dough was preparing his kitchen for the day after.
+Gumshoe: He cleaned the oven, prepared the dough, and other pastry type shit. It was all going as usual until.
+
+bgi gil/Dough Accident.png
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+sfx gil/sfx-explosion.wav plays at -10
+Gumshoe: his oven exploded!
+clear
+
+Gumshoe: what truly ties your client to the murder is this, Pal!
+clear
+bgi gil/Esli cake.png
+Gumshoe: a cake was found in his oven.
+clear
+Kirei: And so? He was a baker, wasn’t he?
+Gumshoe: true…
+sfx gil/sfx-whack.wav plays at -10
+Gumshoe: but what are the odds that the defendant’s [b]NAME[/b] is written on it?!
+clear
+Gumshoe: The police found the defendant during a district-wide sweep. She’s been in the slammer since then.
+
+bgi gil/clear
+bgm stops
+bgi gil/Alley.png
+bgm gil/Investigation 2004.mp3 plays at -10
+Kirei: hm…
+Kirei: that was [i]something[/i].
+Gumshoe enters from the middle
+Kirei: Thanks for the help, Dick
+Gumshoe changes into gil/Gumshoe_4
+Gumshoe: Don’t mention it, Pal.
+
+## Pharmacy
+
+bgi gil/Bakery Road.png
+bgm gil/Investigation 2004.mp3 plays at -10
+Kirei: I wonder if the pharmacy across the way had a visual on the murder.
+Kirei: What do you think, Esli?
+Esli enters from the middle
+Esli changes into gil/Esli_1.png
+Esli: Sure!
+Esli: Sounds good to me.
+clear
+clear chars
+bgi gil/clear
+sfx gil/sfx-screenchange.wav plays at -5
+bgi gil/pharmacy.png
+Esli enters from the left
+Esli changes into gil/Esli_7.png
+Kirei: I wonder if that pharmacist was a witness to last night’s events
+clear
+Esli changes into gil/Esli_8.png
+Esli: ok I guess
+Esli: not like I care
+clear chars
+clear
+Viola enters from the right
+Viola changes into gil/Viola_1.png
+Viola: Good afternoon, dear customers, welcome to [i]Yummiest Drugs Pharmacy [/i] how may I help you today?
+clear
+Viola: we have [i]any kind[/i] of substance on the market,
+Viola: you name it, we have it!
+clear
+Spooky Pharmacy Ghost: ooOOOOooOOoooOoO…
+Spooky Pharmacy Ghost: [i]yummiest drugs pharmacy is not responsible for any side effects. Side effects include:[/i]
+
+Spooky Pharmacy Ghost: [i]Headaches, Fever, Becoming a ghost, Vomit, Green Vomit, Blue Vomit, Mild Colds, Miles Edgeworth, Death, Homosexuality, Spontaneous combustion, Dicks Fingers and Finger-Shaped Dicks.[/i]
+clear
+Esli enters from the left
+Esli changes into gil/Esli_6.png
+Kirei: Seems safe enough ig.
+clear
+Viola changes into gil/Viola_3.png
+fullscreen effect show screenshake
+pause for 1 sec
+fullscreen effect hide screenshake
+sfx gil/sfx-whack.wav plays at -10
+Viola: [b]SHUT THE FUCKING FUCK UP YOU RETARDED STUPID GHOST[/b]
+clear
+Esli changes into gil/Esli_6.png
+Esli changes into gil/Esli_8.png
+Viola changes into gil/Viola_
+Viola: Sorry about that, dearest customers. That ghost won’t leave the pharmacy alone…
+Kirei enters from the middle
+Esli changes into gil/Esli_3.png
+Kirei changes into gil/Kirei_3Confident.png
+Esli & Kirei: Fair enough, we know something about ghosts and busters.
+bgm stops
+bgm gil/Ghostbuster crappy.mp3 plays at -5
+Esli changes into gil/Esli_4.png
+Kirei changes into gil/Kirei_Griffin.png
+Esli & Kirei: Ghostubsters!
+Esli & Kirei: Are back in town!
+clear
+Esli changes into gil/Esli_7.png
+Kirei changes into gil/Kirei_4Smug.png
+Esli & Kirei: Need to pee?????
+clear
+Esli changes into gil/Esli_10.png
+Kirei changes into gil/Kirei_3Confident.png
+Esli & Kirei: That is so crazy!!
+clear
+Esli changes into gil/Esli_8.png
+Kirei changes into gil/Kirei_1stern.png
+
+bgm stops
+bgm gil/Investigation 2004.mp3 plays at -10
+Esli changes into gil/Esli_1.png
+Kirei changes into gil/Kirei_1Happy
+Esli & Kirei: that was bizarre
+clear
+Viola changes into gil/Viola_1.png
+Viola: indeed it was.
+clear
+Viola: I believe you were going to ask me something, dear customers…
+sfx gil/sfx-lightbulb.wav plays at -10
+Kirei: (indeed I was, I guess the heavenly music distracted me)
+clear
+Kirei changes into gil/Kirei_4Smug.png
+Kirei: Absolutely Miss, By any chance, were you a witness to last night’s events?
+clear
+Viola changes into gil/Viola_2.png
+Viola: Maybe I have… why are you asking?
+sfx gil/sfx-realization.wav plays at -10
+Viola: Are you [i]dying[/i] to know?
+clear
+Kirei changes into gil/Kirei_4Disappointed.png
+Kirei: I’m relatively affected, Miss
+Kirei: this Girl would be more affected
+clear
+sfx gil/sfx-realization.wav plays at -10
+Esli changes into gil/Esli_5.png
+Esli: sniffle sniffle
+clear
+Viola changes into gil/Viola_3.png
+Viola: You can’t just say sniffle to pretend that you’re sad
+clear
+Esli changes into gil/Esli_8.png
+Esli: trur…
+clear
+Viola: Well, I’ll tell you guys everything I saw last night.
+clear
+Esli changes into gil/Esli_4.png
+Esli: Thank you!!!
+clear
+clear chars
+
+bgi gil/clear
+bgm stops
+bgm gil/the dough truth.mp3 plays at -10
+Viola: It just so happens that I saw everything…
+clear
+bgi gil/bakery night1.png
+Viola: my shift ended at 1:30 AM, about an hour after Mr. Dough opened up. The day’s preparations were almost over by the time I went in to order.
+clear
+bgi gil/clear
+bgi gil/Viola Snack.png
+Viola: I walked across the street and went to the bakery to treat myself to a [i]special[/i] midnight snack.
+Viola: I bought a Cream Bombolone and some Bignè to take home.
+clear
+bgi gil/clear
+bgi gil/bakery night1.png
+Viola: after that, I paid, left and ate my snack outside.
+Viola: it was…
+sfx gil/sfx-lightbulb.wav plays at -10
+Viola: [i]divine[/i]
+clear
+Viola: anyway… as I was finishing my bombolone,
+
+sfx gil/sfx-whack.wav plays at -10
+Viola: disaster struck...
+clear
+
+fullscreen effect show screenshake
+pause for 1 sec
+bgi gil/clear
+bgi gil/bakery night2.png
+fullscreen effect hide screenshake
+sfx gil/sfx-explosion.wav plays at -5
+Viola: I heard an explosion and as soon as i looked up, the bakery went up in flames!
+clear
+Viola: and also, now that i think about it,
+Viola: Miss Esli,
+sfx gil/sfx-realization.wav plays at -10
+Viola: you should know all about this.
+sfx gil/sfx-whack.wav plays at -10
+clear
+Viola: I swear that I saw you running out of the bakery…
+Viola: although, your clothes did look kind of [i]different[/i]
+clear
+bgm stops
+bgm gil/Investigation 2004.mp3 plays at -10
+bgi gil/pharmacy.png
+Viola enters from the right
+Viola changes into gil/Viola_1.png
+Viola: so that’s about it, dear customers.
+Viola changes into gil/Viola_2.png
+Viola: if you need to know anything else i’d be [i]delighted[/i] to help.
+clear chars
+Kirei: You’ve helped us a lot. We’ve got a fighting chance in court tomorrow
+Kirei: I think I’ve figured out who the culprit is…
+clear
+Esli enters from the middle
+Esli changes into gil/Esli_4.png
+Esli: Really?! Who is it then?
+clear
+Kirei: It’ll all be revealed tomorrow…
+clear

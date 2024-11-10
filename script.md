@@ -1019,14 +1019,14 @@ clear
 
 sfx gil/sfx-smack.wav plays at -10
 Maya changes into gil/Maya_9.png
-Maya: Hey! Just because I
+Maya: Hey! Just because I -tbc-
 
 fullscreen effect show screenshake
 pause for 1 sec
 fullscreen effect hide screenshake
 Maya changes into gil/Maya_8.png
 sfx gil/sfx-smack.wav plays at -10
-Maya: [i]accidentaly[/i] accidentally nuked france twice it doesn't mean that I'm a bad person!
+Maya: [i]accidentally[/i] nuked france twice it doesn't mean that I'm a bad person!
 clear
 
 Esli: yeah sure, sure. So anyway,
@@ -1041,7 +1041,7 @@ clear
 Esli: trur…
 clear
 Maya changes into gil/Maya_5.png
-Maya: I [i]did[/i]
+Maya: I [i]did[/i] -tbc-
 sfx gil/sfx-realization.wav plays at -10
 Maya: overhear something from the guards though!
 clear

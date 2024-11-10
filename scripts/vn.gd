@@ -112,7 +112,10 @@ func update_scene_ui(scene_lines: Array):
 					dialogue_text += "\n"
 					if char_name[0].to_lower() != "narrator":
 						char_label.text = char_name[0]
-				dialogue_text += split_line[1] + "\n"
+				if split_line[1].ends_with("-tbc-"):
+					dialogue_text += split_line[1].trim_suffix("-tbc-")
+				else:
+					dialogue_text += split_line[1] + "\n"
 				#text_label.text = dialogue_text.strip_edges()
 				if not validate_script:
 					await get_tree().create_timer(0.1).timeout  # A slight delay to allow UI to update

@@ -2,41 +2,45 @@
 
 ## Scene 1
 
-bgi Rose.png
+bgi cake.webp
 clear
 clear chars
 
-bgm KouyaoArukePiano.mp3 plays at -10db
+bgm ed/KouyaoArukePiano.mp3 plays at -10db
 bgm goes to 20 db
-sfx vineboom.mp3 plays at -10db
+sfx ahaha.mp3 plays at -10db
 
 Character 1 enters from the left
-Character 1 changes into Nanjo.png
+Character 1 changes into ed/Nanjo.png
 
 Character 2 enters from the right
-Character 2 changes into Ed.png
+<!-- Character 2 changes into ed/Ed.png -->
+Character 2 fades into ed/Ed.png
 
 Character 1: Hello, [i]italic[/i] [b]bold[/b] the story.
 Character 2: Hiiii [font_size=24]Big text[/font_size] [font=res://fonts/CyberpunkWaifus.ttf]skibidi[/font]
+Character 1 fades out
+
+Character 2 exits
 
 <!-- Narrator: This is a comment. -->
 Narrator: really spooky
 clear chars
 <!-- you MUST introduce the characters again if you clear chars -->
-bgm KouyaoArukePiano.mp3 pauses
-bgm nothingisbutwhatisnot.mp3 plays from 10 sec
+bgm ed/KouyaoArukePiano.mp3 pauses
+bgm ed/nothingisbutwhatisnot.mp3 plays from 10 sec
 pause for 2 sec
 bgm stops
-bgm KouyaoArukePiano.mp3 resumes
+bgm ed/KouyaoArukePiano.mp3 resumes
 <!-- wont save the position of nothingisbutwhatisnot, also will override the audio volume with new volume-->
-bgm KouyaoArukePiano.mp3 resumes
+bgm ed/KouyaoArukePiano.mp3 resumes
 
 * Option 1: [Go to the forest](#scene-2)
 * Option 2: [Stay in town](#scene-3)
 
 ## Scene 2
 
-bgi Forest.jpg
+bgi Metaworld.png
 clear
 clear chars
 
@@ -44,25 +48,25 @@ Character 1 enters from the right
 <!-- By default, left sprite is at 0,0, right sprite is at 1024, 0, both have a scale of 700, 1000 -->
 right sprite translates to 700, 0
 right sprite scales to 100, 100
-Character 1 changes into Nanjo.png
+Character 1 changes into ed/Nanjo.png
 
 Character 1: You decided to go to the forest.
 
 <!-- this move will NOT carry over the transforms -->
 
 Character 1 moves to the left
-Left sprite rotates by -45 deg
+Left sprite rotates to -45 deg
 
-bgm nothingisbutwhatisnot.mp3 plays from 10 sec
+bgm ed/nothingisbutwhatisnot.mp3 plays from 10 sec
 wait for click
 clear sprites
 
 hide textbox
-fullscreen effect show Image sprites/Ed.png
+fullscreen effect show Image sprites/ed/Ed.png
 pause for 1 sec
 <!-- no support for 1 min 1 hour etc, this just tells you what the units are -->
 show textbox
-fullscreen effect hide Image sprites/Ed.png
+fullscreen effect hide Image sprites/ed/Ed.png
 fullscreen effect show Image backgrounds/Metaworld.png at 100 100 sized 500 500
 fullscreen effect show YakuzaRadial
 pause for 1 sec
@@ -81,7 +85,7 @@ Character 1: What: The: Hell
 
 ## Scene 3
 
-bgi Rose.png
+bgi Metaworld.png
 bgm tsurupettan.mp3 plays at -20db
 clear
 clear chars

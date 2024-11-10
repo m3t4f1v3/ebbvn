@@ -9,9 +9,9 @@ bgm overthesky.mp3 resumes
 * Option 2: [Meep](#meep)
 * Option 3: [Raul](#raul)
 * Option 4: [Goof](#goof)
-* Option 5: [Abyss](#ed)
-* Option 6: [Eyelets](#zecheru)
-* credits: [Glory](#the-end)
+* Option 5: [War](#ed)
+* Option 6: [Hole in shoe](#zecheru)
+* credits: [Credits](#the-end)
 
 ## Ed
 
@@ -113,7 +113,7 @@ Ed: Dispose of WHOSE body??
 Esli: Not yours
 Ed: okk
 Finger: Well in that case
-fullscreen effect show Image ed/FX/WellInThatCase.jpg at 810 390 sized 300 300
+fullscreen effect show Image FX/ed/WellInThatCase.jpg at 810 390 sized 300 300
 <!-- 810 = 1920/2 - 300/2, we are positioning from top left corner -->
 <!-- 390 = 1080/2 - 300/2 -->
 sfx DoorsOpening.mp3 plays at -20 db
@@ -153,7 +153,7 @@ goto gods-world
 
 ## God’s World
 bgm ed/nothingisbutwhatisnot.mp3 pauses
-bgm ed/lstheme.mp3 plays
+bgm ed/lstheme.mp3 plays at -5 db
 bgi ed/godsworld/ryuk.png at 656.25 0 sized 607.5 1080
 
 Narrator: What is man but his vices?
@@ -418,6 +418,7 @@ Heeler: It defines who we are.
 bgi ed/hvid/living_room_1835923_1920.png
 bgm ed/hvid/I_have_always_loved_you.wav plays
 clear
+Heeler changes into ed/hvid/green.png
 Heeler: I think it worked.
 
 Rauf: Maybe, let me check your skin.

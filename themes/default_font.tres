@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" load_steps=3 format=3 uid="uid://bjuiir7yrp5d"]
+
+[ext_resource type="FontFile" uid="uid://c6ur20ecmdeio" path="res://fonts/FiraCodeNerdFontMono-Regular.ttf" id="1_o7lbv"]
+[ext_resource type="FontFile" uid="uid://c762ajcojaqdu" path="res://fonts/NotoColorEmoji.ttf" id="2_ccris"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_ccris")])
+base_font = ExtResource("1_o7lbv")

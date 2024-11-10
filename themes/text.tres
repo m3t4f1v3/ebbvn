@@ -1,11 +1,13 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://bwr5kvws544hh"]
 
-[ext_resource type="SystemFont" uid="uid://cj2op10schxbx" path="res://fonts/firacodenerdfontmono.tres" id="1_txj63"]
+[ext_resource type="FontVariation" uid="uid://bjuiir7yrp5d" path="res://themes/default_font.tres" id="2_4niag"]
 
 [resource]
+default_font = ExtResource("2_4niag")
+default_font_size = 32
 RichTextLabel/font_sizes/bold_font_size = 32
 RichTextLabel/font_sizes/bold_italics_font_size = 32
 RichTextLabel/font_sizes/italics_font_size = 32
 RichTextLabel/font_sizes/mono_font_size = 32
 RichTextLabel/font_sizes/normal_font_size = 32
-RichTextLabel/fonts/normal_font = ExtResource("1_txj63")
+RichTextLabel/fonts/normal_font = ExtResource("2_4niag")

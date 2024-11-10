@@ -59,6 +59,7 @@ shader_parameter/plane_size = Vector2(0, 0)
 [node name="RootScene" type="Node2D"]
 script = ExtResource("1_t2jh2")
 read_from_current_dir = true
+script_file = "example_script.md"
 button_theme = ExtResource("6_4ty2a")
 
 [node name="BackgroundImage" type="TextureRect" parent="."]
@@ -151,7 +152,6 @@ offset_right = 1750.0
 offset_bottom = 420.0
 theme = ExtResource("2_iqet6")
 bbcode_enabled = true
-scroll_active = false
 scroll_following = true
 
 [node name="Decal" type="Sprite2D" parent="TextBox/TextControl"]
@@ -162,7 +162,7 @@ centered = false
 
 [node name="ProgressButton" type="Button" parent="TextBox/TextControl"]
 layout_mode = 0
-offset_right = 1800.0
+offset_right = 1600.0
 offset_bottom = 430.0
 theme = ExtResource("6_ds41b")
 flat = true

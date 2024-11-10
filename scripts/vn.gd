@@ -160,7 +160,7 @@ func update_scene_ui(scene_lines: Array):
 				if line == "clear":
 					$TextBox/NameControl/Name.text = ""
 					$TextBox/TextControl/Text.text = ""
-				if "chars" in line:
+				elif "chars" in line:
 					$Sprites/Left.texture = null
 					$Sprites/Middle.texture = null
 					$Sprites/Right.texture = null
@@ -173,7 +173,7 @@ func update_scene_ui(scene_lines: Array):
 					$Sprites/Middle.size = default_middle_size
 					$Sprites/Right.position = default_right_position
 					$Sprites/Right.size = default_right_size
-				if "sprites" in line:
+				elif "sprites" in line:
 					$Sprites/Left.texture = null
 					$Sprites/Middle.texture = null
 					$Sprites/Right.texture = null
@@ -183,7 +183,61 @@ func update_scene_ui(scene_lines: Array):
 					$Sprites/Middle.size = default_middle_size
 					$Sprites/Right.position = default_right_position
 					$Sprites/Right.size = default_right_size
+			elif " exits" in line:
+				var character = line.trim_suffix(" exits")
+				match character:
+					left_char:
+						left_char = ""
+						$Sprites/Left.texture = null
+					middle_char:
+						middle_char = ""
+						$Sprites/Middle.texture = null
+					right_char:
+						left_char = ""
+						$Sprites/Right.texture = null
+					_:
+						print(line)
+						printerr("Invalid character specified to hide.")
+			elif " fades " in line:
+				var data = line.split(" fades ")
+				var character = data[0]
+				var command = data[1] #into (sprite) or out
+				
+				var sprite
+				match character:
+					left_char:
+						sprite = $Sprites/Left
+					middle_char:
+						sprite = $Sprites/Middle
+					right_char:
+						sprite = $Sprites/Right
+					_:
+						print(line)
+						printerr("Invalid character specified to fade.")
+				if "into" in command:
+					var char_sprite = command.trim_prefix("into ")
+					sprite.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
+					var fade_tween = get_tree().create_tween()
+					
+					# Set up the fade-out animation
+					sprite.modulate.a=0
+					fade_tween.tween_property(sprite, "modulate", Color(1, 1, 1, 1), 1)
+				elif "out" in command:
+					
+					var fade_tween = get_tree().create_tween()
+					
+					# Set up the fade-out animation
+					fade_tween.tween_property(sprite, "modulate", Color(1, 1, 1, 0), 1)
+					fade_tween.tween_callback(func():
+						sprite.texture = null
+						sprite.modulate.a=1
+					)
 
+				else:
+					print(line)
+					printerr("Invalid direction specified to fade.")
+					
+					
 			elif " moves to the " in line: # change positions
 				var data = line.split(" moves to the ")
 				var character = data[0]
@@ -191,16 +245,17 @@ func update_scene_ui(scene_lines: Array):
 				
 				# Determine current position of the character
 				var current_sprite = null
-				if character == left_char:
-					current_sprite = "left"
-				elif character == middle_char:
-					current_sprite = "middle"
-				elif character == right_char:
-					current_sprite = "right"
-				else:
-					print(line)
-					printerr("Invalid character specified to move.")
-					return
+				match character:
+					left_char:
+						current_sprite = "left"
+					middle_char:
+						current_sprite = "middle"
+					right_char:
+						current_sprite = "right"
+					_:
+						print(line)
+						printerr("Invalid character specified to move.")
+						return
 				
 				# Move character to the specified position
 				match position:
@@ -457,8 +512,8 @@ func update_scene_ui(scene_lines: Array):
 					_:
 						print(line)
 						assert(false, "ERROR: Invalid sprite position")
-			elif " sprite rotates by " in line:
-				var data = line.split(" sprite rotates by ")
+			elif " sprite rotates to " in line:
+				var data = line.split(" sprite rotates to ")
 				var sprite_to_change = data[0]
 				var sprite_angle_in_deg = float(data[1])
 				match sprite_to_change.to_lower():
@@ -598,7 +653,6 @@ func parse_markdown(text: String) -> Dictionary:
 	var local_scene = ""
 	for line in text.split("\n"):
 		if line.begins_with("## "):
-			#print("please")
 			local_scene = clean_string(line.trim_prefix("## ").strip_edges().replace(" ", "-")).to_lower()
 			parsed_scenes[local_scene] = []
 			#print(local_scene)

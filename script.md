@@ -71,7 +71,7 @@ Esli enters from the right
 
 Esli changes into ed/Erika/Erika_mei_1.png
 
-narrator: ...oh yeah. You literally did look like Erika.
+Narrator: ...oh yeah. You literally did look like Erika.
 
 Esli: Dawg I literally have a portrait of you in my room. Why would Erika have that?
 
@@ -85,7 +85,7 @@ Esli: What the fuck are you talking about?
 
 Beatrice: Okay, forget about that. There is a cat box in this gameboard. I've manipulated it to bolster your odds of victory. Fight valiantly, and remember, work hard, GAME hard. I'm out of here.
 
-narrator: Beatrice popped into a storm of golden butterflies that flew out of Esli's room. Esli was now alone again. She took out her phone to text Finger, but before she could even do anything her door burst open. Her boss arrived.
+Narrator: Beatrice popped into a storm of golden butterflies that flew out of Esli's room. Esli was now alone again. She took out her phone to text Finger, but before she could even do anything her door burst open. Her boss arrived.
 
 bgm stops
 
@@ -108,7 +108,7 @@ Zecheru changes into ed/Zecheru.webp
 
 Zecheru: "I'm sorry Elsi, we hoped it wouldn't come to this"
 
-narrator: All the other surprise guests solemnly walked through the now dislodged doorway and into the parlor, their anger palpable.
+Narrator: All the other surprise guests solemnly walked through the now dislodged doorway and into the parlor, their anger palpable.
 
 Saoirse enters from the right
 
@@ -136,32 +136,32 @@ Meepa enters from the middle
 
 Meepa (raul/meep.png): "Trur...and that's exactly what I'm about to do. Stand back, everypony."
 
-narrator: Meepa unsheathed his cool anime sword (he's so sugoii desu ne!) and stared coolly at the still-downed creature in front of him. He dashed and unhesitantly drove his sword into the fleshy hole left by Zecheru's 1000 Romanian Death-Fist attack.
+Narrator: Meepa unsheathed his cool anime sword (he's so sugoii desu ne!) and stared coolly at the still-downed creature in front of him. He dashed and unhesitantly drove his sword into the fleshy hole left by Zecheru's 1000 Romanian Death-Fist attack.
 
 sfx raul/swordswing.mp3 plays
 
-narrator: The demon let out an inhuman groan before fluttering off the ground.
+Narrator: The demon let out an inhuman groan before fluttering off the ground.
 
 Boss: "FUCK YOU, YOU FUCKING AMERICAN...bwooaarrghghgahrghgahrgh"
 
-narrator: Vomit mixed with blood and guts cascaded out of its mouth.
+Narrator: Vomit mixed with blood and guts cascaded out of its mouth.
 
 Boss: "But don't get too excited, for I am only approaching my second phase"
 
 Narrator: The fly's erratic movements suddenly stopped as it remained airborne with perfect stillness.
 
 Boss: "Covidus Trumpus...Ignoramus!"
-narrator: Luminescent purple inscriptions manifested on the furniture, and with a poof, all the Americans in the house disappeared.
+Narrator: Luminescent purple inscriptions manifested on the furniture, and with a poof, all the Americans in the house disappeared.
 
 Ed enters from the middle
 
 Ed changes into ed/Ed.png
 
-narrator: Amidst this horrible blow, Ed started bawling.
+Narrator: Amidst this horrible blow, Ed started bawling.
 
 Ed: "MEEPA YOUUUUU WERE MY ONE AND ONLY FRIEND.....I LOVED YOU SO VERY MUCH...."
 
-narrator: He kneeled in front of his adversary
+Narrator: He kneeled in front of his adversary
 
 Ed: "Youuuu...don't kill more of my friends...please...take what you need and get Out of here..."
 
@@ -173,15 +173,15 @@ Boss: "Cackle FINALLY, IT WAS ABOUT TIME YOU ALL STOPPED RESISTING ME."
 
 Ed: "The cake is still on the table. Please, accept it as our surrender."
 
-narrator: The boss slowly sauntered to the cake box and licked its lips.
+Narrator: The boss slowly sauntered to the cake box and licked its lips.
 
 Boss: "MUEHEHEHE...I LIKE THE WAY YOU THINK, EDDY BOY!"
 
-narrator: It took the box and swallowed it whole.
+Narrator: It took the box and swallowed it whole.
 
-narrator: And just like that...
+Narrator: And just like that...
 
-narrator: AND JUST LIKE THAT...
+Narrator: AND JUST LIKE THAT...
 
 Saoirse enters from the middle
 
@@ -189,7 +189,7 @@ Saoirse changes into raul/saoirsesprite.png
 
 Saoirse & Ed: "Your ass is Dead."
 
-narrator: The fly violently hurled before giving out and shivering in its death throes...
+Narrator: The fly violently hurled before giving out and shivering in its death throes...
 
 Boss: "What the fuck...is...that..."
 
@@ -197,21 +197,21 @@ sfx raul/collapse.mp3 plays
 
 bgm stops
 
-narrator: Everyone was stunned except for Saoirse and Ed. The crowd edged closer to the creature, and it was then that they realized what had happened - Esli's boss ate a whole mouthful of, not cake, but inexplicably, Zecheru's putrid cheese rice.
+Narrator: Everyone was stunned except for Saoirse and Ed. The crowd edged closer to the creature, and it was then that they realized what had happened - Esli's boss ate a whole mouthful of, not cake, but inexplicably, Zecheru's putrid cheese rice.
 
 Goofy: "H-how?", plugging his nose, which clearly wasn't attuned to European cuisine.
 
 bgm raul/far.mp3 plays
 
-narrator: Esli, you knew deep in your heart that Beatrice was behind all this. The cat box...was the cake box all along...woah...
+Narrator: Esli, you knew deep in your heart that Beatrice was behind all this. The cat box...was the cake box all along...woah...
 
-narrator: Thanks to a GPS tracker that Ed stuck up Meepa's left nostril while he wasn't looking, he and Cat were promptly located under the floorboards. After they were hoisted up, it was explained that in the middle of the scuffle, Saoirse's vegan senses picked up on a non-plant-based foodstuff in the cake box. She immediately told Ed, who didn't take long to put two and two together. However, this meant Esli didn't have any cake for this special occasion!
+Narrator: Thanks to a GPS tracker that Ed stuck up Meepa's left nostril while he wasn't looking, he and Cat were promptly located under the floorboards. After they were hoisted up, it was explained that in the middle of the scuffle, Saoirse's vegan senses picked up on a non-plant-based foodstuff in the cake box. She immediately told Ed, who didn't take long to put two and two together. However, this meant Esli didn't have any cake for this special occasion!
 
 Raul enters from the right
 
 Raul: "Wait, okay okay Esli. You sit right there. I'll bake a cake. I'm fucking cracked at this, just gimme a second"
 
-narrator: Saoirse and the United Nations intervened.
+Narrator: Saoirse and the United Nations intervened.
 
 Ed enters from the left
 
@@ -245,7 +245,7 @@ clear
 * 1660226400: [Where it all started](#where-it-all-started)
 * Option 2: [The winter arc](#company-life)
 * Option 3: [Peak](#hvid)
-* Option 4: [Back](#scene-1)
+* Option 4: [Back](#metaworld)
 
 ## Where it all started
 
@@ -445,7 +445,7 @@ fullscreen effect hide 3D
 
 sfx ed/mc_thunder.mp3 plays
 
-narrator: the end
+Narrator: the end
 bgm stops
 goto ed
 
@@ -2023,4 +2023,4 @@ Narrator: Everyone in Japanifornia felt free.
 <!-- bgi gil/EsliBirthday.png -->
 
 wait for click
-goto scene-1
+goto metaworld

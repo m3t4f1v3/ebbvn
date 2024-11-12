@@ -6,12 +6,11 @@ clear
 bgi Metaworld.png
 bgm overthesky.mp3 resumes
 
-* Option 1: [Pink](#pink)
-* Option 2: [Meep](#meep)
-* Option 3: [Raul](#raul)
-* Option 4: [Gil](#gil)
-* Option 5: [War](#ed)
-* Option 6: [Hole in shoe](#zecheru)
+* Option 1: [Meep](#meep)
+* Option 2: [Raul](#raul)
+* Option 3: [Gil](#gil)
+* Option 4: [War](#ed)
+* Option 5: [Hole in shoe](#zecheru)
 * credits: [Credits](#the-end)
 
 ## Ed
@@ -957,7 +956,7 @@ clear chars
 
 Narrator: hold on let me adjust that for you
 
-fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]
 credits roll
 [font_size=96]
 edward wong hau pepelu tivruski the fourth - coding, writing

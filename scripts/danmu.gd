@@ -13,7 +13,7 @@ func init(arguments: String) -> void:
 	#await get_tree().get_current_scene().ready
 	var quotes = arguments.split("|")
 	#print(quotes)
-	for i in range(20):
+	for i in range(30):
 		var comment = RichTextLabel.new()
 		#var x = rng.randf_range(0, 1920)
 		var comment_scale = rng.randf_range(1, 2)
@@ -24,6 +24,8 @@ func init(arguments: String) -> void:
 		comment.push_color(Color(rng.randf(), rng.randf(), rng.randf()))
 		var text = quotes[rng.randi_range(0, len(quotes)-1)]
 		if "[img]" in text:
+			var og_text = text.split("[img]")[0]
+			comment.append_text(og_text)
 			var parts = text.split("]")
 			var data = parts[0].trim_prefix("[img")
 			var path = parts[1].trim_suffix("[/img")#.replace("res://", get_tree().get_current_scene().base_dir)

@@ -33,7 +33,7 @@ Narrator: -With No Overtime Pay,
 
 Narrator: Your Boss"
 
-Narrator: You fell to your knees in despair. "How...how could this happen? Why is she still coming for me....after all this time...just why?" Then, your surprise guests suddenly leaving, were they on their way to fight her? And those guests who were still on their way...were they fighting her at that very moment? You...you slumped to your room in utter confusion and stared longingly at the portrait of Beatrice affixed to the wall.
+Narrator: You fell to your knees in despair. "How...how could this happen? Why is she still coming for me...after all this time...just why?" Then, your surprise guests suddenly leaving, were they on their way to fight her? And those guests who were still on their way...were they fighting her at that very moment? You...you slumped to your room in utter confusion and stared longingly at the portrait of Beatrice affixed to the wall.
 
 Narrator: "Beatrice...Beatrice...what am I to do? Everything is going wrong..."
 
@@ -42,7 +42,6 @@ Narrator: Without warning...
 sfx MagicButterflies.mp3 plays
 
 bgi raul/beatricepainting.png at 555 0 sized 810 1080
-
 
 Beatrice enters from the left
 
@@ -160,11 +159,11 @@ Ed changes into ed/Ed.png
 
 narrator: Amidst this horrible blow, Ed started bawling.
 
-Ed: "MEEPA YOUUUUU WERE MY ONE AND ONLY FRIEND......I LOVED YOU SO VERY MUCH....."
+Ed: "MEEPA YOUUUUU WERE MY ONE AND ONLY FRIEND.....I LOVED YOU SO VERY MUCH...."
 
 narrator: He kneeled in front of his adversary
 
-Ed: "Youuuu....don't kill more of my friends...please...take what you need and get Out of here...."
+Ed: "Youuuu...don't kill more of my friends...please...take what you need and get Out of here..."
 
 Ed moves to the left
 
@@ -182,7 +181,7 @@ narrator: It took the box and swallowed it whole.
 
 narrator: And just like that...
 
-narrator: AND JUST LIKE THAT....
+narrator: AND JUST LIKE THAT...
 
 Saoirse enters from the middle
 
@@ -204,7 +203,7 @@ Goofy: "H-how?", plugging his nose, which clearly wasn't attuned to European cui
 
 bgm raul/far.mp3 plays
 
-narrator: Esli, you knew deep in your heart that Beatrice was behind all this. The cat box...was the cake box all along....woah...
+narrator: Esli, you knew deep in your heart that Beatrice was behind all this. The cat box...was the cake box all along...woah...
 
 narrator: Thanks to a GPS tracker that Ed stuck up Meepa's left nostril while he wasn't looking, he and Cat were promptly located under the floorboards. After they were hoisted up, it was explained that in the middle of the scuffle, Saoirse's vegan senses picked up on a non-plant-based foodstuff in the cake box. She immediately told Ed, who didn't take long to put two and two together. However, this meant Esli didn't have any cake for this special occasion!
 
@@ -1945,7 +1944,7 @@ Judge: Very well then, the court permits Ms. Fey to channel Mr. Dough
 clear
 Maya enters from the middle
 Maya changes into gil/Maya/Maya_8.png
-Maya: IT'S HAPPENING....
+Maya: IT'S HAPPENING...
 Maya changes into gil/Maya/Maya_12.png
 Maya: I'M GONNA CHANNEL
 sfx gil/Fart.mp3 plays at -5

@@ -6,7 +6,7 @@ extends Node
 @export var validate_script = false
 
 var scenes = {}
-var current_scene = "scene-1"
+var current_scene = "raul"
 var base_dir = ""
 
 var left_char = ""
@@ -106,6 +106,7 @@ func update_scene_ui(scene_lines: Array):
 						right_char:
 							$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 						_:
+							print(line)
 							assert(false, "ERROR: You must introduce a characters position before setting the sprite.")
 				dialogue_text = ""
 				if char_label.text != char_name[0]: # we are changing characters
@@ -647,7 +648,7 @@ func _ready():
 		scenes = parse_markdown(script_text)
 		#print(scenes)
 		file.close()
-		load_scene("scene-1")  # Start at Scene 1 or an initial scene of your choice
+		load_scene("raul")  # Start at Scene 1 or an initial scene of your choice
 
 func clean_string(input: String) -> String:
 	var regex = RegEx.new()

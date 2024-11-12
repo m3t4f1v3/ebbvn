@@ -1,6 +1,229 @@
 # Esli's Big Birthday
 
-## Scene 1
+## Raul
+
+bgm raul/door.mp3 plays
+
+bgi raul/eslihouse.png
+
+Narrator: Your name is Esli. You just quit your terrible job and felt the relief that comes with escaping bondage and a wickedly horrible boss. For a minute you felt for all the Chinese kids slaving away in sweatshops with no hope of being saved, but the prospect of discording for 12 hours a day until you got your next job made you forget about all that. IT'S PARTY TIME, BABY! This day was also your birthday. DOUBLE PARTY TIME, BABY!
+
+Narrator: You found yourself lounging in the living room, fantasizing about chilling on VC with your wadabros. Objection.lol was on the agenda. Woo! You were exhausted, so exhausted from all the trials and tribulations leading up to this point. To make matters worse, it was as though your job haunted you, always surfacing in your sea of thoughts when you least expected it to. Your boss, your WHORE boss' existence was indistinguishable from a curse that vexed you even though she was no longer in your life. But you knew things wouldn't be like this forever. Matter of fact, you told yourself you would stop worrying and instead focus on having the coolest birthday of all time. Word! 
+
+Narrator: Where were we? Oh yeah, the doorbell rang. You lazily emerged from your sofa and walked up to the door. Hushed, unintelligible sentences from a number of people could be heard. When you opened the door, you saw none other than Finger...and Zecheru! And Ed, and Meepa, and Raul...wait...so many members of Wadacord had come to visit! 
+
+Zecheru enters from the left
+
+Finger enters from the right
+
+Zecheru (ed/Zecheru.webp): "Happy birthday Elsi, the Greek Boy", waltzing in with a cake box.
+Finger (ed/Finger.png): "Ataturk, Kebab, Baklava" (Translated: There are some others who are still on their way)
+Narrator: It was a surprise visit! Meepa and Ed fought over which party poppers were to be used. Ed thought it best to make a special party popper that fired Reg Moss's ip address. Meepa wanted to use normal party poppers, and said that there was no way he'd be okay with leaking Reg's personal information in a visual novel. 
+
+bgm raul/deathsdoor.mp3 plays
+
+Narrator: In the middle of all the pomp and celebration, a statement of disbelief cut through the air like a scythe. "No...this can't be! Where did this letter come from? How did it get past us?" Zecheru looked worriedly at an envelope in front of him. It was charcoal black, with a crimson red pentagram drawn on its back with what seemed to be melted wax. He tore open the envelope and read out its contents along with the surprise guests who had all huddled behind him. Slowly, their expressions of worry turned into that of grit. "Esli...we'll be back. Whatever you do, don't read this letter. We're going to go and buy milk. Stay put." 
+
+Narrator: They promptly left her house. As for not reading the letter...yeah right lmao as if. You walked up and read it like your life depended on it. The letter read: 
+Narrator: "GOOD TIDINGS, ESLI. IT'S ME, YOUR BOSS. YOU THOUGHT YOU COULD ESCAPE MY CLUTCHES BUT YOU DIDN'T, YOU WON'T, AND SOON YOU'LL BE WORKING FOR ME AGAIN. I'VE ALREADY FOUGHT WITH YOUR PATHETIC LITTLE WADACORD FRIENDS SEVERAL TIMES AND TIME AND TIME AGAIN I'VE PROVEN VICTORIOUS. THEY CAN'T STOP ME FROM TAKING YOU BACK. SAVE SOME OF THAT CAKE FOR ME, WILL YOU? I'M DYING FOR A BITE.
+
+clear chars
+
+Narrator: -With No Overtime Pay,
+
+Narrator: Your Boss"
+
+Narrator: You fell to your knees in despair. "How...how could this happen? Why is she still coming for me....after all this time...just why?" Then, your surprise guests suddenly leaving, were they on their way to fight her? And those guests who were still on their way...were they fighting her at that very moment? You...you slumped to your room in utter confusion and stared longingly at the portrait of Beatrice affixed to the wall. 
+
+Narrator: "Beatrice...Beatrice...what am I to do? Everything is going wrong..."
+
+Narrator: Without warning...
+
+sfx MagicButterflies.mp3 plays
+
+bgi raul/beatricepainting.png
+
+Beatrice enters from the left
+
+Beatrice changes into raul/beatrice.png
+
+bgm raul/candlesdance.mp3 plays
+
+Beatrice: cackle And why the FUCK should I help the mothertrucker who denies me?
+
+Narrator: You were taken aback not only by her reveal, but also her question.
+
+Esli: waitwaitwait, what the fuck? Why are you here? Also when have I ever denied you?
+
+Beatrice: Dude.
+
+Esli: What?!
+
+Beatrice: Why the fuck should I help ERIKA OF ALL PEOPLE?
+
+Esli: Erika??? I'm Esli! Also known as pikopuyo? I have nothing to do with Erika!
+
+Beatrice: Then how do you explain THIS?
+
+Narrator: Beatrice lifted up a mirror.
+
+Esli enters from the right
+
+Esli changes into ed/Erika/Erika_mei_1.png
+
+narrator: ...oh yeah. You literally did look like Erika.
+
+Esli: Dawg I literally have a portrait of you in my room. Why would Erika have that?
+
+Beatrice: Whatever, what do you want my help with?
+
+Esli: My BITCH boss is chasing after me, and all my friends are fighting her and she might be winning and...and...I don't know what to do.
+
+Beatrice: Have you tried love?
+
+Esli: What the fuck are you talking about?
+
+Beatrice: Okay, forget about that. There is a cat box in this gameboard. I've manipulated it to bolster your odds of victory. Fight valiantly, and remember, work hard, GAME hard. I'm out of here.
+
+narrator: Beatrice popped into a storm of golden butterflies that flew out of Esli's room. Esli was now alone again. She took out her phone to text Finger, but before she could even do anything her door burst open. Her boss arrived.
+
+bgm stops
+
+bgi raul/eslihouse.png
+Boss enters from the left
+
+Boss changes into raul/bitchboss.png
+
+Boss: "ESLI, I'VE FINALLY COME. YOUR COMPADRES WERE YET AGAIN NO MATCH FOR ME. YOU CAN MAKE THIS AS PAINLESS AS POSSIBLE BY JOINING ME RIGHT THIS SECO–"
+
+sfx gil/sfx-explosion.wav plays
+
+Zecheru enters from the middle
+
+Narrator: A sound comparable to that of a huge explosion was produced. Esli's house shook from top to bottom. When she came to, she saw her boss' twitching insect body and Zecheru's goo-soaked fist. 
+
+bgm raul/streetfightersimplerating.mp3 plays
+
+Zecheru changes into ed/Zecheru.webp
+
+Zecheru: "I'm sorry Elsi, we hoped it wouldn't come to this"
+
+narrator: All the other surprise guests solemnly walked through the now dislodged doorway and into the parlor, their anger palpable.
+
+Saoirse enters from the right
+
+Saoirse (raul/saoirsesprite.png): "Yeah, we're really sorry,"
+Saoirse: "I told them what should be done to kill a fly but they didn't listen to me. These MFs don't listen to women."
+
+Goofenshmirtz enters from the middle
+
+Goofenshmirtz (raul/goofensprite.png): "No you don't understand, Hasan Abi is based,"
+
+Cat enters from the left
+Cat changes into raul/cat.png
+Necrodisks enters from the middle
+Necrodisks changes into raul/necrosprite.png
+
+Cat & Necrodisks: "I can't enjoy this fight, there's no gay sex."
+
+Raul enters from the right
+
+Raul (raul/raulsprite.png): "Guys, shouldn't we be focusing on helping Esli right now?", looking at gay porn memes on his phone.
+
+clear chars
+
+Meepa enters from the middle
+
+Meepa (raul/meep.png): "Trur...and that's exactly what I'm about to do. Stand back, everypony."
+
+narrator: Meepa unsheathed his cool anime sword (he's so sugoii desu ne!) and stared coolly at the still-downed creature in front of him. He dashed and unhesitantly drove his sword into the fleshy hole left by Zecheru's 1000 Romanian Death-Fist attack.
+
+sfx raul/swordswing.mp3 plays
+
+narrator: The demon let out an inhuman groan before fluttering off the ground. 
+
+Boss: "FUCK YOU, YOU FUCKING AMERICAN...bwooaarrghghgahrghgahrgh"
+
+narrator: Vomit mixed with blood and guts cascaded out of its mouth.
+
+Boss: "But don't get too excited, for I am only approaching my second phase"
+
+Narrator: The fly's erratic movements suddenly stopped as it remained airborne with perfect stillness. 
+
+Boss: "Covidus Trumpus...Ignoramus!"
+narrator: Luminescent purple inscriptions manifested on the furniture, and with a poof, all the Americans in the house disappeared. 
+
+Ed enters from the middle
+
+Ed changes into ed/Ed.png
+
+narrator: Amidst this horrible blow, Ed started bawling.
+
+Ed: "MEEPA YOUUUUU WERE MY ONE AND ONLY FRIEND......I LOVED YOU SO VERY MUCH....."
+
+narrator: He kneeled in front of his adversary
+
+Ed: "Youuuu....don't kill more of my friends...please...take what you need and get Out of here...."
+
+Ed moves to the left
+
+Boss enters from the middle
+
+Boss: "Cackle FINALLY, IT WAS ABOUT TIME YOU ALL STOPPED RESISTING ME."
+
+Ed: "The cake is still on the table. Please, accept it as our surrender."
+
+narrator: The boss slowly sauntered to the cake box and licked its lips.
+
+Boss: "MUEHEHEHE...I LIKE THE WAY YOU THINK, EDDY BOY!"
+
+narrator: It took the box and swallowed it whole.
+
+narrator: And just like that...
+
+narrator: AND JUST LIKE THAT....
+
+Saoirse enters from the middle
+
+Saoirse changes into raul/saoirsesprite.png
+
+Saoirse & Ed: "Your ass is Dead."
+
+narrator: The fly violently hurled before giving out and shivering in its death throes...
+
+Boss: "What the fuck...is...that..."
+
+sfx raul/collapse.mp3 plays
+
+bgm stops
+
+narrator: Everyone was stunned except for Saoirse and Ed. The crowd edged closer to the creature, and it was then that they realized what had happened - Esli's boss ate a whole mouthful of, not cake, but inexplicably, Zecheru's putrid cheese rice.
+
+Goofy: "H-how?", plugging his nose, which clearly wasn't attuned to European cuisine.
+
+bgm raul/far.mp3 plays
+
+narrator: Esli, you knew deep in your heart that Beatrice was behind all this. The cat box...was the cake box all along....woah...
+
+narrator: Thanks to a GPS tracker that Ed stuck up Meepa's left nostril while he wasn't looking, he and Cat were promptly located under the floorboards. After they were hoisted up, it was explained that in the middle of the scuffle, Saoirse's vegan senses picked up on a non-plant-based foodstuff in the cake box. She immediately told Ed, who didn't take long to put two and two together. However, this meant Esli didn't have any cake for this special occasion!
+
+Raul enters from the right
+
+Raul: "Wait, okay okay Esli. You sit right there. I'll bake a cake. I'm fucking cracked at this, just gimme a second"
+
+narrator: Saoirse and the United Nations intervened.
+
+Ed enters from the left
+
+Narrator: "Some of us got together and put together a special cake. I hope you enjoy it"
+
+Narrator: And I hope you enjoy it, too!
+
+Narrator: -Raul
+
+goto metaworld
+
+## Metaworld
 
 clear
 bgi Metaworld.png
@@ -146,7 +369,7 @@ Esli: nothing,, is but what is not
 Finger: out of EVERYTHING you could've gotten into why did it HAVE to be misquoting Elizabethan Era writers with rhythm game osts blasting
 Esli: what is man but a miserable pile of secrets
 Finger: dawg that ain't even a book
-Esli: “The Almighty Judge of good deeds and bad, the Lord God, Head of the Heavens and High King of the World, was unknown to them. Oh, cursed is he who in time of trouble had to thrust his soul into the fire's embrace, forfeiting help; he has nowhere to turn. But blessed is he who after death can approach the Lord and find friendship in the Father's embrace.”
+Esli: "The Almighty Judge of good deeds and bad, the Lord God, Head of the Heavens and High King of the World, was unknown to them. Oh, cursed is he who in time of trouble had to thrust his soul into the fire's embrace, forfeiting help; he has nowhere to turn. But blessed is he who after death can approach the Lord and find friendship in the Father's embrace."
 
 goto gods-world
 
@@ -195,13 +418,13 @@ Ryuk: "Apple?"
 Kira: "Here you go, don't eat the core this time."
 
 Kira: I'll have to start thinking about how to communicate as Kira without the Death Note, asking the board is a death sentence, I'm sure the US will take it as a sign that my job's almost finished and just eliminate me with the subtlety of a nuclear explosion once they think that they can do my work.
-Ryuk: “hedefinize hızla yaklaşan bir nükleer bomba var”
-Kira: “Cut it out.”
-Ryuk: “They aren't usually that interesting, so no, I won't.”
+Ryuk: "hedefinize hızla yaklaşan bir nükleer bomba var"
+Kira: "Cut it out."
+Ryuk: "They aren't usually that interesting, so no, I won't."
 Kira: Going back over my potential solutions may help solve it, axiomizing my logical process would solve both this and the issue of blind trust, but that will take some time to complete.
-Kira: “You hate apples don't you?”
-Ryuk: “I can't help it.”
-Kira: “Hm, I guess hinging designs on your abundance or the lack thereof seems illogical now that I go through it.”
+Kira: "You hate apples don't you?"
+Ryuk: "I can't help it."
+Kira: "Hm, I guess hinging designs on your abundance or the lack thereof seems illogical now that I go through it."
 <!-- detective is aligned with kira idealistically, but has no loyalty -->
 
 clear
@@ -956,7 +1179,7 @@ clear chars
 
 Narrator: hold on let me adjust that for you
 
-fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]|HAPPY BIRTHDAY!!!!!!
 credits roll
 [font_size=96]
 edward wong hau pepelu tivruski the fourth - coding, writing
@@ -1316,7 +1539,7 @@ Esli changes into gil/Esli/Esli_4.png
 Esli: With my head!
 clear
 Esli changes into gil/Esli/Esli_1.png
-<!-- sfx gil/... plays at -10 -->
+sfx gil/sfx-stab2.wav plays at -10
 Kirei: so if you're able to [b]headbutt[/b] your way out of prison, why can't you just evade the judicial system?
 clear
 

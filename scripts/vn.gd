@@ -362,6 +362,7 @@ func update_scene_ui(scene_lines: Array):
 				if type == "bgm":
 					if current_bgm:
 						audio_positions[current_bgm] = $BackgroundMusicPlayer.get_playback_position()
+					$BackgroundMusicPlayer.stop()
 					current_bgm = file
 					$BackgroundMusicPlayer.stream = load_both(base_dir + "audio/bgm/%s" % file, AudioStream)
 					$BackgroundMusicPlayer.volume_db = volume
@@ -369,6 +370,8 @@ func update_scene_ui(scene_lines: Array):
 				elif type == "sfx":
 					if current_sfx:
 						audio_positions[current_sfx] = $SFXPlayer.get_playback_position()
+					current_sfx = file
+					$SFXPlayer.stop()
 					$SFXPlayer.stream = load_both(base_dir + "audio/sfx/%s" % file, AudioStream)
 					$SFXPlayer.volume_db = volume
 					$SFXPlayer.play(start_time)

@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/mc_thunder.mp3-1041fac861795b831b75bc072791c4
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
 bpm=0
 beat_count=0

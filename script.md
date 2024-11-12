@@ -8,9 +8,9 @@ bgi raul/eslihouse.png
 
 Narrator: Your name is Esli. You just quit your terrible job and felt the relief that comes with escaping bondage and a wickedly horrible boss. For a minute you felt for all the Chinese kids slaving away in sweatshops with no hope of being saved, but the prospect of discording for 12 hours a day until you got your next job made you forget about all that. IT'S PARTY TIME, BABY! This day was also your birthday. DOUBLE PARTY TIME, BABY!
 
-Narrator: You found yourself lounging in the living room, fantasizing about chilling on VC with your wadabros. Objection.lol was on the agenda. Woo! You were exhausted, so exhausted from all the trials and tribulations leading up to this point. To make matters worse, it was as though your job haunted you, always surfacing in your sea of thoughts when you least expected it to. Your boss, your WHORE boss' existence was indistinguishable from a curse that vexed you even though she was no longer in your life. But you knew things wouldn't be like this forever. Matter of fact, you told yourself you would stop worrying and instead focus on having the coolest birthday of all time. Word! 
+Narrator: You found yourself lounging in the living room, fantasizing about chilling on VC with your wadabros. Objection.lol was on the agenda. Woo! You were exhausted, so exhausted from all the trials and tribulations leading up to this point. To make matters worse, it was as though your job haunted you, always surfacing in your sea of thoughts when you least expected it to. Your boss, your WHORE boss' existence was indistinguishable from a curse that vexed you even though she was no longer in your life. But you knew things wouldn't be like this forever. Matter of fact, you told yourself you would stop worrying and instead focus on having the coolest birthday of all time. Word!
 
-Narrator: Where were we? Oh yeah, the doorbell rang. You lazily emerged from your sofa and walked up to the door. Hushed, unintelligible sentences from a number of people could be heard. When you opened the door, you saw none other than Finger...and Zecheru! And Ed, and Meepa, and Raul...wait...so many members of Wadacord had come to visit! 
+Narrator: Where were we? Oh yeah, the doorbell rang. You lazily emerged from your sofa and walked up to the door. Hushed, unintelligible sentences from a number of people could be heard. When you opened the door, you saw none other than Finger...and Zecheru! And Ed, and Meepa, and Raul...wait...so many members of Wadacord had come to visit!
 
 Zecheru enters from the left
 
@@ -18,13 +18,13 @@ Finger enters from the right
 
 Zecheru (ed/Zecheru.webp): "Happy birthday Elsi, the Greek Boy", waltzing in with a cake box.
 Finger (ed/Finger.png): "Ataturk, Kebab, Baklava" (Translated: There are some others who are still on their way)
-Narrator: It was a surprise visit! Meepa and Ed fought over which party poppers were to be used. Ed thought it best to make a special party popper that fired Reg Moss's ip address. Meepa wanted to use normal party poppers, and said that there was no way he'd be okay with leaking Reg's personal information in a visual novel. 
+Narrator: It was a surprise visit! Meepa and Ed fought over which party poppers were to be used. Ed thought it best to make a special party popper that fired Reg Moss's ip address. Meepa wanted to use normal party poppers, and said that there was no way he'd be okay with leaking Reg's personal information in a visual novel.
 
 bgm raul/deathsdoor.mp3 plays
 
-Narrator: In the middle of all the pomp and celebration, a statement of disbelief cut through the air like a scythe. "No...this can't be! Where did this letter come from? How did it get past us?" Zecheru looked worriedly at an envelope in front of him. It was charcoal black, with a crimson red pentagram drawn on its back with what seemed to be melted wax. He tore open the envelope and read out its contents along with the surprise guests who had all huddled behind him. Slowly, their expressions of worry turned into that of grit. "Esli...we'll be back. Whatever you do, don't read this letter. We're going to go and buy milk. Stay put." 
+Narrator: In the middle of all the pomp and celebration, a statement of disbelief cut through the air like a scythe. "No...this can't be! Where did this letter come from? How did it get past us?" Zecheru looked worriedly at an envelope in front of him. It was charcoal black, with a crimson red pentagram drawn on its back with what seemed to be melted wax. He tore open the envelope and read out its contents along with the surprise guests who had all huddled behind him. Slowly, their expressions of worry turned into that of grit. "Esli...we'll be back. Whatever you do, don't read this letter. We're going to go and buy milk. Stay put."
 
-Narrator: They promptly left her house. As for not reading the letter...yeah right lmao as if. You walked up and read it like your life depended on it. The letter read: 
+Narrator: They promptly left her house. As for not reading the letter...yeah right lmao as if. You walked up and read it like your life depended on it. The letter read:
 Narrator: "GOOD TIDINGS, ESLI. IT'S ME, YOUR BOSS. YOU THOUGHT YOU COULD ESCAPE MY CLUTCHES BUT YOU DIDN'T, YOU WON'T, AND SOON YOU'LL BE WORKING FOR ME AGAIN. I'VE ALREADY FOUGHT WITH YOUR PATHETIC LITTLE WADACORD FRIENDS SEVERAL TIMES AND TIME AND TIME AGAIN I'VE PROVEN VICTORIOUS. THEY CAN'T STOP ME FROM TAKING YOU BACK. SAVE SOME OF THAT CAKE FOR ME, WILL YOU? I'M DYING FOR A BITE.
 
 clear chars
@@ -33,7 +33,7 @@ Narrator: -With No Overtime Pay,
 
 Narrator: Your Boss"
 
-Narrator: You fell to your knees in despair. "How...how could this happen? Why is she still coming for me....after all this time...just why?" Then, your surprise guests suddenly leaving, were they on their way to fight her? And those guests who were still on their way...were they fighting her at that very moment? You...you slumped to your room in utter confusion and stared longingly at the portrait of Beatrice affixed to the wall. 
+Narrator: You fell to your knees in despair. "How...how could this happen? Why is she still coming for me....after all this time...just why?" Then, your surprise guests suddenly leaving, were they on their way to fight her? And those guests who were still on their way...were they fighting her at that very moment? You...you slumped to your room in utter confusion and stared longingly at the portrait of Beatrice affixed to the wall.
 
 Narrator: "Beatrice...Beatrice...what am I to do? Everything is going wrong..."
 
@@ -41,7 +41,8 @@ Narrator: Without warning...
 
 sfx MagicButterflies.mp3 plays
 
-bgi raul/beatricepainting.png
+bgi raul/beatricepainting.png at 555 0 sized 810 1080
+
 
 Beatrice enters from the left
 
@@ -100,7 +101,7 @@ sfx gil/sfx-explosion.wav plays
 
 Zecheru enters from the middle
 
-Narrator: A sound comparable to that of a huge explosion was produced. Esli's house shook from top to bottom. When she came to, she saw her boss' twitching insect body and Zecheru's goo-soaked fist. 
+Narrator: A sound comparable to that of a huge explosion was produced. Esli's house shook from top to bottom. When she came to, she saw her boss' twitching insect body and Zecheru's goo-soaked fist.
 
 bgm raul/streetfightersimplerating.mp3 plays
 
@@ -140,7 +141,7 @@ narrator: Meepa unsheathed his cool anime sword (he's so sugoii desu ne!) and st
 
 sfx raul/swordswing.mp3 plays
 
-narrator: The demon let out an inhuman groan before fluttering off the ground. 
+narrator: The demon let out an inhuman groan before fluttering off the ground.
 
 Boss: "FUCK YOU, YOU FUCKING AMERICAN...bwooaarrghghgahrghgahrgh"
 
@@ -148,10 +149,10 @@ narrator: Vomit mixed with blood and guts cascaded out of its mouth.
 
 Boss: "But don't get too excited, for I am only approaching my second phase"
 
-Narrator: The fly's erratic movements suddenly stopped as it remained airborne with perfect stillness. 
+Narrator: The fly's erratic movements suddenly stopped as it remained airborne with perfect stillness.
 
 Boss: "Covidus Trumpus...Ignoramus!"
-narrator: Luminescent purple inscriptions manifested on the furniture, and with a poof, all the Americans in the house disappeared. 
+narrator: Luminescent purple inscriptions manifested on the furniture, and with a poof, all the Americans in the house disappeared.
 
 Ed enters from the middle
 

@@ -1179,7 +1179,7 @@ clear chars
 
 Narrator: hold on let me adjust that for you
 
-fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]|HAPPY BIRTHDAY!!!!!!|don't spend it all in one place|HAPPY BIRTHDAY ESLI:bangbang::bangbang: (couldnt bother fixing it)
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]|HAPPY BIRTHDAY!!!!!!|don't spend it all in one place|HAPPY BIRTHDAY ESLI
 credits roll
 [font_size=96]
 edward wong hau pepelu tivruski the fourth - coding, writing

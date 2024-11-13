@@ -6,7 +6,7 @@ extends Node
 @export var validate_script = false
 
 var scenes = {}
-var current_scene = "raul"
+var current_scene = ""
 var base_dir = ""
 
 var left_char = ""
@@ -82,7 +82,8 @@ func update_scene_ui(scene_lines: Array):
 	var choices = []
 	
 	# Separate dialogue lines from choices
-	for line in scene_lines:
+	for line_index in range(len(scene_lines)):
+		var line = scene_lines[line_index]
 		var split_line = line.split(": ", true, 1)
 		if line.begins_with("<!--"): continue # these are in-script comments
 		if len(split_line) == 2:
@@ -106,7 +107,7 @@ func update_scene_ui(scene_lines: Array):
 						right_char:
 							$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 						_:
-							print(line)
+							print(line_index, line)
 							assert(false, "ERROR: You must introduce a characters position before setting the sprite.")
 				dialogue_text = ""
 				if char_label.text != char_name[0]: # we are changing characters
@@ -158,7 +159,7 @@ func update_scene_ui(scene_lines: Array):
 						$Sprites/Right.position = default_right_position
 						$Sprites/Middle.size = default_right_size
 					_:
-						print(line)
+						print(line_index, line)
 						printerr("Invalid position specified for character.")
 			elif line.begins_with("clear"):
 				if line == "clear":
@@ -200,7 +201,7 @@ func update_scene_ui(scene_lines: Array):
 						left_char = ""
 						$Sprites/Right.texture = null
 					_:
-						print(line)
+						print(line_index, line)
 						printerr("Invalid character specified to hide.")
 			elif " fades " in line:
 				var data = line.split(" fades ")
@@ -216,7 +217,7 @@ func update_scene_ui(scene_lines: Array):
 					right_char:
 						sprite = $Sprites/Right
 					_:
-						print(line)
+						print(line_index, line)
 						printerr("Invalid character specified to fade.")
 				if "into" in command:
 					var char_sprite = command.trim_prefix("into ")
@@ -238,7 +239,7 @@ func update_scene_ui(scene_lines: Array):
 					)
 
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("Invalid direction specified to fade.")
 					
 					
@@ -257,7 +258,7 @@ func update_scene_ui(scene_lines: Array):
 					right_char:
 						current_sprite = "right"
 					_:
-						print(line)
+						print(line_index, line)
 						printerr("Invalid character specified to move.")
 						return
 				
@@ -288,7 +289,7 @@ func update_scene_ui(scene_lines: Array):
 							$Sprites/Right.texture = $Sprites/Middle.texture
 							$Sprites/Middle.texture = null
 					_:
-						print(line)
+						print(line_index, line)
 						printerr("Invalid position specified for character.")
 			elif " changes into " in line: # sprite change
 				var data = line.split(" changes into ")
@@ -302,7 +303,7 @@ func update_scene_ui(scene_lines: Array):
 					right_char:
 						$Sprites/Right.texture = load_both(base_dir + "images/sprites/%s" % char_sprite, ImageTexture)
 					_:
-						print(line)
+						print(line_index, line)
 						print(left_char, middle_char, right_char)
 						assert(false, "ERROR: Character position not set before changing sprite.")
 			elif line.begins_with("bgi"): # background image change
@@ -377,7 +378,7 @@ func update_scene_ui(scene_lines: Array):
 					$SFXPlayer.volume_db = volume
 					$SFXPlayer.play(start_time)
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("Invalid sound type")
 			elif " stops" in line:
 				if "bgm" in line:
@@ -385,7 +386,7 @@ func update_scene_ui(scene_lines: Array):
 				elif "sfx" in line:
 					$SFXPlayer.stop()
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("Invalid sound type")
 			elif " pauses" in line:
 				var parts = line.trim_suffix(" pauses").split(" ")
@@ -398,7 +399,7 @@ func update_scene_ui(scene_lines: Array):
 					audio_positions[audio] = $SFXPlayer.get_playback_position()
 					$SFXPlayer.stop()
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("Invalid sound type")
 			elif " resumes" in line:
 				var parts = line.trim_suffix(" resumes").split(" ")
@@ -417,7 +418,7 @@ func update_scene_ui(scene_lines: Array):
 					else:
 						$SFXPlayer.play()
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("Invalid sound type")
 			elif " goes to " in line and "db" in line:
 				var parts = line.split(" goes to ")
@@ -428,7 +429,7 @@ func update_scene_ui(scene_lines: Array):
 				elif type == "sfx":
 					$SFXPlayer.volume_db = volume
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("Invalid sound type")
 			elif line == "hide textbox":
 				$TextBox.hide()
@@ -458,7 +459,7 @@ func update_scene_ui(scene_lines: Array):
 						var _body = await $"SubViewport/Node3D/Parkour Civilization".flag.body_entered
 					#print(body)
 				else:
-					print(line)
+					print(line_index, line)
 					printerr("unknown 3d command")
 			elif line.begins_with("pause for "): # pause for 1 sec
 				if not validate_script:
@@ -518,7 +519,7 @@ func update_scene_ui(scene_lines: Array):
 					"right":
 						$Sprites/Right.set_position(Vector2(float(sprite_position[0]), float(sprite_position[1])))
 					_:
-						print(line)
+						print(line_index, line)
 						assert(false, "ERROR: Invalid sprite position")
 			elif " sprite rotates to " in line:
 				var data = line.split(" sprite rotates to ")
@@ -532,7 +533,7 @@ func update_scene_ui(scene_lines: Array):
 					"right":
 						$Sprites/Right.rotation_degrees = sprite_angle_in_deg
 					_:
-						print(line)
+						print(line_index, line)
 						assert(false, "ERROR: Invalid sprite position")
 			elif " sprite scales to " in line:
 				var data = line.split(" sprite scales to ")
@@ -546,7 +547,7 @@ func update_scene_ui(scene_lines: Array):
 					"right":
 						$Sprites/Right.set_size(Vector2(float(sprite_scales[0]), float(sprite_scales[1])))
 					_:
-						print(line)
+						print(line_index, line)
 						assert(false, "ERROR: Invalid sprite position")
 			elif line.begins_with("credits roll"):
 				$TextBox/Buttons.hide()
@@ -585,6 +586,7 @@ func update_scene_ui(scene_lines: Array):
 				credits_rolling = true
 				
 			elif credits_rolling:
+				# bad code mald harder
 				var in_bbcode = false
 				line.replace("res://", base_dir)
 				for character in line:
@@ -598,7 +600,7 @@ func update_scene_ui(scene_lines: Array):
 				text_label.text += "\n"
 				#await get_tree().create_timer(0.01).timeout
 			else:
-				print(line)
+				print(line_index, line)
 				assert(false, "ERROR: Unrecognized line format.")
 	if choices:
 		# Populate choice buttons
@@ -641,8 +643,9 @@ func _ready():
 	else:
 		base_dir = "res://"
 
-	print("we are working from ", base_dir)
-	var file = FileAccess.open(base_dir + script_file, FileAccess.ModeFlags.READ)
+	#print("we are working from ", base_dir)
+	# shipping only, lobotomized
+	var file = FileAccess.open("./" + script_file, FileAccess.ModeFlags.READ)
 	if file:
 		var script_text = file.get_as_text()
 		scenes = parse_markdown(script_text)

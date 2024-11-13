@@ -229,7 +229,7 @@ clear
 bgi Metaworld.png
 bgm overthesky.mp3 resumes
 
-* Option 1: [Meep](#meep)
+<!-- * Option 1: [Meep](#meep) -->
 * Option 2: [Raul](#raul)
 * Option 3: [Gil](#gil)
 * Option 4: [War](#ed)
@@ -1179,13 +1179,13 @@ clear chars
 
 Narrator: hold on let me adjust that for you
 
-fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]|HAPPY BIRTHDAY!!!!!!|don't spend it all in one place
+fullscreen effect show Danmu happyyy birthdayyyyy esliiii|Slappy turd day dumbass (love meep)|[img]res://images/sprites/ups.webp[/img]|Epic Greek Birthday. Word.|Happy Birthday Mr. Elsi|[b]TAKE THAT![/b] Happy Birthday Esli!!!! Love, Gil|Happy birthday to my favourite Muslim Grandma|Happy birthday eslii, didnt have time to do much for this other than write this, love u n fingy|Yo what up (birthday edition). From, Antag.|Happy birthday broski 🤓 [img]res://images/sprites/RikaSmile.webp[/img]|HAPPY BIRTHDAY!!!!!!|don't spend it all in one place|HAPPY BIRTHDAY ESLI:bangbang::bangbang: (couldnt bother fixing it)
 credits roll
 [font_size=96]
 edward wong hau pepelu tivruski the fourth - coding, writing
 goof - found an icon
-meep - writing?
-jth - responded to 1/8 of my pings
+meep - writing (let him cook)
+jth - responded to 2/9 of my pings
 esli - i dont remember
 yapgpt - my goat
 godot engine - engine
@@ -1494,7 +1494,7 @@ goto prison-exterior
 
 ## Prison Exterior
 
-bgi gil/prison exterior 1.png
+bgi gil/PoliceStation.png
 
 Kirei: (Time to get to the bottom of this situation)
 clear
@@ -1508,7 +1508,7 @@ Kirei: This is curious, what's this tremor?
 clear
 
 sfx gil/sfx-explosion.wav plays at -10
-bgi gil/prison exterior 2
+bgi gil/PoliceStation.png
 sfx gil/sfx-scenechange.wav plays at -5
 Esli enters from the middle
 
@@ -1516,7 +1516,7 @@ Esli changes into gil/Esli/Esli_7.png
 Esli: So... where are we gonna be investigating?
 clear
 
-sfx gil/yell2 plays at -10
+sfx gil/sfx-yell2.wav plays at -10
 Kirei: Esli, [b]what in the world[/i] did you do?
 clear
 Esli changes into gil/Esli/Esli_10.png
@@ -1529,7 +1529,7 @@ Kirei: Just one...
 clear
 
 Kirei: How the -tbc-
-sfx gil/whip plays at -10
+sfx gil/sfx-whip.wav plays at -10
 Esli changes into gil/Esli/Esli_6.png
 Kirei: [b]FUCK[/b] did you manage to smash through cinder blocks?!
 clear
@@ -2028,7 +2028,7 @@ goto metaworld
 
 clear
 bgi zec/Forest_p3bf.webp
-bgm zec/Deep.mp3 plays
+bgm zec/Deep.wav plays
 
 Elsi enters from the right
 Elsi changes into zec/PC_Erika.Casual.Sprite_18.webp
@@ -2051,11 +2051,11 @@ Narrator: As any retard in fiction she put her eye in the shoe hole to see the f
 Elsi changes into zec/PC_Erika.Casual.Sprite_6.webp
 Narrator: The moment she put her greek eye inside, she got sucked in.
 
-Elsi changes into zec/0.webp
+Elsi fades out
 
 clear
 
-sfx zec/DoorsOpening.mp3 plays at -20 db
+sfx DoorsOpening.mp3 plays at -20 db
 clear
 
 bgi zec/wada.png
@@ -2064,9 +2064,9 @@ pause for 2 sec
 fullscreen effect hide Titlecard INTO THE WADALANDS
 
 clear
-bgi zec/Metaworld.png
+bgi Metaworld.png
 Narrator: Our young protagonist fell down of her shoe hole.
-Narrator: She woke up and she was shocked. 
+Narrator: She woke up and she was shocked.
 
 clear
 
@@ -2087,53 +2087,51 @@ Narrator: I think its time to present our protagonist since the fucker hasnt fig
 
 clear
 
-Narrator: Here we have Elsi - A spirited Turkish woman in her late 50s, with a passion for exploring life’s pleasures, including herbal remedies and psychedelic experiences. She’s adventurous, open-minded, and has a knack for finding beauty in chaos. Her suitcase is filled with various potions and trinkets from her travels. (drugs) [i]wink[/i]
+Narrator: Here we have Elsi - A spirited Turkish woman in her late 50s, with a passion for exploring life's pleasures, including herbal remedies and psychedelic experiences. She's adventurous, open-minded, and has a knack for finding beauty in chaos. Her suitcase is filled with various potions and trinkets from her travels. (drugs) [i]wink[/i]
 
 clear
 
 Elsi changes into zec/PC_Erika.Casual.Sprite_16.webp
 
-Narrator: Elsi took a deep breath, trying to gather her thoughts as she surveyed her bizarre surroundings. She found herself in what looked like a psychedelic version of a suburban backyard, complete with flamingos that seemed to be arguing over a capybara. 
-
+Narrator: Elsi took a deep breath, trying to gather her thoughts as she surveyed her bizarre surroundings. She found herself in what looked like a psychedelic version of a suburban backyard, complete with flamingos that seemed to be arguing over a capybara.
 
 Elsi changes into zec/PC_Erika.Casual.Sprite_23.webp
 clear
 
-Elsi: (squinting her eyes like a damn chinese) Is that capybara wearing a pink shirt? 
-Elsi changes into zec/0.webp
+Elsi: (squinting her eyes like a damn chinese) Is that capybara wearing a pink shirt?
+Elsi fades out
 clear
 bgi zec/bg-r-001.webp
-Narrator: Indeed, the capybara was decked out in floral patterns, sipping from a cocoNUT. 
+Narrator: Indeed, the capybara was decked out in floral patterns, sipping from a cocoNUT.
 clear
 Capybara enters from the left
 Capybara changes into zec/gort.png
 
-Capybara: (in a surprisingly british accent) Oi Oi Oi! Would you like a sip you wanker? It’s absolutely delightful! (said the capybara calmly)
+Capybara: (in a surprisingly british accent) Oi Oi Oi! Would you like a sip you wanker? It's absolutely delightful! (said the capybara calmly)
 
 clear
 
 Capybara changes into zec/gortRED.png
 
 Elsi changes into zec/PC_Erika.Casual.Sprite_23.webp
-Elsi: (bewildered) I mean, why not? I’m already in a shoe hole, might as well indulge. 
+Elsi: (bewildered) I mean, why not? I'm already in a shoe hole, might as well indulge.
 clear
 
-bgi zec/Metaworld.png
-Elsi changes into zec/0.webp
-Capybara changes into zec/0.png
+bgi Metaworld.png
+Elsi fades out
+Capybara fades out
 
-Narrator: Elsi believed we wouldnt see her greed. 
+Narrator: Elsi believed we wouldnt see her greed.
 
 clear
 
 bgi zec/bg-r-001.webp
 Capybara changes into zec/gortNUT.png
-Capybara: (offering the NUT) It’s a blend of NUT water and a secret ingredient... 
-
+Capybara: (offering the NUT) It's a blend of NUT water and a secret ingredient...
 
 clear
 Elsi changes into zec/PC_Erika.Casual.Sprite_6.webp
-Elsi: (taking a sip) Mmm, tangy! I can taste the bitterness of the NUT! 
+Elsi: (taking a sip) Mmm, tangy! I can taste the bitterness of the NUT!
 Elsi: (takes another sip): Damn this shit is wack cuz. What's your name my furry homie?
 
 clear
@@ -2149,8 +2147,8 @@ clear
 Gort: Gort.
 
 clear
-Elsi changes into zec/0.webp
-Capybara changes into zec/0.png
+Elsi fades out
+Capybara fades out
 bgi zec/wada.png
 fullscreen effect show Titlecard [font_size=100] INTO THE WADALANDS [/font_size] at 250 250
 pause for 2 sec
@@ -2161,37 +2159,38 @@ bgi zec/bg-r-002.webp
 
 Narrator: After indulging into what seems 30 minutes of NUT water, a giant cockroach appeared behind the bush.
 
-clear 
+clear
 
 Narrator: I smell NUT (said the cockroach)
 clear
 Elsi changes into zec/PC_Erika.Casual.Sprite_6.webp
-Elsi: (laughing) Okay, this is definitely a trip! 
+Elsi: (laughing) Okay, this is definitely a trip!
 clear
 Narrator: Nigga are you high on NUT or what, you see a damn giant cock fucking roach and your first instinct is laugh !
 
 Abdul enters from the left
 Abdul changes into zec/cock.png
 clear
-Abdul changes into zec/0.png
+Abdul fades out
 Gort enters from the left
 Gort changes into zec/gortNUT.png
 
-Gort: (sipping his cocoNUT) Oh, don’t mind Abdul. He’s quite friendly once you get to know him.
+Gort: (sipping his cocoNUT) Oh, don't mind Abdul. He's quite friendly once you get to know him.
 clear
-Elsi: (shocked) Abdul ? That name brings back memories of my homeworld. 
+Elsi: (shocked) Abdul ? That name brings back memories of my homeworld.
 clear
+Abdul enters from the middle
 Abdul changes into zec/cock.png
 Abdul: Oho ?
 clear
-Elsi: I think that fucker owes me some shit on mudae. He made me give my Snufkin pull for his Himiko. That shit ain’t even worth my AI feet pics.
+Elsi: I think that fucker owes me some shit on mudae. He made me give my Snufkin pull for his Himiko. That shit ain't even worth my AI feet pics.
 clear
-Narrator: I’ll pretend i didn't hear that.
+Narrator: I'll pretend i didn't hear that.
 clear
 
-Abdul changes into zec/0.png
-Elsi changes into zec/0.webp
-Gort changes into zec/0.png
+Abdul fades out
+Elsi fades out
+Gort fades out
 bgi zec/wada.png
 fullscreen effect show Titlecard [font_size=100] INTO THE WADALANDS [/font_size] at 250 250
 pause for 2 sec
@@ -2208,12 +2207,12 @@ Abdul: I was performing a special activity that my people enjoy doing.
 clear
 Elsi: Oho ? What is it ?
 clear
-Abdul: Edging.	
+Abdul: Edging.
 clear
 
-Abdul changes into zec/0.png
-Elsi changes into zec/0.webp
-Gort changes into zec/0.png
+Abdul fades out
+Elsi fades out
+<!-- Gort fades out -->
 bgi zec/wada.png
 fullscreen effect show Titlecard [font_size=100] INTO THE WADALANDS [/font_size] at 250 250
 pause for 2 sec
@@ -2234,7 +2233,7 @@ clear
 bgi zec/bg-r-002.webp
 
 clear
-Narrator: Elsi blinked, taken aback by Abdul’s blunt admission.
+Narrator: Elsi blinked, taken aback by Abdul's blunt admission.
 clear
 Elsi changes into zec/PC_Erika.Casual.Sprite_6.webp
 Elsi: (laughing) Edging? Is that some kind of racing technique for cockroaches?
@@ -2244,28 +2243,29 @@ Abdul: (grinning) Only the most advanced technique! Keeps the excitement high!
 clear
 Narrator: Gort, still sipping his cocoNUT, chuckled and nudged Elsi with his furry elbow.
 clear
+Gort enters from the left
 Gort changes into zec/gortNUT.png
 Gort: (teasingly) I think Abdul just enjoys keeping things... tense.
 clear
-Elsi: (playfully rolling her eyes) Well, good for you, Abdul! Just don’t get too carried away. We don’t need any unexpected surprises.
+Elsi: (playfully rolling her eyes) Well, good for you, Abdul! Just don't get too carried away. We don't need any unexpected surprises.
 
-Elsi: (grinning) Well, this place is wild, but I think I've had enough of the weirdness for one day. I’m gonna go find a way out of this wacky place.
+Elsi: (grinning) Well, this place is wild, but I think I've had enough of the weirdness for one day. I'm gonna go find a way out of this wacky place.
 clear
-Narrator: Elsi, ever the optimist, thought she could just waltz right out of the Wadalands. But let’s be real—who in their right mind would let you leave after you’ve had that much NUT water?
+Narrator: Elsi, ever the optimist, thought she could just waltz right out of the Wadalands. But let's be real—who in their right mind would let you leave after you've had that much NUT water?
 clear
-Gort: (sipping his cocoNUT) You might not want to go just yet. You see, the Wadalands have a... way of keeping you. Things don’t just leave.
+Gort: (sipping his cocoNUT) You might not want to go just yet. You see, the Wadalands have a... way of keeping you. Things don't just leave.
 clear
-Abdul: (nervously) Yeah, uh, the Wadalands don’t take kindly to people running off. Once you’re in, you’re in. There’s no going back. Trust me. Unless you want you ass eaten by goats. WHICH I WONT JUDGE.
+Abdul: (nervously) Yeah, uh, the Wadalands don't take kindly to people running off. Once you're in, you're in. There's no going back. Trust me. Unless you want you ass eaten by goats. WHICH I WONT JUDGE.
 clear
-Elsi: (laughing) Yeah, okay, keep your spooky stories to yourselves. I’m not that easily scared, bros..
+Elsi: (laughing) Yeah, okay, keep your spooky stories to yourselves. I'm not that easily scared, bros..
 clear
-Narrator: But something was off. A chill ran through the air, and the once playful colors of the Wadalands now felt... wrong. It’s not the same ol gay place as before…
+Narrator: But something was off. A chill ran through the air, and the once playful colors of the Wadalands now felt... wrong. It's not the same ol gay place as before…
 clear
 Narrator: First, the cockroach started shaking. Then the capybara froze mid-sip, its eyes locked on something in the distance.
 clear
-Gort: (sipping his cocoNUT) It’s happening again…
+Gort: (sipping his cocoNUT) It's happening again…
 clear
-Elsi: (squinting like a chinese) What’s happening?
+Elsi: (squinting like a chinese) What's happening?
 clear
 Abdul: (looking over his shoulder) You hear that?
 clear
@@ -2273,69 +2273,69 @@ Narrator: A distant rumble vibrated through the ground. A dark fog, thick as tar
 clear
 Elsi: (nervously) What the hell is that?
 clear
-Narrator: From the shadows of the fog, shapes began to emerge. They weren’t quite human. Or animal. They weren’t anything you could put a FINGER on, but the way they moved was too smooth, too deliberate. Their eyes glowed an unnatural shade of red, piercing through the mist.
+Narrator: From the shadows of the fog, shapes began to emerge. They weren't quite human. Or animal. They weren't anything you could put a FINGER on, but the way they moved was too smooth, too deliberate. Their eyes glowed an unnatural shade of red, piercing through the mist.
 clear
-Abdul: (shivering) The cocks are out. I told you... You’re not supposed to go too far past the general balkan.
+Abdul: (shivering) The cocks are out. I told you... You're not supposed to go too far past the general balkan.
 clear
-Narrator: At this point, even Elsi, in all her high-as-a-kite glory, couldn’t deny something was wrong. The creatures—the cocks, as Abdul called them—came closer, their steps silent, their forms twisting and bending in impossible ways.
+Narrator: At this point, even Elsi, in all her high-as-a-kite glory, couldn't deny something was wrong. The creatures—the cocks, as Abdul called them—came closer, their steps silent, their forms twisting and bending in impossible ways.
 clear
 Elsi: (pointing) What the hell are they?
 clear
-Gort: (sipping his cocoNUT) No one really knows. Some say they’re the forgotten ones, souls who got too curious about the Wadalands and never left. Others say they’re something much older... and much worse.
+Gort: (sipping his cocoNUT) No one really knows. Some say they're the forgotten ones, souls who got too curious about the Wadalands and never left. Others say they're something much older... and much worse.
 clear
-Abdul: (nervously) They don’t like people who laugh. Or make noise. Or, uh, talk too much…
+Abdul: (nervously) They don't like people who laugh. Or make noise. Or, uh, talk too much…
 clear
-Narrator: Elsi, ever the jokester, couldn’t help herself.
+Narrator: Elsi, ever the jokester, couldn't help herself.
 clear
-Elsi: (laughing nervously) Okay, okay. So we’ve got some goat weirdos, what’s the big deal? We’ve got sipping capybaras and cockroaches performing tantric edging rituals. This place is crazy.
+Elsi: (laughing nervously) Okay, okay. So we've got some goat weirdos, what's the big deal? We've got sipping capybaras and cockroaches performing tantric edging rituals. This place is crazy.
 clear
-Narrator: Big mistake. Elsi’s laughter rang out, echoing like an alarm bell. One of the creatures twitched, and with a speed that defied logic, it shot forward, it went straight to general chat. IT…WAS…A…ONE PIECE…EDIT
+Narrator: Big mistake. Elsi's laughter rang out, echoing like an alarm bell. One of the creatures twitched, and with a speed that defied logic, it shot forward, it went straight to general chat. IT…WAS…A…ONE PIECE…EDIT
 clear
 Elsi: (screaming) WHOA, FUCK!
 clear
-Narrator: The thing was fast—too fast—and Elsi’s instinct was to jump back. But as she did, the ground under her feet crumbled away, like some sick cosmic trap was ready to swallow her whole.
+Narrator: The thing was fast—too fast—and Elsi's instinct was to jump back. But as she did, the ground under her feet crumbled away, like some sick cosmic trap was ready to swallow her whole.
 clear
-Abdul: (frantically) You shouldn’t have laughed! You shouldn’t have….
+Abdul: (frantically) You shouldn't have laughed! You shouldn't have….
 clear
-Narrator: The last thing Elsi saw before everything went dark was Abdul’s horrified face. Then the chat went silent.
+Narrator: The last thing Elsi saw before everything went dark was Abdul's horrified face. Then the chat went silent.
 clear
-Narrator: Elsi awoke. This time, it wasn’t the soft, grassy backyard she had found herself in earlier. No, this time she was in a place... vastly different.
+Narrator: Elsi awoke. This time, it wasn't the soft, grassy backyard she had found herself in earlier. No, this time she was in a place... vastly different.
 clear
-Narrator: Elsi started to regret checking the hole. 
+Narrator: Elsi started to regret checking the hole.
 clear
 Narrator: She started to scream.
 clear
-Narrator: Elsi's scream echoed through the abyss, but it didn’t sound like it was going anywhere. The air around her was thick and heavy, and the ground felt as if it might just evaporate under her feet at any second. The sky? A dull, oppressive gray. The air? Smelled like 90% alcohol. (Did fucking Zecheru described Romania Winter).
+Narrator: Elsi's scream echoed through the abyss, but it didn't sound like it was going anywhere. The air around her was thick and heavy, and the ground felt as if it might just evaporate under her feet at any second. The sky? A dull, oppressive gray. The air? Smelled like 90% alcohol. (Did fucking Zecheru described Romania Winter).
 clear
 Elsi: (desperately) WHERE AM I NOW?!
 clear
-Narrator: Elsi’s voice barely cut through the silence. The landscape around her was an endless stretch of nothing. But, wait... was that a flicker of movement in the distance?
+Narrator: Elsi's voice barely cut through the silence. The landscape around her was an endless stretch of nothing. But, wait... was that a flicker of movement in the distance?
 clear
-Narrator: She squinted, her vision still fuzzy from whatever the hell had just happened. And then, like a glitch in reality, something appeared. Something that made Elsi’s stomach drop to her shoes.
+Narrator: She squinted, her vision still fuzzy from whatever the hell had just happened. And then, like a glitch in reality, something appeared. Something that made Elsi's stomach drop to her shoes.
 clear
-Narrator: A giant hand—no, a giant FINGER—broke through the ground like it had been buried for centuries. It wasn’t human. It wasn’t animal. It was a...It was a… turk. A turk made out of endless hours played in FIFA 2024 (it's not a paid promotion).
+Narrator: A giant hand—no, a giant FINGER—broke through the ground like it had been buried for centuries. It wasn't human. It wasn't animal. It was a...It was a… turk. A turk made out of endless hours played in FIFA 2024 (it's not a paid promotion).
 clear
 Elsi: (in horror) What... the fuck?
 clear
-Narrator: FINGER didn’t say anything. It didn’t need to. A lurkers job is to lurk. Finger started looking directly at Elsi, like it was deciding whether or not to press "send" on the most cursed meme ever created.
+Narrator: FINGER didn't say anything. It didn't need to. A lurkers job is to lurk. Finger started looking directly at Elsi, like it was deciding whether or not to press "send" on the most cursed meme ever created.
 clear
 Narrator: Elsi stood frozen, trying to figure out what was happening. Did the NUT juice fucked me really good ?
 clear
 Narrator: And then, the ground rumbled. Again.
 clear
-Narrator: A distant howl echoed from the shadows, followed by the sound of clicking—the sound was worse then the discord ping from Halloween 2024. 
+Narrator: A distant howl echoed from the shadows, followed by the sound of clicking—the sound was worse then the discord ping from Halloween 2024.
 clear
 Elsi: (gulping) What is it now...?
 clear
-Narrator: The creatures crawled from the fog, their bodies distorted in ways that couldn’t possibly make sense. 
+Narrator: The creatures crawled from the fog, their bodies distorted in ways that couldn't possibly make sense.
 clear
 Narrator: The Americans joined the chat.
 clear
-Narrator: From the fog appeared, two dudes and a cat named Dong . That’s right—Dong. One of the dudes had a mullet so big it could have housed a family of immigrants, and the other was wearing cargo shorts and flip-flops. (fuck you guys, i don’t know you fuckers look)
+Narrator: From the fog appeared, two dudes and a cat named Dong . That's right—Dong. One of the dudes had a mullet so big it could have housed a family of immigrants, and the other was wearing cargo shorts and flip-flops. (fuck you guys, i don't know you fuckers look)
 clear
 Narrator: Pst…
 clear
-Narrator: Dong wasn’t a real cat. He was a dude who acted like a cat. How? Hell if anyone knew. He had the whole act down, though—tail, ears, and all. 
+Narrator: Dong wasn't a real cat. He was a dude who acted like a cat. How? Hell if anyone knew. He had the whole act down, though—tail, ears, and all.
 clear
 Dong enters from the left
 Dong changes into zec/dong.png
@@ -2352,12 +2352,12 @@ clear
 The other 2 Americans: Sooo, when are you gonna let us introduce ourselves ?
 clear
 Narrator: …. In a moment I realised something.
-Narrator: The fuck is this story … Why the fuck i feel like i’m also a part of this story.
+Narrator: The fuck is this story … Why the fuck i feel like i'm also a part of this story.
 clear
 The other 2 Americans: Cmon dude, introduce us !
 clear
-Narrator: I pretended i didn’t saw them and moved on.
-Narrator: The fuck is this story … Why the fuck i feel like i’m also a part of this story.
+Narrator: I pretended i didn't saw them and moved on.
+Narrator: The fuck is this story … Why the fuck i feel like i'm also a part of this story.
 clear
 Elsi: Was about to ask that !
 clear
